@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> HTML [table] 태그</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <h2>
+            HTML [table] 태그
+        </h2>
+    </header>
+
+    <article>
+        <p>
+        <h2> 만약 HTML에서 표를 그리고 싶다면 어떻게 해야 할까 ?! </h2>
+        바로, <strong> [table] 태그와 [td]태그 </strong>를 쓰면 된다. td는 table data의 약어이다. <br>
+        <h3>
+            [table] <br>
+            [td] 이름 [/td] [td] 성별 [/td] [td] 주소 [/td] [td] 회비 [/td] <br>
+            [td] 수수 [/td] [td] 여자 [/td] [td] 광동 [/td] [td] 500 [/td] <br>
+            [td] 초코 [/td] [td] 남자 [/td] [td] 투썸 [/td] [td] 600 [/td] <br>
+            [/table] <br>
+        </h3>
+        table의 선 굵기를 따로 설정하고 싶다면 <strong> [table border=“선의 굵기”] [/table] </strong> 을 써넣으면 된다.<br>
+        이런 식으로 table이 만들어지긴 하지만, 의미있는 정보가 담긴 HTML이 되기 위해서는 몇가지 추가해야 할 것이 있다. <br>
+        </p>
+
+        <p>
+        <h2> 1. [tr]</h2>
+        [tr] 태그는 table row의 약어로 행을 구분하는 역할을 한다. <br>
+        <br>
+        [table] <br>
+        <strong>
+            [tr] <br>
+        </strong>
+        [td] 이름 [/td] [td] 성별 [/td] [td] 주소 [/td] [td] 회비 [/td]<br>
+        <strong>
+            [/tr] <br> <br>
+
+            [tr] <br>
+        </strong>
+        [td] 수수 [/td] [td] 여자 [/td] [td] 광동 [/td] [td] 500 [/td]<br>
+        <strong>
+            [/tr] <br> <br>
+
+            [tr] <br>
+        </strong>
+        [td] 초코 [/td] [td] 남자 [/td] [td] 투썸 [/td] [td] 600 [/td]<br>
+        <strong>
+            [/tr] <br>
+        </strong>
+        [/table] <br>
+        <br>
+        </p>
+
+        <p>
+        <h2> 2. [thead] [tbody] [tfoot] </h2>
+        위 태그들은 데이터들의 위치를 정하고 알리는 역할을 한다. <br>
+        [thead]는 데이터의 분류기준 열에, [tbody]는 데이터 열에, [tfoot]은 표에 가장 아래에 위치해야 하는 곳에 쓰인다. <br>
+        <br>
+        [table] <br>
+        <strong>
+            [thead] <br>
+        </strong>
+        [tr] <br>
+        [td] 이름 [/td] [td] 성별 [/td] [td] 주소 [/td] [td] 회비 [/td] <br>
+        [/tr] <br>
+        <strong>
+            [/thead] <br>
+        </strong>
+        <br>
+        <strong>
+            [tbody] <br>
+        </strong>
+        [tr] <br>
+        [td] 수수 [/td] [td] 여자 [/td] [td] 투썸 [/td] [td] 500 [/td]<br>
+        [/tr] <br>
+        <br>
+        [tr] <br>
+        [td] 초코 [/td] [td] 남자 [/td] [td] 투썸 [/td] [td] 600 [/td]<br>
+        [/tr] <br>
+        <strong>[/tbody]</strong> <br><br>
+        <strong> [tfoot] <br>
+            [tr] <br>
+            [td] 회비 합계 1100 [/td]
+            [/tr] <br>
+            [/tfoot] <br>
+        </strong> <br>
+        [/table] <br>
+        </p>
+
+        <p>
+        <h2> 만약 HTML에서 표를 병합하고 싶다면 어떻게 해야 할까 ?! </h2>
+        <h3> [td rowspan="2(개수)"]와 [td colspan="3(개수)"] </h3>
+        row는 행, col은 열을 뜻한다.<br>
+        [td rowspan="2(개수)"]는 행과 다음 행(총 2개)을 병합하겠다는 뜻이다. <br>
+        우리가 그렸던 표를 보면, 수수와 초코의 주소가 같다. 공통된 부분을 병합하여 표를 나타낸다면 더 깔끔할 것 같다.<br>
+        [td colspan="3(개수)"]는 열과 다음 열, 다음다음 열 (총 3개)를 병합하겠다는 뜻이다. <br>
+        <img src="2table.png" alt="html로 표 그리기 미완성" height="150" title="html로 표 그리기 미완성" /> <br>
+        마지막 행을 보면 회비 합계의 항목이 덩그러니 있다. 이것을 보기 좋게 [회비합계] [공백] [1100]으로 나타내는 것이 좋을 것 같다. <br>
+        그러기 위해서는 열 3개를 병합하여 회비 칸에 1100이 들어가게 해야 할 것이다. <br>
+        </p>
+
+        <p>
+            <br>
+            [table] <br>
+            [thead] <br>
+            [tr] <br>
+            [td] 이름 [/td] [td] 성별 [/td] [td] 주소 [/td] [td] 회비 [/td] <br>
+            [/tr] <br>
+            [/thead] <br>
+            <br>
+            [tbody] <br>
+            [tr] <br>
+            [td] 수수 [/td] [td] 여자 [/td] <strong> [td rowspan="2"] 투썸 [/td] </strong> [td] 500 [/td]<br>
+            [/tr] <br>
+            <br>
+            [tr] <br>
+            [td] 초코 [/td] [td] 남자 [/td]<strong> <del>[td] 투썸 [/td] 👈👈여기 지우기</del> [td] 600 [/td]</strong> <br>
+            [/tr] <br>
+            [/tbody] <br>
+            <br>
+            [tfoot] <br>
+            [tr] <br>
+            <strong>[td colspan="3"] 회비 합계 [/td] ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ[td] 1100 [/td]</strong> <br>
+            [/tr] <br>
+            [/tfoot] <br>
+            <br>
+            [/table] <br>
+            <br>
+            <img src="3table.png" alt="html로 표 그리기 완성" height="150" title="html로 표 그리기 완성" /> <br>
+        <h2>이제 예쁜 표가 만들어졌다 ! </h2>
+        </p>
+
+        <p>
+            표 자체가 행이랑 열을 생각해야하는데, 나는 행과 열, 가로와 세로 같은 거 구분 못하는 사람이라 이해하기까지 조금 시간이 걸렸다. <br>
+            그래도 이렇게 한 번 정리하고 나니까 전보다 더 이해됐다. 이야 성장하는 나 자신... 대단해,,~!<br>
+        </p>
+    </article>
+</body>
+
+<footer>
+    <ul>
+        <li> <a href="https://blog.pongdang.today/pongtoday/index.html"> 🌀🌀돌아가기🌀🌀 </a></li>
+        <li> <a href="https://blog.pongdang.today/">❣️❣️처음으로 돌아가기❣️❣️</a></li>
+    </ul>
+</footer>
+
+</html>
