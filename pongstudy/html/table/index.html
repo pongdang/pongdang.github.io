@@ -17,16 +17,27 @@
         <p>
         <h2> 만약 HTML에서 표를 그리고 싶다면 어떻게 해야 할까 ?! </h2>
         바로, <strong> &lt;table&gt; 태그와 &lt;td&gt;태그 </strong>를 쓰면 된다. td는 table data의 약어이다. <br>
-        <h3>
+        <h4>
             &lt;table&gt; <br>
-            &lt;td&gt; 이름 &lt;/td&gt; &lt;td&gt; 성별 &lt;/td&gt; &lt;td&gt; 주소 &lt;/td&gt; &lt;td&gt; 회비 &lt;/td&gt; <br>
-            &lt;td&gt; 수수 &lt;/td&gt; &lt;td&gt; 여자 &lt;/td&gt; &lt;td&gt; 광동 &lt;/td&gt; &lt;td&gt; 500 &lt;/td&gt;
             <br>
-            &lt;td&gt; 초코 &lt;/td&gt; &lt;td&gt; 남자 &lt;/td&gt; &lt;td&gt; 투썸 &lt;/td&gt; &lt;td&gt; 600 &lt;/td&gt;
+            &lt;td&gt; 이름 &lt;/td&gt; <br>
+            &lt;td&gt; 성별 &lt;/td&gt; <br>
+            &lt;td&gt; 주소 &lt;/td&gt; <br>
+            &lt;td&gt; 회비 &lt;/td&gt; <br>
+            <br>
+            &lt;td&gt; 수수 &lt;/td&gt; <br>
+            &lt;td&gt; 여자 &lt;/td&gt; <br>
+            &lt;td&gt; 광동 &lt;/td&gt; <br>
+            &lt;td&gt; 500 &lt;/td&gt; <br>
+            <br>
+            &lt;td&gt; 초코 &lt;/td&gt; <br>
+            &lt;td&gt; 남자 &lt;/td&gt; <br>
+            &lt;td&gt; 투썸 &lt;/td&gt; <br>
+            &lt;td&gt; 600 &lt;/td&gt; <br>
             <br>
             &lt;/table&gt; <br>
-        </h3>
-        table의 선 굵기를 따로 설정하고 싶다면 <strong> &lt;table border=“선의 굵기”&gt; &lt;/table&gt; </strong> 을 써넣으면 된다.<br>
+        </h4>
+        table의 선 굵기를 따로 설정하고 싶다면 <strong> &lt;table border=“선의 굵기(숫자로 입력)”&gt; &lt;/table&gt; </strong> 을 써넣으면 된다.<br>
         이런 식으로 table이 만들어지긴 하지만, 의미있는 정보가 담긴 HTML이 되기 위해서는 몇가지 추가해야 할 것이 있다. <br>
         </p>
 
@@ -35,25 +46,40 @@
         &lt;tr&gt; 태그는 table row의 약어로 행을 구분하는 역할을 한다. <br>
         <br>
         &lt;table&gt; <br>
+        <br>
         <strong>
             &lt;tr&gt; <br>
         </strong>
-        &lt;td&gt; 이름 &lt;/td&gt; &lt;td&gt; 성별 &lt;/td&gt; &lt;td&gt; 주소 &lt;/td&gt; &lt;td&gt; 회비 &lt;/td&gt;<br>
-        <strong>
-            &lt;/tr&gt; <br> <br>
-
-            &lt;tr&gt; <br>
-        </strong>
-        &lt;td&gt; 수수 &lt;/td&gt; &lt;td&gt; 여자 &lt;/td&gt; &lt;td&gt; 광동 &lt;/td&gt; &lt;td&gt; 500 &lt;/td&gt;<br>
-        <strong>
-            &lt;/tr&gt; <br> <br>
-
-            &lt;tr&gt; <br>
-        </strong>
-        &lt;td&gt; 초코 &lt;/td&gt; &lt;td&gt; 남자 &lt;/td&gt; &lt;td&gt; 투썸 &lt;/td&gt; &lt;td&gt; 600 &lt;/td&gt;<br>
+        &lt;td&gt; 이름 &lt;/td&gt; <br>
+        &lt;td&gt; 성별 &lt;/td&gt; <br>
+        &lt;td&gt; 주소 &lt;/td&gt; <br>
+        &lt;td&gt; 회비 &lt;/td&gt; <br>
         <strong>
             &lt;/tr&gt; <br>
         </strong>
+        <br>
+        <strong>
+            &lt;tr&gt; <br>
+        </strong>
+        &lt;td&gt; 수수 &lt;/td&gt; <br>
+        &lt;td&gt; 여자 &lt;/td&gt; <br>
+        &lt;td&gt; 광동 &lt;/td&gt; <br>
+        &lt;td&gt; 500 &lt;/td&gt; <br>
+        <strong>
+            &lt;/tr&gt; <br>
+        </strong>
+        <br>
+        <strong>
+            &lt;tr&gt; <br>
+        </strong>
+        &lt;td&gt; 초코 &lt;/td&gt; <br>
+        &lt;td&gt; 남자 &lt;/td&gt; <br>
+        &lt;td&gt; 투썸 &lt;/td&gt; <br>
+        &lt;td&gt; 600 &lt;/td&gt; <br>
+        <strong>
+            &lt;/tr&gt; <br>
+        </strong>
+        <br>
         &lt;/table&gt; <br>
         <br>
         </p>
@@ -62,13 +88,18 @@
         <h2> 2. &lt;thead&gt; &lt;tbody&gt; &lt;tfoot&gt; </h2>
         위 태그들은 데이터들의 위치를 정하고 알리는 역할을 한다. <br>
         &lt;thead&gt;는 데이터의 분류기준 열에, &lt;tbody&gt;는 데이터 열에, &lt;tfoot&gt;은 표에 가장 아래에 위치해야 하는 곳에 쓰인다. <br>
+        추가로, 항상 표 아래에 있어야 하는 tfoot 부분에 회비의 합계를 넣어보자!<br>
         <br>
         &lt;table&gt; <br>
+        <br>
         <strong>
             &lt;thead&gt; <br>
         </strong>
         &lt;tr&gt; <br>
-        &lt;td&gt; 이름 &lt;/td&gt; &lt;td&gt; 성별 &lt;/td&gt; &lt;td&gt; 주소 &lt;/td&gt; &lt;td&gt; 회비 &lt;/td&gt; <br>
+        &lt;td&gt; 이름 &lt;/td&gt; <br>
+        &lt;td&gt; 성별 &lt;/td&gt; <br>
+        &lt;td&gt; 주소 &lt;/td&gt; <br>
+        &lt;td&gt; 회비 &lt;/td&gt; <br>
         &lt;/tr&gt; <br>
         <strong>
             &lt;/thead&gt; <br>
@@ -78,32 +109,80 @@
             &lt;tbody&gt; <br>
         </strong>
         &lt;tr&gt; <br>
-        &lt;td&gt; 수수 &lt;/td&gt; &lt;td&gt; 여자 &lt;/td&gt; &lt;td&gt; 투썸 &lt;/td&gt; &lt;td&gt; 500 &lt;/td&gt;<br>
+        &lt;td&gt; 수수 &lt;/td&gt; <br>
+        &lt;td&gt; 여자 &lt;/td&gt; <br>
+        &lt;td&gt; 투썸 &lt;/td&gt; <br>
+        &lt;td&gt; 500 &lt;/td&gt; <br>
         &lt;/tr&gt; <br>
         <br>
         &lt;tr&gt; <br>
-        &lt;td&gt; 초코 &lt;/td&gt; &lt;td&gt; 남자 &lt;/td&gt; &lt;td&gt; 투썸 &lt;/td&gt; &lt;td&gt; 600 &lt;/td&gt;<br>
+        &lt;td&gt; 초코 &lt;/td&gt; <br>
+        &lt;td&gt; 남자 &lt;/td&gt; <br>
+        &lt;td&gt; 투썸 &lt;/td&gt; <br>
+        &lt;td&gt; 600 &lt;/td&gt; <br>
         &lt;/tr&gt; <br>
-        <strong>&lt;/tbody&gt;</strong> <br><br>
-        <strong> &lt;tfoot&gt; <br>
-            &lt;tr&gt; <br>
-            &lt;td&gt; 회비 합계 1100 &lt;/td&gt;
-            &lt;/tr&gt; <br>
-            &lt;/tfoot&gt; <br>
+        <strong>
+            &lt;/tbody&gt;
         </strong> <br>
+        <br>
+        <strong>
+            &lt;tfoot&gt;
+        </strong> <br>
+        &lt;tr&gt; <br>
+        &lt;td&gt; 합계 &lt;/td&gt; <br>
+        &lt;td&gt; xxx &lt;/td&gt; <br>
+        &lt;td&gt; xxx &lt;/td&gt; <br>
+        &lt;td&gt; 1100 &lt;/td&gt; <br>
+        &lt;/tr&gt; <br>
+        <strong>
+            &lt;/tfoot&gt;
+        </strong> <br>
+        <br>
         &lt;/table&gt; <br>
         </p>
 
         <p>
         <h2> 만약 HTML에서 표를 병합하고 싶다면 어떻게 해야 할까 ?! </h2>
-        <h3> &lt;td rowspan="2(개수)"&gt;와 &lt;td colspan="3(개수)"&gt; </h3>
+        <table border="3">
+            <thead>
+                <tr>
+                    <td>이름</td>
+                    <td>성별</td>
+                    <td>주소</td>
+                    <td>회비</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>수수</td>
+                    <td>여자</td>
+                    <td>투썸</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td>초코</td>
+                    <td>남자</td>
+                    <td>투썸</td>
+                    <td>600</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>합계</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td>1100</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h3> &lt;td rowspan="(숫자)"&gt;와 &lt;td colspan="(숫자)"&gt; </h3>
         row는 행, col은 열을 뜻한다.<br>
-        &lt;td rowspan="2(개수)"&gt;는 행과 다음 행(총 2개)을 병합하겠다는 뜻이다. <br>
-        우리가 그렸던 표를 보면, 수수와 초코의 주소가 같다. 공통된 부분을 병합하여 표를 나타낸다면 더 깔끔할 것 같다.<br>
-        &lt;td colspan="3(개수)"&gt;는 열과 다음 열, 다음다음 열 (총 3개)를 병합하겠다는 뜻이다. <br>
-        <img src="2table.png" alt="html로 표 그리기 미완성" height="150" title="html로 표 그리기 미완성" /> <br>
-        마지막 행을 보면 회비 합계의 항목이 덩그러니 있다. 이것을 보기 좋게 &lt;회비합계&gt; &lt;공백&gt; &lt;1100&gt;으로 나타내는 것이 좋을 것 같다. <br>
-        그러기 위해서는 열 3개를 병합하여 회비 칸에 1100이 들어가게 해야 할 것이다. <br>
+        &lt;td rowspan="(숫자)"&gt;는 괄호안의 숫자만큼 행을 병합하겠다는 뜻이다. <br>
+        그렸던 표를 보면, 수수와 초코의 주소가 같다. 공통된 부분을 병합한다면 예쁜 표를 만들 수 있다.<br>
+        &lt;td colspan="(숫자)"&gt;는 괄호안의 숫자만큼 열을 병합하겠다는 뜻이다. <br>
+        마지막 행을 보면 합계 열이 보기 좋아보이지는 않는다. xxx가 쓰여있는 칸을 합계칸과 합친다면 예쁜 표를 만들 수 있다. <br>
+        이제 &lt;td rowspan="2"&gt; &lt;td colspan="3"&gt; 을 추가해보자!
         </p>
 
         <p>
@@ -111,39 +190,89 @@
             &lt;table&gt; <br>
             &lt;thead&gt; <br>
             &lt;tr&gt; <br>
-            &lt;td&gt; 이름 &lt;/td&gt; &lt;td&gt; 성별 &lt;/td&gt; &lt;td&gt; 주소 &lt;/td&gt; &lt;td&gt; 회비 &lt;/td&gt; <br>
+            &lt;td&gt; 이름 &lt;/td&gt; <br>
+            &lt;td&gt; 성별 &lt;/td&gt; <br>
+            &lt;td&gt; 주소 &lt;/td&gt; <br>
+            &lt;td&gt; 회비 &lt;/td&gt; <br>
             &lt;/tr&gt; <br>
             &lt;/thead&gt; <br>
             <br>
             &lt;tbody&gt; <br>
             &lt;tr&gt; <br>
-            &lt;td&gt; 수수 &lt;/td&gt; &lt;td&gt; 여자 &lt;/td&gt; <strong> &lt;td rowspan="2"&gt; 투썸 &lt;/td&gt; </strong>
-            &lt;td&gt; 500
-            &lt;/td&gt;<br>
+            &lt;td&gt; 수수 &lt;/td&gt; <br>
+            &lt;td&gt; 여자 &lt;/td&gt; <br>
+            <strong>
+                &lt;td rowspan="2"&gt; 투썸 &lt;/td&gt;
+            </strong> <br>
+            &lt;td&gt; 500 &lt;/td&gt;<br>
             &lt;/tr&gt; <br>
             <br>
             &lt;tr&gt; <br>
-            &lt;td&gt; 초코 &lt;/td&gt; &lt;td&gt; 남자 &lt;/td&gt;<strong> <del>&lt;td&gt; 투썸 &lt;/td&gt; 👈👈여기 지우기</del>
-                &lt;td&gt; 600
-                &lt;/td&gt;</strong> <br>
+            &lt;td&gt; 초코 &lt;/td&gt; <br>
+            &lt;td&gt; 남자 &lt;/td&gt; <br>
+            <strong>
+                <del>&lt;td&gt; 투썸 &lt;/td&gt;</del> 👈👈 여기 지우기
+            </strong> <br>
+            &lt;td&gt; 600 &lt;/td&gt;<br>
             &lt;/tr&gt; <br>
             &lt;/tbody&gt; <br>
             <br>
             &lt;tfoot&gt; <br>
             &lt;tr&gt; <br>
-            <strong>&lt;td colspan="3"&gt; 회비 합계 &lt;/td&gt; ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ&lt;td&gt; 1100 &lt;/td&gt;</strong> <br>
+            <strong>
+                &lt;td colspan="3"&gt; 합계 &lt;/td&gt; <br>
+                <del>
+                    &lt;td&gt; xxx &lt;/td&gt;
+                </del>
+                👈👈 여기 지우기 <br>
+                <del>
+                    &lt;td&gt; xxx &lt;/td&gt;
+                </del>
+                👈👈 여기 지우기 <br>
+            </strong>
+            &lt;td&gt; 1100 &lt;/td&gt; <br>
             &lt;/tr&gt; <br>
             &lt;/tfoot&gt; <br>
             <br>
             &lt;/table&gt; <br>
             <br>
-            <img src="3table.png" alt="html로 표 그리기 완성" height="150" title="html로 표 그리기 완성" /> <br>
-        <h2>이제 예쁜 표가 만들어졌다 ! </h2>
-        </p>
 
-        <p>
-            표 자체가 행이랑 열을 생각해야하는데, 나는 행과 열, 가로와 세로 같은 거 구분 못하는 사람이라 이해하기까지 조금 시간이 걸렸다. <br>
-            그래도 이렇게 한 번 정리하고 나니까 전보다 더 이해됐다. 이야 성장하는 나 자신... 대단해,,~!<br>
+        <table border="3">
+            <thead>
+                <tr>
+                    <td>이름</td>
+                    <td>성별</td>
+                    <td>주소</td>
+                    <td>회비</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>수수</td>
+                    <td>여자</td>
+                    <td rowspan="2">투썸</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td>초코</td>
+                    <td>남자</td>
+
+                    <td>600</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">합 계</td>
+
+                    <td>1100</td>
+                </tr>
+            </tfoot>
+        </table>
+
+
+        <h2>이제 예쁜 표가 만들어졌다 ! </h2>
+        이때, 열과 행을 병합할 때는 병합할 부분들을 지워야 한다. 안 그러면 표가 밀려나 모양도 예쁘지 않고 표의 기능을 하지 못한다. <br>
+        이제 끝!~!~
         </p>
     </article>
 </body>
