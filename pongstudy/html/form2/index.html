@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> HTML &lt;form 2&gt; </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <h2>
+            여러가지의 HTML &lt;form 2&gt;
+        </h2>
+    </header>
+
+    <article>
+        <p>
+        <h2>
+            1. &lt;textarea&gt; 텍스트 필드
+        </h2>
+        <strong>&lt;textarea row=10 cols=30 &gt; 냥 &lt;/textarea&gt; </strong> <br>
+        🌟실행화면🌟 <br>
+        <textarea rows=10 cols=30>냥</textarea>
+        </p>
+
+        <p>
+        <h2>
+            &lt;2. dropdown list&gt;
+        </h2>
+        &lt;option&gt; 태그와 &lt;select&gt; 태그를 같이 사용한다면 여러 선택지를 보여주고 선택할 수 있다. <br>
+        &lt;html&gt; <br>
+        &lt;body&gt; <br>
+        <strong>
+            &lt;form action="서버주소"&gt; <br>
+            &lt;select name="color"&gt; <br>
+            &lt;option value="red"&gt; 빨간색 &lt;/option&gt; <br>
+            &lt;option value="blue"&gt; 파란색 &lt;/option&gt; <br>
+            &lt;option value="green"&gt; 초록색 &lt;/option&gt; <br>
+            &lt;/select&gt; <br>
+        </strong>
+        &lt;/form&gt; <br>
+        &lt;/body&gt; <br>
+        &lt;/html&gt; <br>
+        <br>
+        🌟실행화면🌟 <br>
+        <form action="서버주소">
+            <select name="color">
+                <option value="red"> 빨간색 </option>
+                <option value="blue"> 파란색 </option>
+                <option value="green"> 초록색 </option>
+            </select>
+        </form>
+        <br>
+        여기서 value에 넣는 문자는 컴퓨터가 쉽게 이해할 수 있도록 도와주는 역할을 한다. &lt; &gt; 꺽새 바깥에 있는 문자들은 사람이 보기 편한 문자이다. <br>
+        </p>
+
+        <p>
+        <h2>
+            3. 라디오 버튼
+        </h2>
+        &lt;input type="radio"&gt;를 입력하면 개구리알처럼 생긴 것이 출력된다. <br>
+        &lt;form&gt; <br>
+        <strong>
+            &lt;input type="radio"&gt; <br>
+            &lt;input type="radio"&gt; <br>
+            &lt;input type="radio"&gt; <br>
+            &lt;input type="radio"&gt; <br>
+        </strong>
+        &lt;/form&gt; <br>
+        🌟실행화면🌟 <br>
+        <form>
+            <input type="radio">
+            <input type="radio">
+            <input type="radio">
+            <input type="radio">
+        </form>
+        이렇게 개구리알 4개가 만들어졌다. <br>
+        개구리알을 하나씩 눌러보면 전부 다 선택이 되고 선택한 것을 취소할 수 없다. <br>
+        <h3>
+            만약 이 중에 하나만 선택하고 싶다면 어떻게 해야 할까?
+        </h3>
+        바로 모두에게 같은 이름을 지어주어 grouping을 해준다. <br>
+        &lt;form&gt; <br>
+        &lt;h2&gt; 색상 (단일선택) &lt;/h2&gt;
+        빨간색 : &lt;input type="radio" <strong>name="color"</strong> value="red"&gt; <br>
+        파란색 : &lt;input type="radio" <strong>name="color"</strong> value="blue"&gt; <br>
+        초록색 : &lt;input type="radio" <strong>name="color"</strong> value="green"&gt; <br>
+        분홍색 : &lt;input type="radio" <strong>name="color"</strong> value="pink"&gt; <br>
+        &lt;/form&gt; <br>
+        🌟실행화면🌟 <br>
+        <form>
+            <h2> 색상 (단일선택) </h2>
+            빨간색 : <input type="radio" name="color" value="red">
+            파란색 : <input type="radio" name="color" value="blue">
+            초록색 : <input type="radio" name="color" value="green">
+            분홍색 : <input type="radio" name="color" value="pink">
+        </form>
+        </p>
+
+        <p>
+        <h2>
+            3. 체크박스
+        </h2>
+        <h3>
+            같은 그룹 안에 있는데 여러 개가 선택되게 하고 싶다면??!
+        </h3>
+        <strong>
+            &lt;form&gt; <br>
+            &lt;h2&gt; 사이즈 (다중선택 가능) &lt;/h2&gt;
+            90 : &lt;input type="checkbox" name="size" value="s"&gt; <br>
+            95 : &lt;input type="checkbox" name="size" value="m"&gt; <br>
+            100 : &lt;input type="checkbox" name="size" value="l"&gt; <br>
+            105 : &lt;input type="checkbox" name="size" value="xl"&gt; <br>
+            &lt;/form&gt; <br>
+        </strong> <br>
+        🌟실행화면🌟
+        <form>
+            <h2>사이즈 (다중선택 가능)</h2>
+            90 :<input type="checkbox" name="size" value="s">
+            95 :<input type="checkbox" name="size" value="m">
+            100 :<input type="checkbox" name="size" value="l">
+            110 :<input type="checkbox" name="size" value="xl">
+        </form>
+        선택된 모습을 예시로 보여주고 싶다면 &lt;input&gt; 태그 안에 checked만 추가하면 된다. <br>
+
+        &lt;form&gt; <br>
+        &lt;h2&gt; 사이즈 (다중선택 가능) &lt;/h2&gt;
+        90 : &lt;input type="checkbox" name="size" value="s"&gt; <br>
+        95 : &lt;input type="checkbox" name="size" value="m" <strong>checked</strong>&gt; <br>
+        100 : &lt;input type="checkbox" name="size" value="l" <strong>checked</strong>&gt; <br>
+        105 : &lt;input type="checkbox" name="size" value="xl"&gt; <br>
+        &lt;/form&gt; <br>
+        <br>
+        🌟실행화면🌟
+        <form>
+            <h2>사이즈 (다중선택 가능)</h2>
+            90 :<input type="checkbox" name="size" value="s">
+            95 :<input type="checkbox" name="size" value="m" checked>
+            100 :<input type="checkbox" name="size" value="l" checked>
+            110 :<input type="checkbox" name="size" value="xl">
+        </form>
+        </p>
+
+        <p>
+        <h2>
+            3. button
+        </h2>
+        <strong>&lt;input type="button"&gt;</strong> 을 입력하면 네모칸이 생성된다. <br>
+        🌟실행화면🌟
+        <form>
+            <input type="button">
+        </form>
+        여기에 문자를 삽입하려면, <br>
+        &lt;form&gt; <br>
+        &lt;input type="button" value="샤브샤브 먹고 싶다 !"&gt;<br>
+        &lt;/form&gt; <br>
+        <form>
+            <input type="button" value="샤브샤브 먹고 싶다 !"">
+        </form>
+        근데 아직 버튼을 눌러도 아무일도 생기지 않을 것이다. 무슨 일이 생기게 하려면 프로그래밍 언어를 배워야 한다.<br>
+        <h3> 
+            reset 버튼 
+        </h3>
+        텍스트 필드에 작성하던 정보를 리셋시켜주는 버튼이다. <br>
+        <br>
+        &lt;form action=" 서버주소 어쩌고 저쩌고" &gt; <br>
+            &lt;input type="text" &gt;<br>
+            &lt;input type="submit" value="제출"&gt;<br>
+            <strong>
+                &lt;input type="reset" value="지우기"&gt;
+            </strong> <br>
+
+            🌟실행화면🌟 <br>
+            <form action=" 서버주소">
+                <input type="text">
+                <input type="submit" value="제출">
+                <input type="reset" value="지우기">
+            </form>
+            </p>
+
+
+
+    </article>
+</body>
+
+<footer>
+    <ul>
+        <li> <a href=" /pongstudy/"> 🌀🌀돌아가기🌀🌀 </a></li>
+        <li> <a href="/">❣️❣️처음으로 돌아가기❣️❣️</a></li>
+    </ul>
+</footer>
+
+</html>
