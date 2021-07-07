@@ -56,20 +56,22 @@
             태그 선택자
         </h2>
         HTML의 태그들을 선택자로 하여 여러 효과를 만든다.<br>
-        <script type="html">
-<html>
-    <head>
-        <style>
-            h2 {
-                color: pink;
-            }
-        </style>
-    </head>
-    <body>
-        <h2>hello world</h2>
-    </body>
-</html>
+        <div style="text-align: left;">
+            <script type="html">
+            <html>
+                <head>
+                    <style>
+                        h2 {
+                            color: pink;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <h2>hello world</h2>
+                </body>
+            </html>
         </script>
+        </div>
         </p>
 
         <p>
@@ -92,12 +94,14 @@
         웹페이지에서 id로 지정한 단어가 있다면 또 그 id가 등장해서는 안 된다.<br>
         <br>
 
-        <script type="html">
+        <div style="text-align: left;">
+            <script type="html">
 <html>
     <head>
         <style>
             il {
-                text-decoration:line-through; (취소선)
+                text-decoration:line-through; 
+                (취소선)
             }
             #example {
                 color:green;
@@ -114,6 +118,7 @@
     </body>
 </html>
         </script>
+        </div>
         </p>
 
         <p>
@@ -148,7 +153,9 @@
         <strong>.class로 지정한 이름</strong>의 형식으로 사용한다. <br>
         그리고 class 선택자는 같은 태그명에서도 다른 태그명에서도 사용할 수 있다. 여러 번 등장도 가능하다. <br>
         <br>
-        <script type="html">
+
+        <div style="text-align: left;">
+            <script type="html">
 <html>
 <head>
     <style>
@@ -171,7 +178,9 @@
 </body>
 </html>
     </script>
+        </div>
         </p>
+
         <p>
             🌟 실 행 화 면 🌟
             <style>
@@ -195,27 +204,33 @@
         <h2>
             부모자식 선택자
         </h2>
-        <script type="html">
-<ul>
-    <li> html </li>
-    <li> css </li>
-    <li> js </li>
-</ul>
-<ol>
-    <li> html </li>
-    <li> css </li>
-    <li> js </li>
-</ol>
+
+        <div style="text-align: left;">
+            <script type="html">
+            <ul>
+                <li> html </li>
+                <li> css </li>
+                <li> js </li>
+            </ul>
+            <ol>
+                <li> html </li>
+                <li> css </li>
+                <li> js </li>
+            </ol>
         </script>
+        </div>
         <br>
         위와 같은 문서에서 ul에 속해있는 li들에게만 효과를 주고 싶을 때는 아래를 적용하면 된다. <br>
-        <script type="html">
-<style> 
-    ul li {
-        color:brown;
-    }
-</style>
+
+        <div style="text-align: left;">
+            <script type="html">
+            <style> 
+                ul li {
+                    color:brown;
+                }
+            </style>
         </script>
+        </div>
         <p>
             🌟 실 행 화 면 🌟
             <style>
@@ -241,43 +256,47 @@
         </p>
 
         <p>
+        <div style="text-align: left;">
             <script type="html">
-<ul>
-    <li> 식물 </li>
-    <li> 동물 
-        <ol>
-            <li> 고양이 </li>
-            <li> 강아지 </li>
-        </ol>
-    </li>
-    <li> 사람 </li>
-</ul>
+            <ul>
+                <li> 식물 </li>
+                <li> 동물 
+                    <ol>
+                        <li> 고양이 </li>
+                        <li> 강아지 </li>
+                    </ol>
+                </li>
+                <li> 사람 </li>
+            </ul>
 
             </script>
-            <br>
-            이렇게 중첩된 문서에서 ol에 포함되어 있는 li들의 글자는 보라색으로, <br>
-            ol의 바깥에 있고 ul의 안에 있는 li들의 글자는 빨간색으로 하려면 어떻게 해야 할까? <br>
+        </div>
+        <br>
+        이렇게 중첩된 문서에서 ol에 포함되어 있는 li들의 글자는 보라색으로, <br>
+        ol의 바깥에 있고 ul의 안에 있는 li들의 글자는 빨간색으로 하려면 어떻게 해야 할까? <br>
 
+        <div style="text-align: left;">
             <script type="html">
-<style>
-ol li { 
-    color:purple;
-}
-ul > li {
-    color:red;
-}
-</style>
-<ul>
-    <li> 식물 </li>
-    <li> 동물 
-        <ol>
-            <li> 고양이 </li>
-            <li> 강아지 </li>
-        </ol>
-    </li>
-    <li> 사람 </li>
-</ul>
+            <style>
+            ol li { 
+                color:purple;
+            }
+            ul > li {
+                color:red;
+            }
+            </style>
+            <ul>
+                <li> 식물 </li>
+                <li> 동물 
+                    <ol>
+                        <li> 고양이 </li>
+                        <li> 강아지 </li>
+                    </ol>
+                </li>
+                <li> 사람 </li>
+            </ul>
         </script>
+        </div>
         </p>
 
         <p>
