@@ -5,28 +5,12 @@
     <title> CSS 3가지 선택자; </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        a:visited {
-            color: black;
-        }
-
-        a:link {
-            color: black;
-        }
-
-
-        a:hover {
-            color: palevioletred;
-        }
-
-        a:active {
-            color: peachpuff;
-        }
-
         .cursor {
             cursor: pointer;
         }
 
         body {
+            padding-top: 45px;
             text-align: center;
             line-height: 2;
         }
@@ -42,17 +26,28 @@
             color: rgb(0, 2, 141)
         }
 
-        div {
+        .run_Screen {
             border: 3px solid pink;
+        }
+
+        #me {
+            background-color: rgb(252, 243, 244);
+            color: black;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            text-align: center;
+            height: 40px;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <a href="/">
-            <img class="cursor" src="/images/home.png" height="50">
-        </a>
+        <div id="me"><a href="/"><img class="cursor" src="/images/home.png" height="35px"></a> P O N G D A N G B L O G
+        </div>
+
         <h1 style="color:palevioletred">
             CSS 3가지 선택자
         </h1>
@@ -75,7 +70,7 @@
 </textarea>
         </p>
 
-        <div>
+        <div class="run_Screen">
             🌟 실 행 화 면 🌟
             <style>
                 #ex {
@@ -119,7 +114,7 @@
 
         </p>
 
-        <div>
+        <div class="run_Screen">
             🌟 실 행 화 면 🌟
             <style>
                 #ex3 {
@@ -174,7 +169,7 @@
 
         </p>
 
-        <div>
+        <div class="run_Screen">
             🌟 실 행 화 면 🌟
             <style>
                 #banana {
@@ -223,7 +218,7 @@
     }
 </style>
 </textarea>
-        <div>
+        <div class="run_Screen">
             🌟 실 행 화 면 🌟
             <style>
                 #cat {
@@ -288,7 +283,7 @@
 </textarea>
         </p>
 
-        <div>
+        <div class="run_Screen">
             🌟 실 행 화 면 🌟
             <style>
                 #animal li {
