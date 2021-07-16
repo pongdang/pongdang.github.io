@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Cascading, 케스케이딩 </title>
+    <style>
+        h2,
+        p,
+        pre {
+            margin: 0;
+            padding: 0;
+        }
+
+        #me {
+            background-color: rgb(252, 243, 244);
+            color: black;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 30px;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .cursor {
+            cursor: pointer;
+        }
+
+
+        header {
+            text-align: center;
+        }
+
+        body {
+            padding-top: 40px;
+            line-height: 2;
+        }
+
+        article {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            color: rgb(255, 93, 120);
+        }
+
+        ul,
+        ol {
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+
+        .image {
+            text-align: center;
+        }
+
+        .run_Screen {
+            border: 3px solid pink;
+        }
+
+        textarea.block-center {
+            display: block;
+            margin: 0 auto 10px auto;
+        }
+
+        textarea {
+            resize: none;
+            color: rgb(0, 2, 141);
+        }
+
+        pre {
+            font-family: unset;
+            margin: 0;
+            padding: 10px;
+            overflow: auto;
+            white-space: pre-wrap;
+        }
+    </style>
+
+<body>
+    <header>
+        <div id="me">P O N G D A N G ' s <a href="/">🚪</a> B L O G
+        </div>
+
+        <h1 style="color:palevioletred">
+            cascading, 케스케이딩
+        </h1>
+    </header>
+
+    <article>
+        <h2>
+            우선순위
+        </h2>
+        <pre><p>css를 하다가 보면 스타일끼리 충돌한다던가 스타일이 생각한대로 적용되지 않았던 경험이 있다.
+그런 일이 발생하는 이유는 css 안에 우선순위라는 것이 존재하기 때문이다.
+
+</p></pre>
+        <p>
+            <textarea name="cascading" class="block-center" cols="40" rows="30">
+<style>
+    li{
+        color:pink;
+    }
+    #id_sel{
+        color:blue;
+    }
+    .class_sel{
+        color:green;
+    }
+</style>
+<body>
+    <ul>
+        <li>강아지</li>
+
+        <li id="id_sel" 
+        class="class_sel" 
+        style="color:purple">
+            고양이
+        </li>
+
+        <li>사람</li>
+    </ul>
+</body>
+        </textarea>
+        </p>
+        <pre><p>
+리스트 중 고양이에게 색깔을 주기 위해 [id, class, 태그 선택자, 인라인 스타일] 등을 사용했을 때 어떤 효과가 가장 먼저 나타날까?
+        </p></pre>
+    </article>
+</body>
+
+<footer>
+
+</footer>
+
+
+</html>
