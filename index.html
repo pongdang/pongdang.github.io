@@ -9,7 +9,8 @@
 
   <style>
     html,
-    body {
+    body,
+    ul {
       padding: 0;
       margin: 0;
     }
@@ -55,6 +56,10 @@
       text-decoration: none;
     }
 
+    li a {
+      border-bottom: 3px solid pink;
+    }
+
     nav.pc {
       border-right: 3px solid rgb(196, 193, 193);
     }
@@ -78,6 +83,11 @@
         border-right: 3px solid rgb(196, 193, 193);
         flex-basis: 250px;
         flex-shrink: 0;
+      }
+
+      nav.pc ul {
+        text-align: center;
+        padding: 60px 0;
       }
 
       main {
@@ -157,11 +167,11 @@
   <section>
     <nav class="pc">
       <ul>
-        <li> <a href="/pongtoday/">🌑 T O D A Y 🌑</a> </li>
-        <li> <a href="/pongstudy/">🌒 S T U D Y 🌒</a> </li>
-        <li> <a href="/pongbook/">🌓 B O O K 🌓</a> </li>
-        <li> <a href="/Earthquake/">🌔 Earthquake 🌔</a> </li>
-        <li> <a href="/pongtoday/">🌕 Undefined 🌕</a> </li>
+        <li> <a href="/pongtoday/"> T O D A Y </a> </li>
+        <li> <a href="/pongstudy/"> S T U D Y </a> </li>
+        <li> <a href="/pongbook/"> B O O K </a> </li>
+        <li> <a href="/Earthquake/"> Earthquake </a> </li>
+        <li> <a href="/pongtoday/"> Undefined </a> </li>
       </ul>
     </nav>
     <main>
