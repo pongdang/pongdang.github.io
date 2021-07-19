@@ -55,26 +55,47 @@
       text-decoration: none;
     }
 
-    /* @media screen and (max-width: 540px) {
-      body {
-        width: calc(100% - 20px);
-        padding-top: 0;
-        padding-bottom: 0;
-      }
-    }
-
-    @media screen and (min-width: 540px) {
-      body {
-        max-width: calc(540px - 20px);
-        margin: 0 auto;
-        padding-top: 20px;
-        padding-bottom: 50px;
-      }
+    /* body {
+      text-align: center;
     } */
 
-    body {
+    header {
+      display: flex;
+      flex-direction: column;
       text-align: center;
-      /* border: 10px double palevioletred; */
+      border-bottom: 3px solid rgb(196, 193, 193);
+
+    }
+
+    section {
+      display: flex;
+      flex-direction: row;
+
+    }
+
+    nav {
+      border-right: 3px solid rgb(196, 193, 193);
+      flex-basis: 250px;
+      flex-shrink: 0;
+    }
+
+    main {
+      margin: 30px 30px;
+      flex-basis: 966px;
+      flex-shrink: 2;
+      margin: 70px auto;
+    }
+
+    /* aside {
+      border-left: 3px solid rgb(196, 193, 193);
+      flex-shrink: 0;
+    } */
+
+    footer {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      border-top: 3px solid rgb(196, 193, 193);
     }
 
     ul {
@@ -83,16 +104,6 @@
       line-height: 3;
       font-weight: bold;
     }
-
-    /* html 
-     border: 10px double palevioletred;
-      padding-top: 20px;
-      padding-bottom: 50px;
-      width: 500px;
-      margin-left: 590px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-    } */
   </style>
 </head>
 
@@ -112,16 +123,27 @@
     </h1>
 
   </header>
+  <section>
+    <nav>
+      <ul>
+        <li> <a href="/pongtoday/">🌑 T O D A Y 🌑</a> </li>
+        <li> <a href="/pongstudy/">🌒 S T U D Y 🌒</a> </li>
+        <li> <a href="/pongbook/">🌓 B O O K 🌓</a> </li>
+        <li> <a href="/Earthquake/">🌔 Earthquake 🌔</a> </li>
+        <li> <a href="/pongtoday/">🌕 Undefined 🌕</a> </li>
+      </ul>
+    </nav>
+    <main>
+      <p>
+        안녕하세요 저는 체리쥬빌레와 냉우동을 좋아합니다. 변비를 앓고 있고 효과 좋다는 변비약도 많이 먹어봤지만 배만 아프고 딱히 효과는 없었습니다.
+        하 내일부터 css를 배우러 가는데 너무너무너무 무섭습니다.!
+      </p>
+    </main>
 
-  <nav>
-    <ul>
-      <li> <a href="/pongtoday/">🌑 T O D A Y 🌑</a> </li>
-      <li> <a href="/pongstudy/">🌒 S T U D Y 🌒</a> </li>
-      <li> <a href="/pongbook/">🌓 B O O K 🌓</a> </li>
-      <li> <a href="/Earthquake/">🌔 Earthquake 🌔</a> </li>
-      <li> <a href="/pongtoday/">🌕 Undefined 🌕</a> </li>
-    </ul>
-  </nav>
+    <!-- <aside>
+
+    </aside> -->
+  </section>
 
   <footer>
     <p>
@@ -133,13 +155,5 @@
   </footer>
   <script src="/assets/clock.js"></script>
 </body>
-<!--
-      @comment: 보통 이미지 버튼은 아래처럼
-      <a href="/ptest/1/">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSdklgC0rQO-oJCTtBhKlX_bsUHsspxcescg&usqp=CAU" />
-      </a>
-
-      <img onclick="window.location.href = '/ptest/1/'" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSdklgC0rQO-oJCTtBhKlX_bsUHsspxcescg&usqp=CAU" />
-    -->
 
 </html>
