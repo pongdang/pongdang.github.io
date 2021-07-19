@@ -56,9 +56,7 @@
       text-decoration: none;
     }
 
-    li a {
-      border-bottom: 3px solid pink;
-    }
+
 
     nav.pc {
       border-right: 3px solid rgb(196, 193, 193);
@@ -95,11 +93,11 @@
         flex-shrink: 2;
         margin: 10px auto;
         line-height: 2;
-      }
 
+      }
     }
 
-    @media (max-width:500px) {
+    @media (max-width:499px) {
       nav.pc {
         display: none;
       }
@@ -117,7 +115,6 @@
       }
 
     }
-
 
     header {
       display: flex;
@@ -144,6 +141,10 @@
       list-style: none;
       line-height: 3;
       font-weight: bold;
+    }
+
+    li a {
+      border-bottom: 3px solid pink;
     }
   </style>
 </head>
@@ -187,11 +188,11 @@
 
     <nav class="mobile">
       <ul>
-        <li> <a href="/pongtoday/">🌑 T O D A Y 🌑</a> </li>
-        <li> <a href="/pongstudy/">🌒 S T U D Y 🌒</a> </li>
-        <li> <a href="/pongbook/">🌓 B O O K 🌓</a> </li>
-        <li> <a href="/Earthquake/">🌔 Earthquake 🌔</a> </li>
-        <li> <a href="/pongtoday/">🌕 Undefined 🌕</a> </li>
+        <li> <a href="/pongtoday/">T O D A Y </a> </li>
+        <li> <a href="/pongstudy/"> S T U D Y </a> </li>
+        <li> <a href="/pongbook/"> B O O K </a> </li>
+        <li> <a href="/Earthquake/"> Earthquake </a> </li>
+        <li> <a href="/pongtoday/"> Undefined </a> </li>
       </ul>
     </nav>
 
