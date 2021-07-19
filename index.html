@@ -55,6 +55,63 @@
       text-decoration: none;
     }
 
+    nav.pc {
+      border-right: 3px solid rgb(196, 193, 193);
+    }
+
+    main {
+      margin: 30px 30px;
+      margin: 70px auto;
+      line-height: 2;
+    }
+
+    @media (min-width:500px) {
+      section {
+        display: flex;
+        flex-direction: row;
+
+      }
+
+      nav.mobile {
+        display: none;
+      }
+
+      nav.pc {
+        border-right: 3px solid rgb(196, 193, 193);
+        flex-basis: 250px;
+        flex-shrink: 0;
+      }
+
+      main {
+        margin: 30px 30px;
+        flex-basis: 966px;
+        flex-shrink: 2;
+        margin: 70px auto;
+        line-height: 2;
+      }
+
+    }
+
+    @media (max-width:500px) {
+      nav.pc {
+        display: none;
+      }
+
+      nav.mobile {
+        text-align: center;
+        border: none;
+      }
+
+      main {
+        margin: auto;
+        line-height: 2;
+        padding: 0 20px;
+        border-bottom: 3px solid rgb(196, 193, 193);
+      }
+
+    }
+
+
     header {
       display: flex;
       flex-direction: column;
@@ -63,24 +120,6 @@
 
     }
 
-    section {
-      display: flex;
-      flex-direction: row;
-
-    }
-
-    nav {
-      border-right: 3px solid rgb(196, 193, 193);
-      flex-basis: 250px;
-      flex-shrink: 0;
-    }
-
-    main {
-      margin: 30px 30px;
-      flex-basis: 966px;
-      flex-shrink: 2;
-      margin: 70px auto;
-    }
 
     /* aside {
       border-left: 3px solid rgb(196, 193, 193);
@@ -120,7 +159,7 @@
 
   </header>
   <section>
-    <nav class="menu">
+    <nav class="pc">
       <ul>
         <li> <a href="/pongtoday/">🌑 T O D A Y 🌑</a> </li>
         <li> <a href="/pongstudy/">🌒 S T U D Y 🌒</a> </li>
@@ -131,10 +170,24 @@
     </nav>
     <main>
       <p>
-        안녕하세요 저는 체리쥬빌레와 냉우동을 좋아합니다. 변비를 앓고 있고 효과 좋다는 변비약도 많이 먹어봤지만 배만 아프고 딱히 효과는 없었습니다.
-        하 내일부터 css를 배우러 가는데 너무너무너무 무섭습니다.!
+      <h2>안녕하세요!</h2>
+      고양이를 좋아합니다. 제가 가장 사랑하는 고양이의 이름은 삼진, 사진, 그림 입니다!
+      좋아하는 아이스크림은 체리쥬빌레, 음식은 냉우동, 카페에 가면 오렌지에이드 또는 초코어쩌구를 시킵니다.
+      2021.07.20 부터 CSS를 배웁니다. 떨려요 헉헉,,, <br>
+      2021.08.30 부터 코드 캠프에 코딩을 배우러 갑니다. 그것두 떨려요 헥헥... <br>
+      완전 짱 쎈 개발자가 되고 싶습니다~! 안 되면 주먹으로 다 부셔~!@!
       </p>
     </main>
+
+    <nav class="mobile">
+      <ul>
+        <li> <a href="/pongtoday/">🌑 T O D A Y 🌑</a> </li>
+        <li> <a href="/pongstudy/">🌒 S T U D Y 🌒</a> </li>
+        <li> <a href="/pongbook/">🌓 B O O K 🌓</a> </li>
+        <li> <a href="/Earthquake/">🌔 Earthquake 🌔</a> </li>
+        <li> <a href="/pongtoday/">🌕 Undefined 🌕</a> </li>
+      </ul>
+    </nav>
 
     <!-- <aside>
 
