@@ -15,13 +15,8 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	/* font-size: 100%; */
 	font: inherit;
 	vertical-align: baseline;
-}
-
-article h1 {
-  font-size: 2em;
 }
 
 #me {
@@ -45,7 +40,7 @@ header {
 }
 
 body {
-  padding: 50px 20px 0 20px;
+  padding: 70px 20px 0 20px;
   line-height: 2;
 }
 
