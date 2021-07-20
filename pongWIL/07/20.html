@@ -6,9 +6,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WIL 07.20~07.22</title>
+    <style>
+        body {
+            margin: 0
+        }
+
+        body {
+            background-image: url(/images/bg3.png);
+            background-size: cover;
+            background-repeat: repeat;
+            margin-top: 40px;
+        }
+
+        article {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 0 20px;
+        }
+
+        .cat {
+            flex-grow: 1;
+            flex-basis: 200px;
+            flex-shrink: 0;
+            text-align: center;
+        }
+
+        .cat-3jin {
+            background-color: rgb(205, 200, 200);
+            margin: 20px;
+            border: 30px solid rgb(162, 139, 163);
+        }
+
+        .cat-4jin {
+            background-color: rgb(148, 146, 146);
+            margin: 20px;
+            border: 30px solid rgb(182, 159, 183);
+        }
+
+        .cat-5jin {
+            background-color: rgb(95, 94, 94);
+            margin: 20px;
+            border: 30px solid rgb(202, 179, 203);
+        }
+
+        div h1 {
+            color: white;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.5rem;
+            padding: 0 30px;
+            text-align: left;
+            line-height: 2;
+        }
+
+        /* 이 속성이 적용되는 것과 안되는 것의 차이 */
+        img {
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
+    <header>
+
+    </header>
+
+    <article>
+
+        <div class="cat cat-3jin">
+            <img src="/images/3jin.png" alt="삼진이">
+            <h1> 삼 진 (9) </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem architecto veritatis earum magnam. Nobis
+                laboriosam possimus consequuntur, cumque minima eum nam doloribus deleniti error voluptate nulla vel
+                quidem
+                porro ratione!
+
+            </p>
+        </div>
+
+
+        <div class="cat cat-4jin">
+            <img src="/images/4jin.png" alt="사진이">
+            <h1> 사 진 (8) </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem architecto veritatis earum magnam. Nobis
+                laboriosam possimus consequuntur, cumque minima eum nam doloribus deleniti error voluptate nulla vel
+
+            </p>
+        </div>
+
+        <div class="cat cat-5jin">
+            <img src="/images/5jin.png" alt="그림이">
+            <h1> 그 림 (1) </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem architecto veritatis earum magnam. Nobis
+
+            </p>
+        </div>
+
+    </article>
+
+    <footer>
+
+    </footer>
 
 </body>
 
