@@ -13,22 +13,19 @@
 
         body {
             background-image: url(/images/bg3.png);
-            background-size: cover;
             background-repeat: repeat;
             margin-top: 40px;
         }
 
         article {
             display: flex;
-            flex-direction: row;
             flex-wrap: wrap;
-            justify-content: space-evenly;
             padding: 0 20px;
         }
 
         .cat {
             flex-grow: 1;
-            flex-basis: 200px;
+            flex-basis: 100px;
             flex-shrink: 0;
             text-align: center;
         }
@@ -39,10 +36,18 @@
             border: 30px solid rgb(162, 139, 163);
         }
 
+        .cat-3jin h1 {
+            color: rgb(205, 200, 200);
+        }
+
         .cat-4jin {
-            background-color: rgb(148, 146, 146);
+            background-color: rgb(155, 152, 152);
             margin: 20px;
             border: 30px solid rgb(182, 159, 183);
+        }
+
+        .cat-4jin h1 {
+            color: rgb(155, 152, 152);
         }
 
         .cat-5jin {
@@ -51,10 +56,15 @@
             border: 30px solid rgb(202, 179, 203);
         }
 
+        .cat-5jin h1 {
+            color: rgb(95, 94, 94);
+        }
+
         div h1 {
-            color: white;
+            /* color: black; */
             font-size: 2rem;
             text-align: center;
+            cursor: pointer;
         }
 
         p {
@@ -64,16 +74,21 @@
             line-height: 2;
         }
 
-        /* 이 속성이 적용되는 것과 안되는 것의 차이 */
-        img {
-            width: 100%;
+        div:hover {
+            background-color: white;
+        }
+
+        header h1 {
+            color: rgba(160, 77, 255, 0.571);
+            text-align: center;
+            font-size: 3rem;
         }
     </style>
 </head>
 
 <body>
     <header>
-
+        <h1> MY CAT </h1>
     </header>
 
     <article>
