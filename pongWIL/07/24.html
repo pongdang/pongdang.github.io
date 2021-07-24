@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+    <style>
+        /* 초기화 */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .rabbit {
+            font-size: 0;
+            width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .rabbit .ear {
+            display: inline-block;
+            border: 3px solid pink;
+            border-bottom: none;
+            border-radius: 50px 50px 0 0;
+            width: 100px;
+            height: 200px;
+            margin: 10px 50px 0 50px;
+            background-color: pink;
+        }
+
+        .rabbit .ear1 {
+            display: inline-block;
+            border: 3px solid rgb(250, 86, 119);
+            border-radius: 50px 50px 0 0;
+            width: 50px;
+            height: 170px;
+            margin: 27px 20px 0 20px;
+            background-color: rgb(250, 86, 119);
+        }
+
+        .rabbit .face {
+            border: 3px solid pink;
+            border-radius: 0 0 50px 50px;
+            width: 306px;
+            height: 150px;
+            margin: -3px auto 0 auto;
+            background-color: pink;
+        }
+
+        .rabbit .eye {
+            display: inline-block;
+            border-radius: 50px;
+            width: 50px;
+            height: 50px;
+            margin: 20px 30px;
+            background-color: black;
+        }
+
+        .rabbit .mouse {
+            background-color: black;
+            width: 45px;
+            height: 5px;
+            margin: 0 auto;
+        }
+
+        .rabbit .teeth {
+            display: inline-block;
+            width: 10px;
+            height: 20px;
+            background-color: white;
+        }
+
+        .rabbit .teeth.left {
+            border: 3px solid black;
+            border-right: 1px solid black;
+            border-top: 0;
+        }
+
+        .rabbit .teeth.right {
+            border: 3px solid black;
+            border-left: 0;
+            border-top: 0;
+        }
+
+        .wrapper {
+            /* font-size: 2rem; */
+            text-align: center;
+            /* color: palevioletred; */
+            background-color: palevioletred;
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .header .profile {
+            width: 130px;
+            border-radius: 150px 150px 250px 0px / 250px 150px 150px 0px;
+            border: 5px solid rgb(255, 128, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rabbit">
+        <div class="ear">
+            <div class="ear1"></div>
+        </div>
+        <div class="ear">
+            <div class="ear1"></div>
+        </div>
+        <div class="face">
+            <div class="eye"></div>
+            <div class="eye"></div>
+            <div class="mouse"></div>
+            <div class="teeth left"></div>
+            <div class="teeth right"></div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="header">
+            <img class="profile" src="https://cdn.pixabay.com/photo/2017/02/05/18/54/hare-2040911_960_720.png"
+                alt="프로필 사진">
+            <h1>JEON I JIN</h1>
+            <p>
+
+            </p>
+        </div>
+
+        <div class="main">
+            main
+        </div>
+
+        <div class="footer">
+            footer
+        </div>
+
+    </div>
+</body>
+
+</html>
