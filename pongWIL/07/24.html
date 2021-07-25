@@ -134,10 +134,25 @@
         }
 
         .header .profile {
-            width: 130px;
+            padding: 40px 0 10px 0;
+            position: relative;
+        }
+
+        .header .profile img {
             border-radius: 150px 150px 250px 0px / 250px 150px 150px 0px;
             border: 10px solid rgb(255, 128, 0);
-            margin: 20px 0;
+            width: 130px;
+        }
+
+        .header .profile .tail {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: green;
+            left: 57%;
+            top: 8%;
+            border-radius: 60% 0 60% 0;
+            margin-top: 20px;
         }
 
         .header h1 {
@@ -244,8 +259,10 @@
             </div>
         </div>
         <div class="header">
-            <img class="profile" src="https://cdn.pixabay.com/photo/2017/02/05/18/54/hare-2040911_960_720.png"
-                alt="프로필 사진">
+            <div class="profile">
+                <img src="https://cdn.pixabay.com/photo/2017/02/05/18/54/hare-2040911_960_720.png" alt="프로필 사진">
+                <div class="tail"></div>
+            </div>
             <h1 title="제 프로필 입니다 !">JEON I JIN</h1>
             <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
