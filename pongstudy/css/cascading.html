@@ -73,7 +73,7 @@
 
         textarea.block-center {
             display: block;
-            margin: 0 auto 10px auto;
+            margin: 20px auto 10px auto;
         }
 
         textarea {
@@ -104,41 +104,28 @@
         <h2>
             우선순위
         </h2>
-        <pre><p>css를 하다가 보면 스타일끼리 충돌한다던가 스타일이 생각한대로 적용되지 않았던 경험이 있다.
-그런 일이 발생하는 이유는 css 안에 우선순위라는 것이 존재하기 때문이다.
+        css를 하다가 보면 스타일끼리 충돌한다던가 스타일이 생각한대로 적용되지 않았던 경험이 있다.
+        그런 일이 발생하는 이유는 css 안에 우선순위라는 것이 존재하기 때문이다.
+        <textarea class="block-center" name="태그 선택자" cols="40" rows="20">
 
-</p></pre>
-        <p>
-            <textarea name="cascading" class="block-center" cols="40" rows="30">
-<style>
-    li{
-        color:pink;
-    }
-    #id_sel{
-        color:blue;
-    }
-    .class_sel{
-        color:green;
-    }
-</style>
-<body>
-    <ul>
-        <li>강아지</li>
+6 순위 : *
 
-        <li id="id_sel" 
-        class="class_sel" 
-        style="color:purple">
-            고양이
-        </li>
+5 순위 : tag 선택자
 
-        <li>사람</li>
-    </ul>
-</body>
+4 순위 : class 선택자
+
+3 순위 : id 선택자
+
+2 순위 : inline-style 
+(ex) 
+<h1 style="color:blueviolet;">hello</h1>
+
+1 순위 : !important
+        
         </textarea>
-        </p>
-        <pre><p>
-리스트 중 고양이에게 색깔을 주기 위해 [id, class, 태그 선택자, 인라인 스타일] 등을 사용했을 때 어떤 효과가 가장 먼저 나타날까?
-        </p></pre>
+
+        아래로 내려갈수록 우선순위가 높다. 여기서 inline-style은 태그 안에 존재하는 스타일을 말한다.
+
     </article>
 </body>
 
