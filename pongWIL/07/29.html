@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIL</title>
+
+    <style>
+        /* 초기화 */
+
+        body,
+        h1,
+        h2,
+        p {
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* 폰트 */
+
+        h1,
+        h2 {
+            font-family: "Alfa Slab One", cursive;
+        }
+
+        p {
+            font-family: "Gowun Dodum", sans-serif;
+        }
+
+        /* header */
+
+        .header {
+            background-image: url(https://cdn.pixabay.com/photo/2021/01/21/15/54/books-5937716_960_720.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            color: white;
+            padding: 60px 0;
+        }
+
+        .header h1 {
+            line-height: 1.6;
+        }
+
+        .wrapper {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .wrpper-hard {
+            color: tomato;
+            font-size: 1.5em;
+        }
+
+        .wrapper .button {
+            display: inline-block;
+            text-align: center;
+            padding: 20px;
+            border-radius: 30px;
+            background-color: rgba(128, 128, 128, 0.564);
+            margin-top: 60px;
+        }
+
+        .button:hover {
+            background-color: rgba(245, 245, 245, 0.687);
+        }
+
+        /* content 효과 */
+
+        .content-study:hover {
+            transform: scale(1.2);
+            /* 확대 */
+            transition: transform 0.4s box-shadow 0.4s;
+            /* 확대될 때까지 걸리는 시간 */
+            box-shadow: 20px 20px 10px rgba(128, 128, 128, 0.632);
+        }
+
+        .content-study {
+            transform: scale(1);
+            /* 원래 크기로 돌아가기 */
+            transition: transform 0.4s;
+            /* 돌아갈 때 걸리는 시간  */
+            box-shadow: 20px 16px 5px rgba(128, 128, 128, 0.632);
+        }
+
+        .content-study a {
+            display: inline-block;
+        }
+
+        /* content */
+
+        .content {
+            text-align: center;
+            font-size: 0;
+            padding: 40px 0;
+            background-color: whitesmoke;
+        }
+
+        .content-study {
+            display: inline-block;
+            vertical-align: top;
+            font-size: 15px;
+            text-align: left;
+            width: 280px;
+            margin: 30px 40px 70px 40px;
+            background-color: rgb(218, 217, 217);
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .content-img {
+            width: 100%;
+            height: 141px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .content-text {
+            padding: 20px;
+            min-height: 220px;
+        }
+
+        .content-text h2 {
+            padding-bottom: 20px;
+            color: whitesmoke;
+        }
+
+        .content-text .veam {
+            color: rgb(107, 47, 254);
+        }
+
+        .content-text .js {
+            color: rgb(235, 211, 24);
+        }
+
+        .content-text .react {
+            color: rgb(81, 202, 240);
+        }
+    </style>
+</head>
+
+<body>
+    <!doctype html>
+    <html>
+
+    <head>
+        <title>Let's study hard</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Gowun+Dodum&display=swap"
+            rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="wrapper">
+                <h1>
+                    Let's<br>
+                    study<br>
+                    <span class="wrpper-hard">hard</span>
+                </h1>
+                <a class="button" href="https://www.google.com/">LOCATION</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="content-study">
+                <a href="https://tookoon.com/css/page/day03.php" target="_blank">
+                    <img class="content-img" src="https://veamcamp.com/wp-content/uploads/cover-2.png" alt="빔캠프">
+                    <div class="content-text">
+                        <h2 class="veam">CSS</h2>
+                        <p>
+                            종속형 시트 또는 캐스케이딩 스타일 시트는 마크업 언어가 실제 표시되는 방법을 기술하는 언어로, HTML과 XHTML에 주로 쓰이며, XML에서도 사용할 수 있다.
+                            W3C의
+                            표준이며, 레이아웃과 스타일을 정의할 때의 자유도가 높다.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="content-study">
+                <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/A_re-introduction_to_JavaScript"
+                    target="_blank">
+                    <img class="content-img" src="/images/js.jpeg" alt="자바스크립트">
+                    <div class="content-text">
+                        <h2 class="js">JavaScript</h2>
+                        <p>
+                            자바스크립트는 객체 기반의 스크립트 프로그래밍 언어이다. 웹 브라우저 내에서 주로 사용하며, 다른 응용 프로그램의 내장 객체에도 접근할 수 있는 기능을 가지고
+                            있다. 또한 Node.js와 같은 런타임 환경과 같이 서버 프로그래밍에도 사용되고 있다.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="content-study">
+                <a href="https://ko.reactjs.org/docs/getting-started.html" target="_blank">
+                    <img class="content-img"
+                        src="https://media.vlpt.us/images/fromzoo/post/25badbb6-d09e-4061-88d2-0f91b84d528b/reactLogo.jpeg"
+                        alt="리액트">
+                    <div class="content-text">
+                        <h2 class="react">React</h2>
+                        <p>
+                            리액트는 자바스크립트 라이브러리의 하나로서 사용자 인터페이스를 만들기 위해 사용된다. 페이스북과 개별 개발자 및 기업들 공동체에 의해 유지보수된다. 리액트는 싱글
+                            페이지
+                            애플리케이션이나 모바일 애플리케이션 개발에 사용될 수 있다.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </body>
+
+    </html>
+</body>
+
+</html>
