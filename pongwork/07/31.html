@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>MugApp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+    <style>
+        body,
+        h1,
+        h2,
+        p,
+        img {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        body {
+            background-image: url(images/background.png);
+        }
+
+        .wrapper {
+            background-color: white;
+            width: 1200px;
+            overflow: hidden;
+            margin: 24px auto 0 auto;
+            border-radius: 10px;
+            font-family: "Indie Flower", cursive;
+        }
+
+        /* sidebar */
+
+        .sidebar {
+            float: left;
+            width: 270px;
+            height: 80vh;
+            background-image: url(images/sidebar-background.png);
+            background-size: cover;
+        }
+
+        .sidebar .mugapp {
+            color: whitesmoke;
+            padding: 20px;
+        }
+
+        .sidebar .coffee-icon {
+            width: 70px;
+            float: right;
+            margin: 0 10px 10px 10px;
+        }
+
+        .sidebar .mugapp-title {
+            border-bottom: 10px solid rgb(143, 143, 143);
+            overflow: hidden;
+        }
+
+        .sidebar .mugapp-text {
+            margin-top: 20px;
+        }
+
+        .sidebar .button {
+            display: block;
+            margin-top: 10px;
+            text-align: center;
+            padding: 5px 0;
+            font-size: 12px;
+            letter-spacing: 4px;
+        }
+
+        .sidebar .button.location {
+            background-color: royalblue;
+        }
+
+        .sidebar .button.share {
+            background-color: rgb(143, 143, 143);
+        }
+
+        /* contents */
+
+        .contents {
+            overflow: hidden;
+            padding: 20px 20px 60px 20px;
+            color: rgb(143, 143, 143);
+            height: 80vh;
+            overflow: scroll;
+            box-sizing: border-box;
+        }
+
+        .contents-header {
+            float: left;
+            overflow: hidden;
+            display: block;
+        }
+
+        .contents-header.right {
+            float: right;
+            background-color: whitesmoke;
+            padding: 2px 10px;
+            text-align: center;
+            border-radius: 30px;
+        }
+
+        .contents-main {
+            border-top: 10px solid whitesmoke;
+            clear: both;
+            overflow: hidden;
+        }
+
+        .contents-box {
+            float: left;
+            overflow: hidden;
+            width: 280px;
+            box-sizing: border-box;
+            margin-right: calc((100% - 3 * 280px) / 2);
+            margin-top: 20px;
+            padding: 20px;
+            background-color: whitesmoke;
+            border-radius: 10px;
+        }
+
+        /* 3n번째 content는 항상 margin-right:0  */
+        .contents-box:nth-child(3n) {
+            margin-right: 0;
+        }
+
+        /* 
+.main-content.last {
+  margin-right: 0;
+} 
+*/
+
+        .contents-img {
+            width: 100%;
+            display: block;
+        }
+
+        .contents-text {
+            margin-top: 20px;
+        }
+
+        .text-shape {
+            border: 6px solid;
+            background-color: currentColor;
+            float: right;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+
+        .contents-text.under {
+            text-align: right;
+            clear: both;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="mugapp">
+                <img class="coffee-icon" src="images/coffee-icon.png" alt="">
+                <h1 class="mugapp-title">
+                    MugApp
+                </h1>
+                <p class="mugapp-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eos, voluptatem natus, architecto
+                </p>
+                <a class="button location" href="https://www.google.com/">LOCATION</a>
+                <a class="button share" href="https://www.google.com/">SHARE</a>
+            </div>
+        </div>
+
+        <div class="contents">
+
+            <div class="contents-header">
+                <h2>All About Cafe</h2>
+            </div>
+            <a href="" class="contents-header right">
+                view all
+            </a>
+
+            <div class="contents-main">
+                <div class="contents-box">
+                    <img class="contents-img" src="images/photo_3.png" alt="커피">
+                    <p class="contents-text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae distinctio ex iusto
+                        possimus earum voluptates illum repellendus quasi sit vero sint molestias culpa eligendi quo qui
+                        ab, suscipit dolores perferendis?
+                    </p>
+
+                    <span class="text-shape"></span>
+                    <p class="contents-text under">
+                        Glenn Lee
+                    </p>
+                </div>
+
+                <div class="contents-box">
+                    <img class="contents-img" src="images/photo_6.png" alt="커피">
+                    <p class="contents-text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae distinctio ex iusto
+                        possimus earum voluptates illum repellendus quasi sit vero sint molestias culpa eligendi quo qui
+                        ab, suscipit dolores perferendis?
+                    </p>
+
+                    <span class="text-shape"></span>
+                    <p class="contents-text under">
+                        Mike
+                    </p>
+                </div>
+
+                <div class="contents-box last">
+                    <img class="contents-img" src="images/photo_7.png" alt="커피">
+                    <p class="contents-text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae distinctio ex iusto
+                        possimus earum voluptates illum repellendus quasi sit vero sint molestias culpa eligendi quo qui
+                        ab, suscipit dolores perferendis?
+                    </p>
+
+                    <span class="text-shape"></span>
+                    <p class="contents-text under">
+                        Liam
+                    </p>
+
+                </div>
+                <div class="contents-box last">
+                    <img class="contents-img" src="images/photo_7.png" alt="커피">
+                    <p class="contents-text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae distinctio ex iusto
+                        possimus earum voluptates illum repellendus quasi sit vero sint molestias culpa eligendi quo qui
+                        ab, suscipit dolores perferendis?
+                    </p>
+
+                    <span class="text-shape"></span>
+                    <p class="contents-text under">
+                        Liam
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
