@@ -1,0 +1,49 @@
+a:visited {
+  color: black;
+}
+
+a:link {
+  color: black;
+}
+
+a:hover {
+  color: palevioletred;
+}
+
+a:active {
+  color: peachpuff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+body {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  line-height: 2;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#me {
+  background-color: rgb(252, 243, 244);
+  color: black;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  text-align: center;
+  height: 30px;
+  padding: 10px;
+  font-weight: bold;
+}
