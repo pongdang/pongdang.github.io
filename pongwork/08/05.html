@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>pongdang</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <style>
+        /* Reset */
+
+        body,
+        p,
+        ul,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: inherit;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            vertical-align: top;
+        }
+
+        /* Typography */
+        .header-home {
+            font-family: "Press Start 2P", cursive;
+            font-size: 1.5em;
+        }
+
+        .header-meta {
+            font-family: "Press Start 2P", cursive;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+
+        /* Layouts */
+
+        .wrapper {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        /* Commons */
+
+        /* Components */
+
+        .header {
+            background-color: lightpink;
+        }
+
+        .header-container {
+            /* border: 10px solid salmon; */
+            display: flex;
+            align-items: center;
+            height: 100px;
+        }
+
+        .header-meta {
+            /* border: 10px solid cornflowerblue; */
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            color: whitesmoke;
+        }
+
+        .header-meta::before {
+            /* 필수 */
+            content: " ";
+            /* 글자가 10개 정도 들어갈 크기 */
+            width: 10em;
+            height: 2px;
+            background-color: whitesmoke;
+            margin: 0 1em;
+            opacity: 0.5;
+        }
+
+        /* contents */
+
+        .contents-container {
+            display: flex;
+            margin: 20px 0;
+        }
+
+        .contents-main {
+            flex-grow: 1;
+            background-image: url("images/memo.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .contents-box {
+            height: 500px;
+            display: flex;
+            flex-wrap: wrap-reverse;
+            align-items: flex-start;
+            align-content: space-around;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .box {
+            background-color: rgba(245, 245, 245, 0.7);
+            padding: 20px;
+            flex-basis: 180px;
+            flex-shrink: 1;
+        }
+
+        .box:hover {
+            background-color: white;
+        }
+
+        .box-title {
+            color: rgb(242, 63, 99);
+            padding-bottom: 20px;
+        }
+
+        /* sidebar */
+
+        .sidebar {
+            /* border: 1px solid blue; */
+            flex-shrink: 0;
+            margin-left: 20px;
+            width: 200px;
+        }
+
+        .sidebar-header {
+            margin: 4px 0 4px 0;
+            color: rgb(242, 63, 99);
+        }
+
+        .sidebar-header::before {
+            content: "\f00b";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            margin-right: 8px;
+        }
+
+        .sidebar-list {
+            background-color: lightpink;
+        }
+
+        .list-title {
+            color: currentColor;
+            border-top: 3px solid;
+            padding: 10px 0 10px 10px;
+        }
+
+        .list-contents {
+            padding: 10px 0 0 10px;
+            color: white;
+        }
+
+        .list-contents li {
+            /* color: whitesmoke; */
+            border-bottom: 1px solid currentColor;
+            padding: 4px 0;
+        }
+
+        .list-contents li:last-child {
+            border-bottom: none;
+        }
+
+        .list-contents a:hover {
+            color: rgb(242, 63, 99);
+        }
+
+        /* Mediaqueries */
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="wrapper">
+
+            <div class="header-container">
+
+                <a class="header-home" href="#">
+                    PONGDANG
+                </a>
+
+                <p class="header-meta">
+                    Hello 👋 pongdang's Blog !
+                </p>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- contents 시작 -->
+    <section class="contents">
+        <!-- wrapper 시작 -->
+        <div class="wrapper">
+            <!-- contents-container 시작 -->
+            <div class="contents-container">
+                <!-- contents-main 시작 -->
+                <div class="contents-main">
+
+                    <!-- contents-box 시작 -->
+                    <div class="contents-box">
+                        <div class="box">
+                            <h2 class="box-title">
+                                Photography
+                            </h2>
+                            <p class="box-inside">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea minima nobis architecto
+                                usantium.
+                            </p>
+                        </div>
+
+                        <div class="box">
+                            <h2 class="box-title">
+                                Photography
+                            </h2>
+                            <p class="box-inside">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea minima nobis architecto
+                                usantium.
+                            </p>
+                        </div>
+
+                        <div class="box">
+                            <h2 class="box-title">
+                                Photography
+                            </h2>
+                            <p class="box-inside">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea minima nobis architecto
+                                usantium.
+                            </p>
+                        </div>
+
+                        <div class="box">
+                            <h2 class="box-title">
+                                Photography1
+                            </h2>
+                            <p class="box-inside">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea minima nobis architecto
+                                usantium.
+                            </p>
+                        </div>
+
+                        <div class="box">
+                            <h2 class="box-title">
+                                Photography2
+                            </h2>
+                            <p class="box-inside">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea minima nobis architecto
+                                usantium.
+                            </p>
+                        </div>
+
+                    </div>
+                    <!-- contents-box 끝 -->
+
+                </div>
+                <!-- contents-main 끝 -->
+
+                <!-- sidebar 시작-->
+                <nav class="sidebar">
+
+                    <h2 class="sidebar-header">Categories</h2>
+
+                    <ul class="sidebar-list">
+                        <li class="list-title">
+                            <h3>Action & Adventure</h3>
+                            <ul class="list-contents">
+                                <li>
+                                    <a href="#">Adventures</a>
+                                </li>
+                                <li>
+                                    <a href="#">Action Thrillers </a>
+                                </li>
+                                <li>
+                                    <a href="#">Superhero Movies</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="list-title">
+                            <h3>Dramas</h3>
+                            <ul class="list-contents">
+                                <li>
+                                    <a href="#">Crime Dramas</a>
+                                </li>
+                                <li>
+                                    <a href="#">Teen Dramas</a>
+                                </li>
+                                <li>
+                                    <a href="#">Romantic Dramas</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="list-title">
+                            <h3>About Me</h3>
+                            <ul class="list-contents">
+                                <li>
+                                    <a href="/profile/profile.html">Profile</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/pongdang">GitHub</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </nav>
+                <!-- sidebar 끝 -->
+
+            </div>
+            <!-- contents-container 끝 -->
+
+        </div>
+        <!-- wrapper 끝 -->
+
+    </section>
+    <!-- contents 시작 -->
+
+</body>
+
+</html>
