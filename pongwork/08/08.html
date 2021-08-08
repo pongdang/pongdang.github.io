@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <style>
+        /* 초기화 */
+
+        body,
+        h1,
+        h2,
+        h3,
+        ul,
+        li,
+        p {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: inherit;
+            color: inherit;
+        }
+
+        /* 공통 스타일 */
+
+        .wrapper {
+            width: 1000px;
+            margin: 30px auto;
+        }
+
+        .title {
+            display: inline-block;
+            margin: 30px 0;
+            color: #660099;
+            position: relative;
+        }
+
+        .title::before {
+            content: " ";
+            height: 10px;
+            width: 100%;
+            background-color: #b789cd;
+            display: block;
+            position: absolute;
+            bottom: 0px;
+            z-index: -1;
+        }
+
+        h1,
+        h2,
+        h3,
+        p,
+        a {
+            font-family: "Patrick Hand", cursive;
+        }
+
+        /* 튀어나오는 친구들 */
+
+        .menu-box {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .menu-box .joy {
+            position: absolute;
+            top: -200px;
+            width: 200px;
+            transform: translateY(0);
+            transition: transform 0.5s;
+        }
+
+        .menu-box:hover .joy {
+            transform: translateY(100%);
+        }
+
+        .menu-box .anger {
+            position: absolute;
+            bottom: 0;
+            width: 200px;
+            transform: translateY(100%);
+            transition: transform 0.5s;
+        }
+
+        .menu-box:hover .anger {
+            transform: translateY(0);
+        }
+
+        .menu-box .disgust {
+            position: absolute;
+            width: 200px;
+            right: 0;
+            bottom: 0;
+            transform: translateX(100%);
+            transition: transform 0.5s;
+        }
+
+        .menu-box:hover .disgust {
+            transform: translateX(0);
+        }
+
+        /* 스타일 */
+
+        /* header */
+
+        .header-cover {
+            background: #800080;
+            background: -webkit-linear-gradient(to right, #ffc0cb, #800080);
+            background: linear-gradient(to right, #ffc0cb, #800080);
+
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header-title {
+            background-color: rgba(0, 0, 0, 0.728);
+            padding: 0 0.5em;
+            /* 폰트 */
+            font-size: 6vw;
+            color: white;
+            /* 효과 */
+            /* 원래 크기로 돌아오는데 0.6s 걸림 */
+            transform: scale(1);
+            transition: transform 0.6s;
+        }
+
+        .header-cover:hover .header-title {
+            /* 효과 */
+            /* 1.4배만큼 커지고 커지는데 0.6s 걸림 */
+            transform: scale(1.4);
+            transition: transform 0.6s;
+        }
+
+        /* menu */
+
+        .menu-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            text-align: center;
+            /* 인접한 애들 사이에 간격주기 */
+            gap: 30px 0;
+        }
+
+        .menu-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f1d7ff;
+            height: 300px;
+            width: 300px;
+            font-weight: bold;
+            /* 가운데 정렬 */
+            /* position: relative; */
+        }
+
+        /* .menu-box a {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+        .menu-box:hover {
+            background-color: #e9e9e9;
+        }
+
+        .menu-box a {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* contents-title 글자 색깔 */
+        .watermelon .contents-title {
+            display: inline-block;
+            color: red;
+            border-bottom: 10px solid greenyellow;
+        }
+
+        .orange .contents-title {
+            display: inline-block;
+            color: orange;
+            border-bottom: 10px solid lightsalmon;
+        }
+
+        .kiwi .contents-title {
+            display: inline-block;
+            color: green;
+            border-bottom: 10px solid chocolate;
+        }
+
+        /* contents */
+
+        .contents-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .contents-box {
+            border: 4px solid #f1d7ff;
+            border-radius: 20px;
+            padding: 50px;
+            position: relative;
+        }
+
+        .contents-box:hover {
+            background-color: whitesmoke;
+        }
+
+        .contents-box.orange {
+            text-align: right;
+        }
+
+        .contents-title {
+            margin-bottom: 30px;
+        }
+
+        .contents-description {
+            display: flex;
+            gap: 50px;
+        }
+
+        .contents-description-right {
+            display: flex;
+            gap: 50px;
+            justify-content: flex-end;
+        }
+
+        .contents-description-right p {
+            flex-basis: 350px;
+        }
+
+        .contents-description p {
+            flex-basis: 350px;
+        }
+
+        /* 과일 이미지 */
+
+        .fruit {
+            position: absolute;
+        }
+
+        .fruit-watermelon {
+            top: -20px;
+            right: -190px;
+            width: 330px;
+        }
+
+        .fruit-orange {
+            top: 20px;
+            left: -160px;
+            width: 350px;
+        }
+
+        .fruit-kiwi {
+            top: 20px;
+            right: -200px;
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-cover">
+            <h1 class="header-title">Title</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="wrapper">
+
+            <h2 class="menu-title title ">
+                Insideout
+            </h2>
+
+            <ul class="menu-container">
+                <li class="menu-box">
+                    <a href="#">1 Lorem ipsum dolor sit,
+                        <img class="joy" src="/images/joy.png" alt="조이">
+                    </a>
+
+                </li>
+                <li class="menu-box">
+                    <a href="#">2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque quos magni vel
+                        <img class="disgust" src="/images/disgust.png" alt="까칠이">
+                    </a>
+                </li>
+                <li class="menu-box">
+                    <a href="#">3 Lorem
+                        <img class="anger" src="/images/anger.png" alt="버럭이">
+                    </a>
+                </li>
+
+                <!-- <li class="menu-box">
+                    <a href="#">4 Lorem ipsum dolor</a>
+                </li>
+                <li class="menu-box">
+                    <a href="#">5 Lorem ipsum dolor sit, amet consectetur </a>
+                </li> -->
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <section>
+        <div class="wrapper">
+
+            <h2 class="contents-title title">
+                Fruit
+            </h2>
+
+            <div class="contents-container">
+
+                <div class="contents-box  watermelon">
+                    <h3 class="contents-title">
+                        WATERMELON
+                    </h3>
+                    <div class="contents-description">
+                        <p>
+                            Completely synergize resource relationships via premier niche markets. Professionally
+                            cultivate
+                            one-to-one customer service with robust ideas. Dynamically innovate resource-leveling
+                            customer
+                            service for state of the art customer service.
+                        </p>
+                        <p>
+                            To beautify your face can mask kiwi fruit, kiwi fruit grab, then mash until smooth, and
+                            smear
+                            your face. After that you usually will feel like a pinch on the skin. This means that the
+                            organic acid content in kiwifruit is working. Wait
+                        </p>
+                        <img class="fruit fruit-watermelon" src="/images/watermelon.png" alt="수박">
+                    </div>
+                </div>
+
+                <div class="contents-box orange">
+                    <h3 class="contents-title">
+                        ORANGE
+                    </h3>
+                    <div class="contents-description-right">
+                        <p>
+                            Completely synergize resource relationships via premier niche markets. Professionally
+                            cultivate
+                            one-to-one customer service with robust ideas. Dynamically innovate resource-leveling
+                            customer
+                            service for state of the art customer service.
+                        </p>
+                        <p>
+                            To beautify your face can mask kiwi fruit, kiwi fruit grab, then mash until smooth, and
+                            smear
+                            your face. After that you usually will feel like a pinch on the skin. This means that the
+                            organic acid content in kiwifruit is working. Wait
+                        </p>
+                        <img class="fruit fruit-orange" src="/images/orange.png" alt="오렌지">
+                    </div>
+                </div>
+
+                <div class="contents-box kiwi">
+                    <h3 class="contents-title">
+                        KIWI
+                    </h3>
+                    <div class="contents-description">
+                        <p>
+                            Completely synergize resource relationships via premier niche markets. Professionally
+                            cultivate
+                            one-to-one customer service with robust ideas. Dynamically innovate resource-leveling
+                            customer
+                            service for state of the art customer service.
+                        </p>
+                        <p>
+                            To beautify your face can mask kiwi fruit, kiwi fruit grab, then mash until smooth, and
+                            smear
+                            your face. After that you usually will feel like a pinch on the skin. This means that the
+                            organic acid content in kiwifruit is working. Wait
+                        </p>
+                        <img class="fruit fruit-kiwi" src="/images/kiwi.png" alt="키위">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
