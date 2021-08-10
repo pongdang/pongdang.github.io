@@ -1,213 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PONGDANG💫</title>
-
-  <style>
-    html,
-    body,
-    ul {
-      padding: 0;
-      margin: 0;
-    }
-
-    .git {
-      color: palevioletred;
-    }
-
-    .git:link {
-      color: palevioletred;
-    }
-
-    .git:visited {
-      color: palevioletred;
-    }
-
-    .git:hover {
-      color: rgb(255, 132, 173);
-    }
-
-    .git:active {
-      color: peachpuff;
-    }
-
-    a:link {
-      color: black;
-    }
-
-    a:visited {
-      color: black;
-
-    }
-
-    a:hover {
-      color: rgb(255, 132, 173);
-    }
-
-    a:active {
-      color: peachpuff;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-
-
-    nav.pc {
-      border-right: 3px solid rgb(196, 193, 193);
-    }
-
-    main {
-      padding: 20px 20px;
-      line-height: 2;
-    }
-
-    @media (min-width:500px) {
-      section {
-        display: flex;
-        flex-direction: row;
-      }
-
-      nav.mobile {
-        display: none;
-      }
-
-      nav.pc {
-        border-right: 3px solid rgb(196, 193, 193);
-        flex-basis: 250px;
-        flex-shrink: 0;
-      }
-
-      nav.pc ul {
-        text-align: center;
-        padding: 60px 0;
-      }
-
-      main {
-        flex-basis: 966px;
-        flex-shrink: 2;
-        margin: 10px auto;
-        line-height: 2;
-
-      }
-    }
-
-    @media (max-width:499px) {
-      nav.pc {
-        display: none;
-      }
-
-      nav.mobile {
-        text-align: center;
-        border: none;
-      }
-
-      main {
-        margin: auto;
-        line-height: 2;
-        padding: 0 20px;
-        border-bottom: 3px solid rgb(196, 193, 193);
-      }
-
-    }
-
-    header {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-
-    }
-
-    section {
-      max-width: 1200px;
-      margin: 0 auto;
-      border-top: 3px solid rgb(196, 193, 193);
-      border-bottom: 3px solid rgb(196, 193, 193);
-    }
-
-    footer {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-    }
-
-    ul {
-      padding: 60px;
-      list-style: none;
-      line-height: 3;
-      font-weight: bold;
-    }
-
-    li a {
-      border-bottom: 3px solid pink;
-    }
-  </style>
-</head>
+    <title>PONGDANG's Blog</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
 
 <body>
-  <header>
 
-    <h1 class="main">
-      *:..｡♡*ﾟ¨ﾟﾟ･*:..｡♡* <br>
-      <span style="color:palevioletred; "><a class="git" href="https://github.com/pongdang"
-          target="_blank">PONGDANG</a>'s BLOG
-      </span> <br>
-      *:..｡♡*ﾟ¨ﾟﾟ･*:..｡♡* <br>
-      　　ᕱ ᕱ || <br>
-      　 ( ･ω･ || <br>
-      　 /　つΦ <br>
+    <header>
+        <div class="header-cover">
+            <h1 class="header-title">Pongdang's Blog</h1>
+        </div>
+    </header>
 
-    </h1>
+    <nav>
+        <div class="wrapper">
+            <h2 class="title">
+                구경해보세용
+            </h2>
 
-  </header>
-  <section>
-    <nav class="pc">
-      <ul>
-        <li><a href="/pongtoday/"> T O D A Y </a></li>
-        <li><a href="/pongstudy/"> S T U D Y </a></li>
-        <li><a href="/pongbook/"> B O O K </a></li>
-        <li><a href="/studylog/">새로운 게시판</a></li>
-        <li><a href="/pongwork/"> W O R K </a></li>
-      </ul>
+            <ul class="menu-container">
+                <li class="menu-box">
+                    <a href="/pongstudy/">
+                        공부해라
+                        <img class="joy" src="main-images/joy.png" alt="조이">
+                    </a>
+                </li>
+                <li class="menu-box">
+                    <a href="/pongWIL/">
+                        무언가를 만들어 보았습니다
+                        <img class="disgust" src="main-images/disgust.png" alt="까칠이">
+                    </a>
+                </li>
+                <li class="menu-box">
+                    <a href="/pongtoday/">
+                        오늘의 날씨
+                        <img class="anger" src="main-images/anger.png" alt="버럭이">
+                    </a>
+                </li>
+                <li class="menu-box">
+                    <a href="/pongbook/">
+                        책 좀 읽어라
+                    </a>
+                </li>
+                <li class="menu-box">
+                    <a href="/studylog/">
+                        준비중
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
-    <main>
-      <p>
-      <h2>안녕하세요!</h2>
-      고양이를 좋아합니다. 제가 가장 사랑하는 고양이의 이름은 삼진, 사진, 그림 입니다!
-      좋아하는 아이스크림은 체리쥬빌레, 음식은 냉우동, 카페에 가면 오렌지에이드 또는 초코어쩌구를 시킵니다.<br>
-      완전 짱 쎈 개발자가 되고 싶습니다~! 안 되면 주먹으로 다 부셔~!@!
-      </p>
-    </main>
 
-    <nav class="mobile">
-      <ul>
-        <li><a href="/pongtoday/">T O D A Y</a></li>
-        <li><a href="/pongstudy/">S T U D Y</a></li>
-        <li><a href="/pongbook/">B O O K</a></li>
-        <li><a href="/studylog/">새로운 게시판</a></li>
-        <li><a href="/pongWIL/"> W I L</a></li>
-      </ul>
-    </nav>
+    <section>
+        <div class="wrapper">
 
-    <!-- <aside>
+            <h2 class="title">
 
-    </aside> -->
-  </section>
+            </h2>
 
-  <footer>
-    <p>
-      <button onclick="window.location.href = '/ptest/1/'">왜 안 돼? 빡칠 때</button>
-      <button onclick="window.location.href = '/ptest/2/'">왜 안 돼,, 눈물날 때</button>
-      <button onclick="window.location.href = '/ptest/3/'">됐당! 기쁠 때</button>
-    </p>
-    <div id="clock"></div>
-  </footer>
-  <script src="/assets/clock.js"></script>
+            <div class="contents-container">
+
+                <div class="contents-box">
+                    <a href="/asdf.html">
+                        🌟 너무 귀엽고 어지러운 나의 전 블로그 보러가기
+                    </a>
+                </div>
+
+                <div class="contents-box">
+                    <h3 class="contents-title">
+                        title
+                    </h3>
+                    <div class="contents-description">
+                        <p>
+                            냥
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contents-box">
+                    <h3 class="contents-title">
+                        title2
+                    </h3>
+                    <div class="contents-description">
+                        <p>
+                            냥
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
 </body>
 
 </html>

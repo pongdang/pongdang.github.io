@@ -1,0 +1,190 @@
+*,
+body,
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+/* 공통 스타일 */
+
+body {
+  background-color: rgb(255, 229, 235);
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 30px auto;
+}
+
+.title {
+  display: inline-block;
+  margin: 30px 0;
+  color: #660099;
+  position: relative;
+}
+
+.title::before {
+  content: " ";
+  height: 0.4em;
+  width: 100%;
+  background-color: #b789cd;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+:root {
+  font-size: 20px;
+}
+
+h1 {
+  font-family: "Concert One", cursive;
+}
+
+h2,
+h3,
+a,
+p {
+  font-size: 1.2rem;
+  font-family: "Yeon Sung", cursive;
+}
+
+/* 스타일 */
+
+/* header */
+
+.header-cover {
+  background: #800080;
+  background: -webkit-linear-gradient(to right, #ffc0cb, #800080);
+  background: linear-gradient(to right, #ffc0cb, #800080);
+
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-title {
+  background-color: rgba(0, 0, 0, 0.728);
+  padding: 0 0.5em;
+  /* 폰트 */
+  font-size: 6vw;
+  color: white;
+  line-height: 2;
+  /* 효과 */
+  /* 원래 크기로 돌아오는데 0.6s 걸림 */
+  transform: scale(1);
+  transition: transform 0.6s;
+}
+
+.header-cover:hover .header-title {
+  /* 효과 */
+  /* 1.4배만큼 커지고 커지는데 0.6s 걸림 */
+  transform: scale(1.4);
+  transition: transform 0.6s;
+}
+
+/* menu */
+
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  /* 인접한 애들 사이에 간격주기 */
+  gap: 30px;
+}
+
+.menu-box a {
+  height: 300px;
+  width: 300px;
+  font-weight: bold;
+  box-sizing: border-box;
+  background-color: #f1d7ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-box a:hover {
+  background-color: #e9e9e9;
+}
+
+.menu-box a img {
+  position: absolute;
+  width: 200px;
+  transition: transform 0.5s;
+}
+
+.menu-box a img.joy {
+  top: -200px;
+  transform: translateY(0);
+}
+
+.menu-box a img.anger {
+  bottom: 0;
+  transform: translateY(100%);
+}
+
+.menu-box a img.disgust {
+  right: 0;
+  bottom: 0;
+  transform: translateX(100%);
+}
+
+.menu-box a:hover img.joy {
+  transform: translateY(100%);
+}
+
+.menu-box a:hover img.anger {
+  transform: translateY(0);
+}
+
+.menu-box a:hover img.disgust {
+  transform: translateX(0);
+}
+
+/* contents */
+
+.contents-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+}
+
+.contents-title {
+  margin-bottom: 30px;
+}
+
+.contents-box a {
+  border-bottom: 10px solid rgba(216, 112, 147, 0.571);
+}
+
+.contents-box {
+  border: 4px solid #f1d7ff;
+  border-radius: 20px;
+  background-color: white;
+  padding: 50px;
+}
+
+.contents-box:hover {
+  background-color: whitesmoke;
+}
