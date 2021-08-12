@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(/pongwork/work-images/bg3.png);
+        }
+
+        .wrapper {
+            width: 1000px;
+            margin: 50px auto;
+        }
+
+        .bigBox {
+            margin: 50px auto;
+            background-color: pink;
+            width: 800px;
+            height: 500px;
+            position: relative;
+        }
+
+        .smallBox {
+            width: 50px;
+            height: 50px;
+            background-color: lightcoral;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="bigBox">
+            <div class="smallBox">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let BOX = document.querySelector('.smallBox');
+
+        let rendomBox = function () {
+            let boxLeft = Math.floor(Math.random() * 750);
+            let boxTop = Math.floor(Math.random() * 450);
+            BOX.style.left = boxLeft + ('px');
+            BOX.style.top = boxTop + ('px');
+        }
+
+        BOX.onclick = rendomBox;
+    </script>
+</body>
+
+</html>
