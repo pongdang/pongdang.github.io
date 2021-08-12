@@ -39,7 +39,7 @@ body {
 
 .title::before {
   content: " ";
-  height: 0.4em;
+  height: 0.6rem;
   width: 100%;
   background-color: #b789cd;
   position: absolute;
@@ -55,11 +55,19 @@ h1 {
   font-family: "Concert One", cursive;
 }
 
-h2,
-h3,
+h2 {
+  font-size: 1.8rem;
+  font-family: "Yeon Sung", cursive;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-family: "Yeon Sung", cursive;
+}
+
 a,
 p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-family: "Yeon Sung", cursive;
 }
 
@@ -80,7 +88,7 @@ p {
 
 .header-title {
   background-color: rgba(0, 0, 0, 0.728);
-  padding: 0 0.5em;
+  padding: 0 2rem;
   /* 폰트 */
   font-size: 6vw;
   color: white;
@@ -175,7 +183,11 @@ p {
 }
 
 .contents-box a {
-  border-bottom: 10px solid rgba(216, 112, 147, 0.571);
+  /* border-bottom: 10px solid rgba(216, 112, 147, 0.571); */
+  background-color: rgba(216, 112, 147, 0.571);
+  padding: 10px;
+  border-radius: 50px;
+  /* color: palevioletred; */
 }
 
 .contents-box {
