@@ -169,3 +169,8 @@ p {
 .reactTitle {
   color: rgb(81, 202, 240);
 }
+
+.footer {
+  padding: 40px;
+  height: 30px;
+}
