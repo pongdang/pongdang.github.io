@@ -1,0 +1,134 @@
+/* 초기화 */
+
+*,
+body,
+h1,
+h2,
+ul {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+/* 공통 스타일 */
+
+body {
+  min-height: 100vh;
+  background-color: rgb(255, 229, 235);
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+:root {
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 1.7rem;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+a,
+p {
+  font-size: 1.1rem;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+/* 고정 바 */
+
+.fixedBar {
+  background-color: #f1d7ff;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  /* text-align: center; */
+  height: 50px;
+  width: 100%;
+}
+
+.fixedBar a {
+  letter-spacing: 10px;
+  /* font-size: 1rem; */
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* contents */
+
+.bookTitle {
+  margin: 100px 0;
+  color: #660099;
+  display: inline-block;
+  position: relative;
+}
+
+.bookTitle::before {
+  content: " ";
+  height: 0.8rem;
+  width: 100%;
+  background-color: #b789cd;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+.bookNav {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 30px;
+}
+
+.bookNav li {
+  background-color: white;
+  border: 4px solid #f1d7ff;
+  border-radius: 20px;
+  height: 100px;
+}
+
+.bookNav li:hover {
+  background-color: #e9e9e9;
+}
+
+.bookItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.bookItem:active {
+  color: palevioletred;
+}
+
+.footer {
+  padding: 40px;
+  height: 30px;
+}
