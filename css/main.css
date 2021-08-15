@@ -23,6 +23,8 @@ a {
 
 body {
   background-color: rgb(255, 229, 235);
+  font-family: MalgunGothic, "맑은 고딕", "돋움", Dotum, AppleGothic, Sans-serif,
+    Arial;
 }
 
 .wrapper {
@@ -51,24 +53,17 @@ body {
   font-size: 10px;
 }
 
-h1 {
-  font-family: "Gowun Dodum", sans-serif;
-}
-
 h2 {
   font-size: 2.5rem;
-  font-family: "Gowun Dodum", sans-serif;
 }
 
 h3 {
   font-size: 2.3rem;
-  font-family: "Gowun Dodum", sans-serif;
 }
 
 a,
 p {
   font-size: 2.1rem;
-  font-family: "Gowun Dodum", sans-serif;
 }
 
 /* 스타일 */
@@ -114,13 +109,12 @@ p {
   justify-content: space-between;
   flex-wrap: wrap;
   text-align: center;
-  /* 인접한 애들 사이에 간격주기 */
-  gap: 30px;
 }
 
 .menu-box {
   height: 300px;
   width: 300px;
+  margin-bottom: 30px;
 }
 
 .menu-box a {
@@ -181,7 +175,7 @@ p {
 .contents-container {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -200,6 +194,7 @@ p {
   border-radius: 20px;
   background-color: white;
   padding: 50px;
+  margin-bottom: 30px;
 }
 
 .contents-box a:hover {
