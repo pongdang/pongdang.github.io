@@ -242,4 +242,7 @@ p {
   .menu-box a img {
     display: none;
   }
+  .contents-container {
+    word-wrap: break-word;
+  }
 }
