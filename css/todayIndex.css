@@ -136,9 +136,6 @@ p {
 
 @media screen and (max-width: 629px) {
   .wrapper {
-    padding: 20px;
-  }
-  .todayNav {
-    word-wrap: break-word;
+    padding: 0 20px;
   }
 }
