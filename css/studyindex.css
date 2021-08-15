@@ -101,7 +101,6 @@ p {
 .study-nav {
   display: flex;
   flex-direction: column-reverse;
-  gap: 30px;
 }
 
 .study-nav li {
@@ -122,6 +121,7 @@ p {
   align-items: center;
   height: 100%;
   width: 100%;
+  margin-bottom: 30px;
 }
 
 .liTitle {

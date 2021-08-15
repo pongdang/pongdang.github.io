@@ -100,7 +100,6 @@ p {
 .bookNav {
   display: flex;
   flex-direction: column-reverse;
-  margin-bottom: 30px;
 }
 
 .bookNav li {
@@ -109,6 +108,7 @@ p {
   border-radius: 20px;
   height: 100px;
   padding: 0 20px;
+  margin-bottom: 30px;
 }
 
 .bookNav li:hover {
