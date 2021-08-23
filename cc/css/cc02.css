@@ -77,7 +77,7 @@ p {
   height: 70vh;
   width: 60vw;
   /* border: 3px solid saddlebrown; */
-  background-image: url("/sunnyside-agency-landing-page-main/images/desktop/image-header.jpg");
+  background-image: url("/cc/images/image-header.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -172,11 +172,11 @@ p {
 }
 
 .content-box.pic-cherry {
-  background-image: url("/sunnyside-agency-landing-page-main/images/desktop/image-graphic-design.jpg");
+  background-image: url("/cc/images/image-graphic-design.jpg");
 }
 
 .content-box.pic-orange {
-  background-image: url("/sunnyside-agency-landing-page-main/images/desktop/image-photography.jpg");
+  background-image: url("/cc/images/image-photography.jpg");
 }
 
 .content-box.image-description {
