@@ -1,0 +1,133 @@
+/* 초기화 */
+
+html,
+body,
+a,
+ul {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 공통 스타일 */
+
+:root {
+  font-size: 10px;
+  --header-bg-color: lightcoral;
+  --header-text-color: #fefefe;
+}
+
+.header-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.header-menu {
+  font-size: 1.8rem;
+}
+
+/* 아이콘 */
+
+.fab {
+  padding: 10px;
+  font-size: 1.8rem;
+}
+
+.fas.fa-ice-cream {
+  padding: 10px;
+  font-size: 2.5rem;
+  color: gold;
+}
+
+.fas.fa-bars {
+  font-size: 2.5rem;
+  color: gold;
+}
+/* 스타일 */
+
+header {
+  background-color: var(--header-bg-color);
+  padding: 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--header-text-color);
+}
+
+.header-menu {
+  display: flex;
+}
+
+.header-menu-list:hover {
+  background-color: lightpink;
+  border-radius: 30px;
+}
+
+.header-menu-list {
+  padding: 10px 20px;
+}
+
+.header-icon {
+  display: flex;
+}
+
+.header-menu-btn {
+  display: none;
+}
+
+/* 미디어 쿼리 */
+
+@media screen and (max-width: 888px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-menu-container {
+    display: none;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .header-menu {
+    flex-direction: column;
+    align-items: center;
+    /* border: 3px solid black; */
+    width: 100%;
+  }
+
+  .header-menu-list {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header-icon {
+    width: 100%;
+    display: none;
+    justify-content: center;
+  }
+
+  .header-menu-btn {
+    display: unset;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+
+  .header-menu-container.active,
+  .header-icon.active {
+    display: flex;
+  }
+}
