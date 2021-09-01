@@ -43,7 +43,7 @@ function toggleBox(state) {
     closePage(state);
   }
   // 페이지를 닫으면 pageNo이 0으로.
-  state.pageNo = 0;
+  // state.pageNo = 0;
 }
 function openPage(state) {
   state.pages[state.pageNo].classList.add("visible");
