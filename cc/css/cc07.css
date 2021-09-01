@@ -10,8 +10,13 @@ p,
   box-sizing: border-box;
 }
 
+/* 공통스타일 */
+
 :root {
   font-size: 10px;
+  --content-title-color: #fcca26;
+  --content-item-text-color: #000000;
+  --content-item-bg-color: #ffffff;
 }
 
 h1 {
@@ -25,71 +30,65 @@ h2 {
 p {
   font-size: 1.9rem;
 }
-/* 공통스타일 */
 
 .wrapper {
   width: 620px;
   margin: 0 auto;
-  /* border: 3px solid black; */
 }
 
 body {
   background-color: #f7f1e1;
 }
-/* 스타일 */
 
-.header-title {
-  background-color: pink;
-  text-align: center;
+.page-no {
+  text-align: end;
+  color: var(--content-item-text-color);
+  font-size: 1.5rem;
 }
 
+/* 스타일 */
+
 .content {
-  display: inline-block;
-  border-radius: 20px;
   padding: 20px;
-  margin: 0;
 }
 
 .content.show {
   height: 90vh;
   display: block;
-  /* border-bottom: 3px solid; */
-  color: #fcca26;
+  color: var(--content-title-color);
   background-color: #ffefba;
-  overflow: scroll;
+  border-radius: 20px;
 }
 
 .content-title {
-  /* border: 3px solid purple; */
   cursor: pointer;
   text-align: center;
-  border-bottom: 10px solid #ffefba;
+  padding-bottom: 20px;
+}
+
+.content-title:hover {
+  color: var(--content-title-color);
 }
 
 .content-item {
-  background-color: #ffffff;
-  margin-top: 30px;
-  min-height: 70vh;
   display: none;
-  color: black;
+  background-color: var(--content-item-bg-color);
+  color: var(--content-item-text-color);
+  border-radius: 20px;
+  height: 80vh;
+  padding: 20px;
+  overflow: scroll;
 }
 
 .content-item h2 {
   text-align: center;
-  padding: 20px;
 }
 
 .content-item p {
-  padding: 0 20px 20px 20px;
   line-height: 1.5;
+  padding-top: 20px;
 }
 
 .visible {
   display: block;
-}
-
-.page-no {
-  text-align: right;
-  color: black;
-  font-size: 1.5rem;
 }
