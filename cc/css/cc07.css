@@ -1,0 +1,95 @@
+/* 초기화 */
+
+html,
+body,
+h1,
+p,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.9rem;
+}
+/* 공통스타일 */
+
+.wrapper {
+  width: 620px;
+  margin: 0 auto;
+  /* border: 3px solid black; */
+}
+
+body {
+  background-color: #f7f1e1;
+}
+/* 스타일 */
+
+.header-title {
+  background-color: pink;
+  text-align: center;
+}
+
+.content {
+  display: inline-block;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 0;
+}
+
+.content.show {
+  height: 90vh;
+  display: block;
+  /* border-bottom: 3px solid; */
+  color: #fcca26;
+  background-color: #ffefba;
+  overflow: scroll;
+}
+
+.content-title {
+  /* border: 3px solid purple; */
+  cursor: pointer;
+  text-align: center;
+  border-bottom: 10px solid #ffefba;
+}
+
+.content-item {
+  background-color: #ffffff;
+  margin-top: 30px;
+  min-height: 70vh;
+  display: none;
+  color: black;
+}
+
+.content-item h2 {
+  text-align: center;
+  padding: 20px;
+}
+
+.content-item p {
+  padding: 0 20px 20px 20px;
+  line-height: 1.5;
+}
+
+.visible {
+  display: block;
+}
+
+.page-no {
+  text-align: right;
+  color: black;
+  font-size: 1.5rem;
+}
