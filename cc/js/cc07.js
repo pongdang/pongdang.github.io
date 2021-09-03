@@ -1,13 +1,17 @@
+const SCROLL_UNIT = 100;
+
 const app = (state) => {
   window.addEventListener("keyup", (e) => {
     if (!state.showBook) return;
-    closePage(state);
     if (e.code === "ArrowRight") {
-      increasePageNo(state);
+      openRightPage(state);
     } else if (e.code === "ArrowLeft") {
-      decreasePageNo(state);
+      openLeftPage(state);
+    } else if (e.code === "ArrowUp") {
+      scrollElement(state.pages[state.pageNo], -1 * SCROLL_UNIT);
+    } else if (e.code === "ArrowDown") {
+      scrollElement(state.pages[state.pageNo], SCROLL_UNIT);
     }
-    openPage(state);
   });
 };
 
@@ -66,4 +70,17 @@ function decreasePageNo(state) {
   if (state.pageNo < 0) {
     state.pageNo = 0;
   }
+}
+function openLeftPage(state) {
+  closePage(state);
+  decreasePageNo(state);
+  openPage(state);
+}
+function openRightPage(state) {
+  closePage(state);
+  increasePageNo(state);
+  openPage(state);
+}
+function scrollElement(elem, chages) {
+  elem.scrollTop = (elem.scrollTop || 0) + chages;
 }

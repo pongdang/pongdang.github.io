@@ -91,4 +91,5 @@ body {
 
 .visible {
   display: block;
+  scroll-behavior: smooth;
 }
