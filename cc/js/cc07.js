@@ -13,6 +13,16 @@ const app = (state) => {
       scrollElement(state.pages[state.pageNo], SCROLL_UNIT);
     }
   });
+  window.addEventListener("click", function (event) {
+    console.log(event);
+    console.log(event.target);
+    console.log(document.querySelector(".fa-caret-right"));
+    if (event.target === document.querySelector(".fa-caret-left")) {
+      openLeftPage(state);
+    } else if (event.target === document.querySelector(".fa-caret-right")) {
+      openRightPage(state);
+    }
+  });
 };
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -41,9 +51,11 @@ function toggleBox(state) {
   state.showBook = !state.showBook;
   if (state.showBook) {
     document.querySelector(".content").classList.add("show");
+    document.querySelector(".btn-container").classList.add("show");
     openPage(state);
   } else {
     document.querySelector(".content").classList.remove("show");
+    document.querySelector(".btn-container").classList.remove("show");
     closePage(state);
   }
   // 페이지를 닫으면 pageNo이 0으로.
