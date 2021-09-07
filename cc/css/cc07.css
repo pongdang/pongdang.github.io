@@ -36,7 +36,7 @@ p {
 }
 
 .wrapper {
-  width: 620px;
+  max-width: 620px;
   margin: 0 auto;
 }
 
@@ -45,7 +45,6 @@ body {
 }
 
 .content.show {
-  height: 90vh;
   display: block;
   color: var(--content-title-color);
   background-color: #ffefba;
@@ -92,7 +91,7 @@ body {
   background-color: var(--content-item-bg-color);
   color: var(--content-item-text-color);
   border-radius: 20px;
-  height: 75vh;
+  height: 70vh;
   padding: 20px;
   overflow: scroll;
 }
