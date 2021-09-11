@@ -246,8 +246,32 @@ input {
 .quick-menu-item {
   padding: 20px 0;
 }
+
 .quick-menu-item a {
   padding: 30px 0;
+}
+
+.carousel-btn {
+  /* border: none; */
+  background-color: rgba(255, 255, 255, 0.55);
+  position: absolute;
+  width: 100px;
+  height: 10px;
+}
+
+.carousel-btn-first {
+  bottom: 50px;
+  left: 50px;
+}
+
+.carousel-btn-second {
+  bottom: 50px;
+  left: 155px;
+}
+
+.carousel-btn-third {
+  bottom: 50px;
+  left: 260px;
 }
 
 /* section-2*/
