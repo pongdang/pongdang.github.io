@@ -143,32 +143,32 @@ input {
 }
 
 .main-news-item.first {
-  background-image: url(image/media/media-1.jpeg);
+  background-image: url(/cc/images/ds/media/media-1.jpeg);
 }
 
 .main-news-item.second {
-  background-image: url(image/media/media-2.jpeg);
+  background-image: url(/cc/images/ds/media/media-2.jpeg);
 }
 
 .main-news-item.third {
-  background-image: url(image/media/media-3.jpeg);
+  background-image: url(/cc/images/ds/media/media-3.jpeg);
 }
 
 .main-news-item.fourth {
-  background-image: url(image/media/media-4.jpeg);
+  background-image: url(/cc/images/ds/media/media-4.jpeg);
 }
 
 .main-news-item.fifth {
-  background-image: url(image/media/media-5.jpeg);
+  background-image: url(/cc/images/ds/media/media-5.jpeg);
 }
 
 .main-news-item.sixth {
-  background-image: url(image/media/media-6.jpeg);
+  background-image: url(/cc/images/ds/media/media-6.jpeg);
 }
 
 /* 무엇을 찾으시나요 작은 상자들의 > 아이콘 */
 .search-box-item::after {
-  content: url(image/search/icon-arrow-white.png);
+  content: url(/cc/images/ds/search/icon-arrow-white.png);
   width: 100%;
   padding-right: 16px;
 }
@@ -236,14 +236,6 @@ input {
   height: 100%;
   width: 100%;
 }
-
-/* button {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100px;
-  height: 100px;
-} */
 
 .quick-menu {
   display: flex;
