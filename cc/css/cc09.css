@@ -32,6 +32,11 @@ input {
   padding: 0 30px;
 }
 
+.slide-wrapper {
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
 .search-wrapper {
   margin: 0 auto;
   max-width: 1500px;
@@ -138,32 +143,32 @@ input {
 }
 
 .main-news-item.first {
-  background-image: url(../images/ds/media/media-1.jpeg);
+  background-image: url(image/media/media-1.jpeg);
 }
 
 .main-news-item.second {
-  background-image: url(../images/ds/media/media-2.jpeg);
+  background-image: url(image/media/media-2.jpeg);
 }
 
 .main-news-item.third {
-  background-image: url(../images/ds/media/media-3.jpeg);
+  background-image: url(image/media/media-3.jpeg);
 }
 
 .main-news-item.fourth {
-  background-image: url(../images/ds/media/media-4.jpeg);
+  background-image: url(image/media/media-4.jpeg);
 }
 
 .main-news-item.fifth {
-  background-image: url(../images/ds/media/media-5.jpeg);
+  background-image: url(image/media/media-5.jpeg);
 }
 
 .main-news-item.sixth {
-  background-image: url(../images/ds/media/media-6.jpeg);
+  background-image: url(image/media/media-6.jpeg);
 }
 
 /* 무엇을 찾으시나요 작은 상자들의 > 아이콘 */
 .search-box-item::after {
-  content: url(../images/ds/search/icon-arrow-white.png);
+  content: url(image/search/icon-arrow-white.png);
   width: 100%;
   padding-right: 16px;
 }
@@ -211,10 +216,34 @@ input {
 /* section-1 */
 /* 슬라이드 부분, 퀵메뉴 */
 
-.slide {
+.main-carausel-container {
   border: 3px solid thistle;
-  height: 86vh;
+  height: 80vh;
+  position: relative;
 }
+
+.carousel-box {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  transform: translate(-50%, 0);
+  left: 50%;
+}
+
+.carousel-box img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+} */
 
 .quick-menu {
   display: flex;
