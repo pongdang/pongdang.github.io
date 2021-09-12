@@ -216,7 +216,7 @@ input {
 /* section-1 */
 /* 슬라이드 부분, 퀵메뉴 */
 
-.main-carausel-container {
+.main-carousel-container {
   border: 3px solid thistle;
   height: 80vh;
   position: relative;
@@ -257,6 +257,11 @@ input {
   position: absolute;
   width: 100px;
   height: 10px;
+  cursor: pointer;
+}
+
+.carousel-btn:hover {
+  background-color: #fff;
 }
 
 .carousel-btn-first {
@@ -272,6 +277,16 @@ input {
 .carousel-btn-third {
   bottom: 50px;
   left: 260px;
+}
+
+/* carousel */
+
+.carousel-box {
+  opacity: 0;
+}
+
+.active {
+  opacity: 1;
 }
 
 /* section-2*/
