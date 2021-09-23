@@ -125,6 +125,7 @@ p {
 .liTitle {
   margin-right: 20px;
 }
+
 .htmlTitle {
   color: rgb(246, 37, 14);
 }
@@ -141,6 +142,9 @@ p {
   color: rgb(81, 202, 240);
 }
 
+.httpTitle {
+  color: #3cb371;
+}
 .footer {
   padding: 40px;
   height: 30px;
