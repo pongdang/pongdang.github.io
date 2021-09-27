@@ -1,14 +1,14 @@
 const todayNav = document.querySelector(".todayNav");
 const diaryList = [
-  { name: "2021.08.25, 평균구하기", url: "/pongtoday/08/25" },
-  { name: "2021.08.26, 하샤드 수", url: "/pongtoday/08/26" },
-  { name: "2021.08.27, 핸드폰 번호 가리기", url: "/pongtoday/08/27" },
-  { name: "2021.08.28, x만큼 간격이 있는 n개의 숫자", url: "/pongtoday/08/28" },
-  { name: "2021.08.29, 작은 수 제거하기", url: "/pongtoday/08/29" },
-  { name: "2021.08.31, 정수 제곱근 판별", url: "/pongtoday/08/31" },
-  { name: "2021.09.23, 이상한 문자 만들기", url: "/pongtoday/09/23" },
-  { name: "2021.09.26, 없는 숫자 더하기", url: "/pongtoday/09/26" },
-  { name: "2021.09.27, 음양 더하기", url: "/pongtoday/09/27" },
+  { name: "21.08.25, 평균구하기", url: "/pongtoday/08/25" },
+  { name: "21.08.26, 하샤드 수", url: "/pongtoday/08/26" },
+  { name: "21.08.27, 핸드폰 번호 가리기", url: "/pongtoday/08/27" },
+  { name: "21.08.28, x만큼 간격이 있는 n개의 숫자", url: "/pongtoday/08/28" },
+  { name: "21.08.29, 작은 수 제거하기", url: "/pongtoday/08/29" },
+  { name: "21.08.31, 정수 제곱근 판별", url: "/pongtoday/08/31" },
+  { name: "21.09.23, 이상한 문자 만들기", url: "/pongtoday/09/23" },
+  { name: "21.09.26, 없는 숫자 더하기", url: "/pongtoday/09/26" },
+  { name: "21.09.27, 음양 더하기", url: "/pongtoday/09/27" },
 ];
 for (let i = 0; i < diaryList.length; i++) {
   const diary = diaryList[i];
