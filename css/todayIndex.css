@@ -136,3 +136,13 @@ p {
     padding: 0 20px;
   }
 }
+
+@media screen and (max-width: 555px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+  .todayItem {
+    text-align: center;
+    word-break: keep-all;
+  }
+}
