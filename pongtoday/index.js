@@ -7,6 +7,8 @@ const diaryList = [
   { name: "21.08.29, 작은 수 제거하기", url: "/pongtoday/08/29" },
   { name: "21.08.31, 정수 제곱근 판별", url: "/pongtoday/08/31" },
   { name: "21.09.23, 이상한 문자 만들기", url: "/pongtoday/09/23" },
+  { name: "21.09.24, 내적", url: "/pongtoday/09/24" },
+  { name: "21.09.25, 완주하지 못한 선수", url: "/pongtoday/09/25" },
   { name: "21.09.26, 없는 숫자 더하기", url: "/pongtoday/09/26" },
   { name: "21.09.27, 음양 더하기", url: "/pongtoday/09/27" },
 ];
