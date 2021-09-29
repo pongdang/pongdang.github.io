@@ -11,6 +11,9 @@ const diaryList = [
   { name: "21.09.25, 완주하지 못한 선수", url: "/pongtoday/09/25" },
   { name: "21.09.26, 없는 숫자 더하기", url: "/pongtoday/09/26" },
   { name: "21.09.27, 음양 더하기", url: "/pongtoday/09/27" },
+  { name: "21.09.28, 약수의 합", url: "/pongtoday/09/28" },
+  { name: "21.09.29, 문자열을 정수로 바꾸기", url: "/pongtoday/09/29" },
+  { name: "21.09.29, 서울에서 김서방 찾기", url: "/pongtoday/09/29-2" },
 ];
 for (let i = 0; i < diaryList.length; i++) {
   const diary = diaryList[i];
