@@ -124,6 +124,7 @@ img {
 .emphasis {
   color: rgb(121, 159, 255);
   font-size: 2rem;
+  font-weight: bold;
 }
 
 .explanation {
