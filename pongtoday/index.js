@@ -17,6 +17,7 @@ const diaryList = [
   { name: "21.09.30, 문자열 내림차순으로 배치하기", url: "/pongtoday/09/30" },
   { name: "21.09.30, 문자열 내 p와 y의 개수", url: "/pongtoday/09/30-2" },
   { name: "21.10.05, 나누어 떨어지는 숫자배열", url: "/pongtoday/10/05" },
+  { name: "21.10.06, 가운데 글자 가져오기", url: "/pongtoday/10/06" },
 ];
 for (let i = 0; i < diaryList.length; i++) {
   const diary = diaryList[i];
