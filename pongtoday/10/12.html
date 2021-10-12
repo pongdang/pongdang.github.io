@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/todaystyle.css" />
+    <title>K번째 수</title>
+</head>
+
+<body>
+    <div class="fixedBar">
+        <a href="https://blog.pongdang.today/">
+            PONGDANG's BLOG
+        </a>
+    </div>
+
+    <header class="wrapper">
+        <h2 class="diaryTitle">
+            2021/10/12/화요일
+        </h2>
+    </header>
+
+    <section class="wrapper">
+        <div class="diaryContents">
+            <h2>K번째 수</h2>
+            <img src="/pongtoday/img/1012.png" alt="K번째 수 문제">
+            <h3>🌟내가 푼 방법🌟</h3>
+            <img src="/pongtoday/img/1012-a.png" alt="K번째 수 답 ">
+            <p>
+                2차원배열 commands의 부분부분을 변수로 지정했다.<br>
+                (first) i번째 숫자는 commands[i][0]<br>
+                (middle) j번째 숫자는 commands[i][1]<br>
+                (last) k번째 숫자는 commands[i][2]<br>
+                로 지정해놓았고, array 배열을 i번째부터 j번째까지 잘라야 하므로 slice()메서드를 사용했다.
+                배열을 자른 뒤 자른 배열을 cur에 넣고, sort() 메서드를 이용하여 오름차순으로 정렬했다.
+                그리고 빈 배열 answer에 cur 배열의 k번째 숫자들만 push() 메서드를 이용하여 집어넣게 만들었다.
+                흠냐륑~
+            </p>
+            <br>
+            <p class="emphasis">
+                slice()
+            </p>
+            <p class="explanation">
+                slice(1,3)<br>
+                이러한 형태로 많이 쓰인다. 위와 같은 경우에는 배열의 1번째 요소부터 3번째 요소 전까지를 자른 배열을 반환한다.<br>
+                slice(2)<br>
+                이러한 형태로 쓰였을 때는 배열의 2번째 요소의 다음 요소부터 끝 요소까지 자른 배열을 반환한다.<br>
+                slice(-2)<br>
+                이러한 형태로 쓰였을 때는 뒤에서 배열의 끝에서 2번째에 있는 요소부터 끝 요소까지 자른 배열을 반환한다.<br>
+                slice(2, -1)<br>
+                이러한 형태로 쓰였을 때는 2번째 요소의 다음 요소 ~ 끝 요소로부터 1번째에 있는 요소를 자른 배열을 반환한다.<br>
+            </p>
+        </div>
+    </section>
+</body>
+
+
+</html
