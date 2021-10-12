@@ -21,6 +21,7 @@ const diaryList = [
   { name: "21.10.07, 부족한 금액 계산하기", url: "/pongtoday/10/07" },
   { name: "21.10.10, 문자열 내 마음대로 정렬하기", url: "/pongtoday/10/10" },
   { name: "21.10.11, 같은 숫자는 싫어", url: "/pongtoday/10/11" },
+  { name: "21.10.12, K번째 수", url: "/pongtoday/10/12" },
 ];
 
 for (let i = 0; i < diaryList.length; i++) {
