@@ -1,4 +1,3 @@
-const todayNav = document.querySelector(".todayNav");
 const diaryList = [
   { name: "21.08.25, 평균구하기", url: "/pongtoday/08/25" },
   { name: "21.08.26, 하샤드 수", url: "/pongtoday/08/26" },
@@ -10,15 +9,72 @@ const diaryList = [
   { name: "21.09.24, 내적", url: "/pongtoday/09/24" },
   { name: "21.09.25, 완주하지 못한 선수", url: "/pongtoday/09/25" },
   { name: "21.09.26, 없는 숫자 더하기", url: "/pongtoday/09/26" },
+  { name: "21.09.27, 음양 더하기", url: "/pongtoday/09/27" },
+  { name: "21.09.28, 약수의 합", url: "/pongtoday/09/28" },
+  { name: "21.09.29, 문자열을 정수로 바꾸기", url: "/pongtoday/09/29" },
+  { name: "21.09.29, 서울에서 김서방 찾기", url: "/pongtoday/09/29-2" },
+  { name: "21.09.30, 문자열 내림차순으로 배치하기", url: "/pongtoday/09/30" },
+  { name: "21.09.30, 문자열 내 p와 y의 개수", url: "/pongtoday/09/30-2" },
+  { name: "21.10.05, 나누어 떨어지는 숫자배열", url: "/pongtoday/10/05" },
+  { name: "21.10.06, 가운데 글자 가져오기", url: "/pongtoday/10/06" },
+  { name: "21.10.07, 부족한 금액 계산하기", url: "/pongtoday/10/07" },
+  { name: "21.10.10, 문자열 내 마음대로 정렬하기", url: "/pongtoday/10/10" },
+  { name: "21.10.11, 같은 숫자는 싫어", url: "/pongtoday/10/11" },
+  { name: "21.10.12, K번째 수", url: "/pongtoday/10/12" },
 ];
 
-for (let i = 0; i < diaryList.length; i++) {
-  const diary = diaryList[i];
-  const liTag = document.createElement("li");
-  const aTag = document.createElement("a");
-  aTag.classList.add("todayItem");
-  aTag.innerText = diary.name;
-  aTag.setAttribute("href", diary.url);
-  liTag.append(aTag);
-  todayNav.append(liTag);
+function markPageNo(pageNo) {
+  const buttonList = document.querySelectorAll(".navigation button");
+  for (const button of buttonList) {
+    if (button.innerText === `${Number(pageNo) + 1}`) {
+      button.style.fontWeight = "bold";
+    }
+  }
+}
+
+function renderPage(pageNo) {
+  const todayNav = document.querySelector(".todayNav");
+  const list = diaryList.slice(pageNo * 10, (pageNo + 1) * 10);
+  let contents = "";
+
+  for (const diary of list) {
+    const liTag = document.createElement("li");
+    const aTag = document.createElement("a");
+    aTag.classList.add("todayItem");
+    aTag.innerText = diary.name;
+    aTag.setAttribute("href", diary.url);
+    liTag.append(aTag);
+    contents += liTag.outerHTML;
+  }
+  todayNav.innerHTML = contents;
+
+  markPageNo(pageNo);
+}
+
+const navigationElements = document.querySelectorAll(".navigation");
+for (const el of navigationElements) {
+  el.innerHTML = "";
+  for (let j = 0; j < diaryList.length / 10; j++) {
+    const btn = document.createElement("button");
+    btn.addEventListener("click", () => {
+      window.location.href = "/pongtoday/index.html?pageNo=" + j;
+    });
+    btn.innerText = j + 1;
+    btn.classList.add("page");
+    btn.classList.add("page1");
+    btn.style.cursor = "pointer";
+    el.append(btn);
+  }
+}
+
+const queryList = window.location.search
+  .slice(1)
+  .split("&")
+  .map((params) => params.split("="));
+
+const pageNoQuery = queryList.find((query) => query[0] === "pageNo");
+if (pageNoQuery != null) {
+  renderPage(pageNoQuery[1]);
+} else {
+  renderPage(0);
 }
