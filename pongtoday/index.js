@@ -36,7 +36,7 @@ function markPageNo(pageNo) {
 
 function renderPage(pageNo) {
   const todayNav = document.querySelector(".todayNav");
-  const list = diaryList.slice(pageNo * 10, (pageNo + 1) * 10);
+  const list = diaryList.slice(pageNo * 10, (Number(pageNo) + 1) * 10);
   let contents = "";
 
   for (const diary of list) {
