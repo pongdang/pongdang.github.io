@@ -22,6 +22,7 @@ const diaryList = [
   { name: "21.10.11, 같은 숫자는 싫어", url: "/pongtoday/10/11" },
   { name: "21.10.12, K번째 수", url: "/pongtoday/10/12" },
   { name: "21.10.15, 두 정수 사이의 합", url: "/pongtoday/10/15" },
+  { name: "21.10.17, 문자열 다루기 기본", url: "/pongtoday/10/17" },
 ];
 
 function markPageNo(pageNo) {
