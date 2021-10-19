@@ -24,6 +24,7 @@ const diaryList = [
   { name: "21.10.15, 두 정수 사이의 합", url: "/pongtoday/10/15" },
   { name: "21.10.17, 문자열 다루기 기본", url: "/pongtoday/10/17" },
   { name: "21.10.18, 나머지가 1이 되는 수 찾기", url: "/pongtoday/10/18" },
+  { name: "21.10.19, 체육복", url: "/pongtoday/10/19" },
 ];
 
 function markPageNo(pageNo) {
