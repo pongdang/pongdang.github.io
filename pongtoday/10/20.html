@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/todaystyle.css" />
+    <title>두 개 뽑아서 더하기</title>
+    <style>
+        span {
+            font-size: 2.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fixedBar">
+        <a href="https://blog.pongdang.today/">
+            PONGDANG's BLOG
+        </a>
+    </div>
+
+    <header class="wrapper">
+        <h2 class="diaryTitle">
+            2021/10/20/수요일
+        </h2>
+    </header>
+
+    <section class="wrapper">
+        <div class="diaryContents">
+            <h2>두 개 뽑아서 더하기</h2>
+            <img src="/pongtoday/img/1020.png" alt="두 개 뽑아서 더하기 문제">
+            <h3>🌟내가 푼 방법🌟</h3>
+            <img src="/pongtoday/img/1020-a.png" alt="두 개 뽑아서 더하기 답 ">
+            <p>
+                sort() 메서드를 이용하여 numbers라는 배열을 오름차순으로 정렬한 뒤 이중 for문으로 각 원소끼리 더하게 만들었다.
+                i는 0번째 요소부터 더하지만, j는 굳이 0번째부터 더할 필요가 없다. numbers.length <span>C</span> 2가 두 수를 더하는 최대 경우의 수이기 때문에
+                i번째 요소의 다음 번째 요소부터 더하기 시작하면 쓸데없이 괜히 많이 더하게 만드는 경우를 줄일 수 있다.
+                더한 값을 answer 배열에 push() 메서드를 이용하여 삽입하고 Set()으로 중복된 요소들을 삭제한 뒤 또 sort()로 오름차순으로 정렬했다.
+            </p>
+            <p class="emphasis">
+                Set()
+            </p>
+            <p class="explanation">
+                Set은 새로운 data object이다. Set은 유일한 값만 저장할 수 있도록 해서 배열을 안에 넣으면 중복되는 값은 없어진다.
+            </p>
+        </div>
+    </section>
+</body>
+
+
+</html
