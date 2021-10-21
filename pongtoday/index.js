@@ -26,6 +26,7 @@ const diaryList = [
   { name: "21.10.18, 나머지가 1이 되는 수 찾기", url: "/pongtoday/10/18" },
   { name: "21.10.19, 체육복", url: "/pongtoday/10/19" },
   { name: "21.10.20, 두 개 뽑아서 더하기", url: "/pongtoday/10/20" },
+  { name: "21.10.21, 모의고사", url: "/pongtoday/10/21" },
 ];
 
 function markPageNo(pageNo) {
