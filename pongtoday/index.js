@@ -27,6 +27,7 @@ const diaryList = [
   { name: "21.10.19, 체육복", url: "/pongtoday/10/19" },
   { name: "21.10.20, 두 개 뽑아서 더하기", url: "/pongtoday/10/20" },
   { name: "21.10.21, 모의고사", url: "/pongtoday/10/21" },
+  { name: "21.10.23, 소수 만들기", url: "/pongtoday/10/23" },
 ].reverse();
 
 function markPageNo(pageNo) {
