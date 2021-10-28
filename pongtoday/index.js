@@ -32,6 +32,7 @@ const diaryList = [
   { name: "21.10.25, 약수의 개수와 덧셈", url: "/pongtoday/10/25" },
   { name: "21.10.26, 시저암호", url: "/pongtoday/10/26" },
   { name: "21.10.27, 2016년", url: "/pongtoday/10/27" },
+  { name: "21.10.28, 예산", url: "/pongtoday/10/28" },
 ].reverse();
 
 function markPageNo(pageNo) {
