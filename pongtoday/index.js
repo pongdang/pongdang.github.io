@@ -33,6 +33,7 @@ const diaryList = [
   { name: "21.10.26, 시저암호", url: "/pongtoday/10/26" },
   { name: "21.10.27, 2016년", url: "/pongtoday/10/27" },
   { name: "21.10.28, 예산", url: "/pongtoday/10/28" },
+  { name: "21.10.29, 최소직사각형", url: "/pongtoday/10/29" },
 ].reverse();
 
 function markPageNo(pageNo) {
