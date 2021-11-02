@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/todaystyle.css" />
+    <title>JadenCase 문자열 만들기</title>
+
+</head>
+
+<body>
+    <div class="fixedBar">
+        <a href="https://blog.pongdang.today/">
+            PONGDANG's BLOG
+        </a>
+    </div>
+
+    <header class="wrapper">
+        <h2 class="diaryTitle">
+            2021/11/02/화요일
+        </h2>
+    </header>
+
+    <section class="wrapper">
+        <div class="diaryContents">
+            <h2>JadenCase 문자열 만들기</h2>
+            <img src="/pongtoday/img/1102.png" alt="JadenCase 문자열 만들기 문제">
+            <h3>🌟내가 푼 방법🌟 (1)</h3>
+            <img src="/pongtoday/img/1102-a.png" alt="JadenCase 문자열 만들기 답 1 (실패)">
+            <p>
+                문자열 s를 공백 기준으로 잘랐다. words를 for문으로 돌며 맨 첫글자인 [i][0]번째를 대문자로 바꾸고, 
+                첫번째 글자를 제외한 뒤의 글자들을 소문자로 바꾸어 answer 배열에 넣도록 했다. 그리고 join(" ")을 사용하여 
+                문자열로 바꾸어 반환했다.
+            </p>
+            <img src="/pongtoday/img/1102-r.png" alt="JadenCase 문자열 만들기 답 1 실패 화면">
+            <p>
+                그런데 런타임 에러가 났다. 소문자로 바꾸는 과정이 오래 걸리는 건가, 이것저것 다 바꾸고 변수를 너무 많이 사용했나 싶어 줄이고 줄여봤는데
+                그래도 똑같이 런타임 에러가 나서 진짜 죽고 싶었다. 
+            </p>
+            <h3>🌟내가 푼 방법🌟 (2)</h3>
+            <img src="/pongtoday/img/1102-a2.png" alt="JadenCase 문자열 만들기 답 2">
+            <p>
+                아무래도 2차원 배열을 사용해서 그런가 싶어서, 배열 요소의 첫번째 글자를 찾는 메서드를 사용해보기로 했다. 
+                2차원 배열 대신 charAt()메서드를 써서 실행해보았다.
+            </p>
+            <img src="/pongtoday/img/1102-r2.png" alt="JadenCase 문자열 만들기 답 2 성공 화면">
+            <p>
+                너무 바로 잘 되길래 진짜 어이가 없었다. 겨우 저거 하나 때문에 내가 2시간동안 뭐한 건가 싶기도 하고 진ㅉㅏ 화나는데 그래도 풀어서 신난다.
+                내일도... 풀어야 하는데... 무섭다.... 벌써....
+            </p>
+        </div>
+    </section>
+</body>
+
+
+</html
