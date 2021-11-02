@@ -36,6 +36,7 @@ const diaryList = [
   { name: "21.10.29, 최소직사각형", url: "/pongtoday/10/29" },
   { name: "21.10.30, 최대공약수와 최소공배수", url: "/pongtoday/10/30" },
   { name: "21.10.31, 폰켓몬", url: "/pongtoday/10/31" },
+  { name: "21.11.01, N개의 최소공배수", url: "/pongtoday/11/01" },
 ].reverse();
 
 function markPageNo(pageNo) {
