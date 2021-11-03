@@ -38,7 +38,7 @@ const diaryList = [
   { name: "21.10.31, 폰켓몬", url: "/pongtoday/10/31" },
   { name: "21.11.01, N개의 최소공배수", url: "/pongtoday/11/01" },
   { name: "21.11.02, JadenCase 문자열 만들기", url: "/pongtoday/11/02" },
-
+  { name: "21.11.03, 행렬의 곱셈", url: "/pongtoday/11/03" },
 ].reverse();
 
 function markPageNo(pageNo) {
