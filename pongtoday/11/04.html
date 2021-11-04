@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/todaystyle.css" />
+    <title>피보나치 수</title>
+
+</head>
+
+<body>
+    <div class="fixedBar">
+        <a href="https://blog.pongdang.today/">
+            PONGDANG's BLOG
+        </a>
+    </div>
+
+    <header class="wrapper">
+        <h2 class="diaryTitle">
+            2021/11/04/목요일
+        </h2>
+    </header>
+
+    <section class="wrapper">
+        <div class="diaryContents">
+            <h2>피보나치 수</h2>
+            <img src="/pongtoday/img/1104.png" alt="피보나치 수 문제">
+            <h3>🌟내가 푼 방법🌟</h3>
+            <img src="/pongtoday/img/1104-a.png" alt="피보나치 수 답">
+            <p>
+                0과 1이 요소인 num이라는 배열 하나를 만들었다. num[0] + num[1]는 F(0) + F(1) 이러한 꼴이기 때문에
+                num[2]가 num[0] + num[1]의 값이라는 식을 만들었다. 일반화하면 num[i + 2] = num[i] + num[i + 1] 이다. 
+                그렇게 더한 값을 num 배열 안에 넣었다. <br>
+                그리고 바로 num[n] % 1234567 을 반환하면 되는데, num 배열이 담지 못할 정도로 큰 숫자가 나타날 수 있는 경우도 생각해봐야 한다.<br>
+                이때 모듈러 연산 (Modular arithmetic)을 사용하면, 값이 엄청나게 커져 배열 안에 담지 못하는 경우를 걱정하지 않아도 된다.<br> 
+                a를 n으로 나눈 뒤 나오는 나머지 값(c)과 b를 n으로 나눈 뒤 나오는 나머지 값(d)을 더하고 n으로 나눈 값 (c + d) % n 과 
+                (a + b) % n 의 값이 같다는 특징을 가지고 있다. 
+                이러한 연산을 여기에도 적용하여 1234567을 나머지 연산할 수 있다. 
+            </p>
+        </div>
+    </section>
+</body>
+
+
+</html
