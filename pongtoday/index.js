@@ -40,6 +40,7 @@ const diaryList = [
   { name: "21.11.02, JadenCase 문자열 만들기", url: "/pongtoday/11/02" },
   { name: "21.11.03, 행렬의 곱셈", url: "/pongtoday/11/03" },
   { name: "21.11.04, 피보나치 수", url: "/pongtoday/11/04" },
+  { name: "21.11.05, 최솟값 만들기", url: "/pongtoday/11/05" },
 ].reverse();
 
 function markPageNo(pageNo) {
