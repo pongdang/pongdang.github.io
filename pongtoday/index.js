@@ -42,6 +42,7 @@ const diaryList = [
   { name: "21.11.04, 피보나치 수", url: "/pongtoday/11/04" },
   { name: "21.11.05, 최솟값 만들기", url: "/pongtoday/11/05" },
   { name: "21.11.08, 최댓값과 최솟값", url: "/pongtoday/11/08" },
+  { name: "21.11.10, 다음 큰 숫자", url: "/pongtoday/11/10" },
 ].reverse();
 
 function markPageNo(pageNo) {
