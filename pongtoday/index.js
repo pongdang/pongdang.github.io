@@ -44,6 +44,7 @@ const diaryList = [
   { name: "21.11.08, 최댓값과 최솟값", url: "/pongtoday/11/08" },
   { name: "21.11.10, 다음 큰 숫자", url: "/pongtoday/11/10" },
   { name: "21.11.11, 올바른 괄호", url: "/pongtoday/11/11" },
+  { name: "21.11.15, 가장 큰 수", url: "/pongtoday/11/15" },
 ].reverse();
 
 function markPageNo(pageNo) {
