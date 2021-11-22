@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/todaystyle.css" />
+    <title>n^2 배열 자르기</title>
+  </head>
+
+  <body>
+    <div class="fixedBar">
+      <a href="https://blog.pongdang.today/"> PONGDANG's BLOG </a>
+    </div>
+
+    <header class="wrapper">
+      <h2 class="diaryTitle">2021/11/22/월요일</h2>
+    </header>
+
+    <section class="wrapper">
+      <div class="diaryContents">
+        <h2>n^2 배열 자르기</h2>
+        <img src="/pongtoday/img/1122.png" alt="n^2 배열 자르기 문제" />
+        <h3>🌟내가 푼 방법🌟</h3>
+        <img src="/pongtoday/img/1122-a.png" alt="n^2 배열 자르기 답" />
+        <p>
+          n이 3일 때<br />
+          (1,1)(1,2)(1,3)<br />
+          (2,1)(2,2)(2,3)<br />
+          (3,1)(3,2)(3,3)<br />
+          (x,y) 꼴이라고 할 때 x와 y 중 더 큰 값이 자리를 차지하게 된다는 규칙성이 있다는 것을 알게 되었다. 그래서
+          시작점과 left와 right의 길이를 이용하여 값을 구하기로 했다. 시작점은 (start + 1, startK + 1) 이고, for문을 두
+          번 돌면서 좌표를 계속 바뀌게 하여 큰 값을 고르고 answer에 push하고 count는 계속 감소시켜 count가 0이 되면
+          answer를 반환하도록 했다.
+        </p>
+        <p>6일동안 계속 고민하던 문제였다. 해결해서 너무너무 다행이다. 너무 행복해</p>
+      </div>
+    </section>
+  </body>
+</html>
