@@ -1,63 +1,56 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/todaystyle.css" />
     <title>두 개 뽑아서 더하기</title>
     <style>
-        span {
-            font-size: 2.5rem;
-        }
+      span {
+        font-size: 2.5rem;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="fixedBar">
-        <a href="https://blog.pongdang.today/">
-            PONGDANG's BLOG
-        </a>
+      <a href="https://blog.pongdang.today/"> PONGDANG's BLOG </a>
     </div>
 
     <header class="wrapper">
-        <h2 class="diaryTitle">
-            2021/10/20/수요일
-        </h2>
+      <h2 class="diaryTitle">2021/10/20/수요일</h2>
     </header>
 
     <section class="wrapper">
-        <div class="diaryContents">
-            <h2>두 개 뽑아서 더하기</h2>
-            <img src="/pongtoday/img/1020.png" alt="두 개 뽑아서 더하기 문제">
-            <h3>🌟내가 푼 방법🌟 (1)</h3>
-            <img src="/pongtoday/img/1020-a.png" alt="두 개 뽑아서 더하기 답 ">
-            <p>
-                sort() 메서드를 이용하여 numbers라는 배열을 오름차순으로 정렬한 뒤 이중 for문으로 각 원소끼리 더하게 만들었다.
-                i는 0번째 요소부터 더하지만, j는 굳이 0번째부터 더할 필요가 없다. numbers.length <span>C</span> 2가 두 수를 더하는 최대 경우의 수이기 때문에
-                i번째 요소의 다음 번째 요소부터 더하기 시작하면 쓸데없이 괜히 많이 더하게 만드는 경우를 줄일 수 있다.
-                더한 값을 answer 배열에 push() 메서드를 이용하여 삽입하고 Set()으로 중복된 요소들을 삭제한 뒤 또 sort()로 오름차순으로 정렬했다.
-            </p>
+      <div class="diaryContents">
+        <h2>두 개 뽑아서 더하기</h2>
+        <img src="/pongtoday/img/1020.png" alt="두 개 뽑아서 더하기 문제" />
+        <h3>🌟내가 푼 방법🌟 (1)</h3>
+        <img src="/pongtoday/img/1020-a.png" alt="두 개 뽑아서 더하기 답 " />
+        <p>
+          sort() 메서드를 이용하여 numbers라는 배열을 오름차순으로 정렬한 뒤 이중 for문으로 각 원소끼리 더하게 만들었다.
+          i는 0번째 요소부터 더하지만, j는 굳이 0번째부터 더할 필요가 없다. numbers.length <span>C</span> 2가 두 수를
+          더하는 최대 경우의 수이기 때문에 i번째 요소의 다음 번째 요소부터 더하기 시작하면 쓸데없이 괜히 많이 더하게
+          만드는 경우를 줄일 수 있다. 더한 값을 answer 배열에 push() 메서드를 이용하여 삽입하고 Set()으로 중복된
+          요소들을 삭제한 뒤 또 sort()로 오름차순으로 정렬했다.
+        </p>
 
-            <h3>🌟내가 푼 방법🌟 (2)</h3>
-            <img src="/pongtoday/img/1020-a2.png" alt="두 개 뽑아서 더하기 답 ">
-            <p>
-                처음부터 answer라는 이름의 new Set 객체를 만들었다. numbers[i] + numbers[j]를 더한 새로운 값만 new Set 객체 안에 집어 넣을 수 있다.
-                마지막에는 sort() 메서드로 오름차순으로 정렬하여 바로 배열로 반환했다.
-                처음 방법은 배열 => 객체 => 배열 순서대로 흘러가서 되게 왔다갔다를 많이 했는데 이번 방법은 처음부터 객체로 시작하여 마지막에만 배열로 바꾸어
-                객체 => 배열로 보기에 훨씬 간단해졌다.
-            </p>
+        <h3>🌟내가 푼 방법🌟 (2)</h3>
+        <img src="/pongtoday/img/1020-a2.png" alt="두 개 뽑아서 더하기 답 " />
+        <p>
+          처음부터 answer라는 이름의 new Set 객체를 만들었다. numbers[i] + numbers[j]를 더한 새로운 값만 new Set 객체
+          안에 집어 넣을 수 있다. 마지막에는 sort() 메서드로 오름차순으로 정렬하여 바로 배열로 반환했다. 처음 방법은
+          배열 => 객체 => 배열 순서대로 흘러가서 되게 왔다갔다를 많이 했는데 이번 방법은 처음부터 객체로 시작하여
+          마지막에만 배열로 바꾸어 객체 => 배열로 보기에 훨씬 간단해졌다.
+        </p>
 
-            <p class="emphasis">
-                Set()
-            </p>
-            <p class="explanation">
-                Set은 새로운 data object이다. Set은 유일한 값만 저장할 수 있도록 해서 배열을 안에 넣으면 중복되는 값은 없어진다.
-            </p>
-        </div>
+        <p class="emphasis">Set()</p>
+        <p class="explanation">
+          Set은 새로운 data object이다. Set은 유일한 값만 저장할 수 있도록 해서 배열을 안에 넣으면 중복되는 값은
+          없어진다.
+        </p>
+      </div>
     </section>
-</body>
-
-
-</html
+  </body>
+</html>

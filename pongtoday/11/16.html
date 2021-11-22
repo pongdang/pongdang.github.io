@@ -1,53 +1,47 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/todaystyle.css" />
     <title>방문 길이</title>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="fixedBar">
-        <a href="https://blog.pongdang.today/">
-            PONGDANG's BLOG
-        </a>
+      <a href="https://blog.pongdang.today/"> PONGDANG's BLOG </a>
     </div>
 
     <header class="wrapper">
-        <h2 class="diaryTitle">
-            2021/11/16/화요일
-        </h2>
+      <h2 class="diaryTitle">2021/11/16/화요일</h2>
     </header>
 
     <section class="wrapper">
-        <div class="diaryContents">
-            <h2>방문 길이</h2>
-            <img src="/pongtoday/img/1116.png" alt="방문 길이 문제">
-            <h3>🌟내가 푼 방법🌟</h3>
-            <img src="/pongtoday/img/1116-a.png" alt="방문 길이 답 (실패)">
-            <p>
-                U, D, R, L의 경우에 맞게 x와 y의 값이 증가, 감소하게 한 뒤 왔다갔다한 경우를 빼기 위해서 중복된 값을 빼주고, x와 y의 값이 -5에서 5의 범위를 넘지 못하도록 했다. 
-            </p>
-            <img src="/pongtoday/img/1116-r.png" alt="방문 길이 실행화면 (실패)">
-            <p>
-                내가 이렇게 열심히 했는데 테스트 8 이후는 다 실패했다. 내 5시간 돌려줘라.
-            </p>
-            <h3>🌟내가 푼 방법 (2)🌟</h3>
-            <img src="/pongtoday/img/1116-a2.png" alt="방문 길이 답 (성공)">
-            <p>
-                드디어 왜 안 되는지 알게 되었다. 전 코드에서는 UDU와 같이 연속되게 왔다갔다하는 것만 세고 있었다. 그래서 UUUUUUUUDDDDDDDDDD와 같은 경우에서는 count가 덜 되어 원하는 결과가 나오지 못했던 것이다... 그래서 이번에는 이중 for문을 사용하여 교차로 같은 값을 다 구했다. 그리고 answer.length에서 count를 뺀 값을 리턴했다. 
-            </p>
-            <img src="/pongtoday/img/1116-r2.png" alt="방문 길이 실행화면 (성공))">
-            <p>
-                야호 다 통과햇다. 이거는 11점 나왔다. 정말 오랜만인 높은 점수... 이틀동안 머리 아프긴 했지만, 해결해서 기분은 좋다!
-            </p>
-        </div>
+      <div class="diaryContents">
+        <h2>방문 길이</h2>
+        <img src="/pongtoday/img/1116.png" alt="방문 길이 문제" />
+        <h3>🌟내가 푼 방법🌟</h3>
+        <img src="/pongtoday/img/1116-a.png" alt="방문 길이 답 (실패)" />
+        <p>
+          U, D, R, L의 경우에 맞게 x와 y의 값이 증가, 감소하게 한 뒤 왔다갔다한 경우를 빼기 위해서 중복된 값을 빼주고,
+          x와 y의 값이 -5에서 5의 범위를 넘지 못하도록 했다.
+        </p>
+        <img src="/pongtoday/img/1116-r.png" alt="방문 길이 실행화면 (실패)" />
+        <p>내가 이렇게 열심히 했는데 테스트 8 이후는 다 실패했다. 내 5시간 돌려줘라.</p>
+        <h3>🌟내가 푼 방법 (2)🌟</h3>
+        <img src="/pongtoday/img/1116-a2.png" alt="방문 길이 답 (성공)" />
+        <p>
+          드디어 왜 안 되는지 알게 되었다. 전 코드에서는 UDU와 같이 연속되게 왔다갔다하는 것만 세고 있었다. 그래서
+          UUUUUUUUDDDDDDDDDD와 같은 경우에서는 count가 덜 되어 원하는 결과가 나오지 못했던 것이다... 그래서 이번에는
+          이중 for문을 사용하여 교차로 같은 값을 다 구했다. 그리고 answer.length에서 count를 뺀 값을 리턴했다.
+        </p>
+        <img src="/pongtoday/img/1116-r2.png" alt="방문 길이 실행화면 (성공))" />
+        <p>
+          야호 다 통과햇다. 이거는 11점 나왔다. 정말 오랜만인 높은 점수... 이틀동안 머리 아프긴 했지만, 해결해서 기분은
+          좋다!
+        </p>
+      </div>
     </section>
-</body>
-
-
-</html
+  </body>
+</html>
