@@ -46,6 +46,7 @@ const diaryList = [
   { name: "21.11.11, 올바른 괄호", url: "/pongtoday/11/11" },
   { name: "21.11.15, 가장 큰 수", url: "/pongtoday/11/15" },
   { name: "21.11.16, 방문 길이", url: "/pongtoday/11/16" },
+  { name: "21.11.22, n^2 배열 자르기", url: "/pongtoday/11/22" },
 ].reverse();
 
 function markPageNo(pageNo) {
