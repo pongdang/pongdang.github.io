@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/todaystyle.css" />
+    <title>이진 변환 반복하기</title>
+  </head>
+
+  <body>
+    <div class="fixedBar">
+      <a href="https://blog.pongdang.today/"> PONGDANG's BLOG </a>
+    </div>
+
+    <header class="wrapper">
+      <h2 class="diaryTitle">2021/11/29/월요일</h2>
+    </header>
+
+    <section class="wrapper">
+      <div class="diaryContents">
+        <h2>이진 변환 반복하기</h2>
+        <img src="/pongtoday/img/1129.png" alt="이진 변환 반복하기 문제" />
+        <h3>🌟내가 푼 방법🌟</h3>
+        <img src="/pongtoday/img/1129-a.png" alt="이진 변환 반복하기 답" />
+        <p>
+          문자열 s를 split("")한 뒤 s가 1을 몇 개 가지고 있고, 0을 몇 개 가지고 있는 지 구했다. 1을 몇 개 가지고 있는 지
+          알고 난 뒤, 그 수를 이진수로 변환한 문자열 arr을 만들었다. (엥 생각해보니까 변수명을 잘못 지은 것 같다.)
+          <br />
+          while문을 사용하여 arr의 길이가 1이상일 때 안에 있는 식을 반복하게 만들었다. zero는 arr이 가진 0의 개수,
+          execution은 실행 횟수이다. while문을 실행할 때마다 zero의 개수를 더해주고, arr을 새로운 arr로 덮어씌우고,
+          execution를 증가시켰다. <br />
+          그렇게 구한 것들은 바로 [execution, zero] 리턴하여 답을 구했다.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
