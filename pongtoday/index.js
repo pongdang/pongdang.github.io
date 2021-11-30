@@ -47,7 +47,8 @@ const diaryList = [
   { name: "21.11.15, 가장 큰 수", url: "/pongtoday/11/15" },
   { name: "21.11.16, 방문 길이", url: "/pongtoday/11/16" },
   { name: "21.11.22, n^2 배열 자르기", url: "/pongtoday/11/22" },
-  { name: "21.11.22, 이진 변환 반복하기", url: "/pongtoday/11/29" },
+  { name: "21.11.29, 이진 변환 반복하기", url: "/pongtoday/11/29" },
+  { name: "21.11.30, 점프와 순간 이동", url: "/pongtoday/11/30" },
 ].reverse();
 
 function markPageNo(pageNo) {
