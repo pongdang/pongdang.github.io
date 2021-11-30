@@ -82,7 +82,7 @@ p {
 /* contents */
 
 .diaryTitle {
-  margin: 100px 0;
+  margin: 100px 0 30px;
   color: #660099;
   display: inline-block;
   position: relative;
