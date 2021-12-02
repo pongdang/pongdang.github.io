@@ -1,0 +1,287 @@
+@charset 'utf-8';
+
+html {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+}
+
+body {
+  overflow-x: hidden;
+  color: rgb(29, 29, 31);
+  letter-spacing: -0.05em;
+  background-color: white;
+}
+
+p {
+  line-height: 1.6;
+}
+
+a {
+  color: rgb(29, 29, 31);
+  text-decoration: none;
+}
+
+/* style */
+
+/* .global-nav-links, */
+.local-nav-links {
+  height: 100%;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.local-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 52px;
+  border-bottom: 1px solid #ddd;
+  padding: 0 1rem;
+  z-index: 11;
+}
+
+.local-nav-sticky .local-nav {
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: saturate(180%) blur(15px);
+}
+
+.local-nav-links a {
+  font-size: 0.8rem;
+  color: palevioletred;
+}
+
+.local-nav-links .product-name {
+  margin-right: auto;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.local-nav-links a:not(.product-name) {
+  margin-left: 2em;
+}
+
+.scroll-section {
+  padding-top: 50vh;
+  /* border: 3px solid blue; */
+}
+
+#scroll-section-0 h1 {
+  position: relative;
+  z-index: 5;
+  font-size: 4rem;
+  text-align: center;
+  color: whitesmoke;
+}
+
+#scroll-section-0 p {
+  color: whitesmoke;
+}
+
+.main-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 35vh;
+  height: 3em;
+  font-size: 2.5rem;
+  /* background-color: antiquewhite; */
+  margin: 5px 0;
+  opacity: 0;
+}
+
+.main-message p {
+  line-height: 1.2;
+  font-weight: bold;
+  text-align: center;
+}
+
+.main-message small {
+  display: block;
+  margin-bottom: 0.5em;
+  font-size: 1.2rem;
+  color: rgb(0, 139, 157);
+}
+
+.description {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  color: #888;
+  padding: 0 1rem;
+}
+
+.description strong {
+  float: left;
+  margin-right: 0.2em;
+  font-size: 3rem;
+  color: palevioletred;
+}
+
+#scroll-section-2 p {
+  color: powderblue;
+}
+
+#scroll-section-2 .main-message {
+  font-size: 3rem;
+}
+
+#scroll-section-2 .b {
+  top: 10%;
+  left: 40%;
+}
+
+#scroll-section-2 .b {
+  top: 15%;
+  left: 45%;
+}
+
+.desc-message {
+  font-weight: bold;
+  font-size: 2rem;
+  width: 50%;
+  opacity: 0;
+}
+
+.pin {
+  width: 2px;
+  height: 100px;
+  background-color: powderblue;
+}
+
+.sub-message {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 2rem;
+  color: #888;
+  padding: 0 1rem;
+}
+
+.sub-message strong {
+  color: rgb(29, 29, 31);
+}
+
+.shij-img {
+  margin: 10px 0;
+}
+
+.canvas-caption {
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #888;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7rem;
+  color: white;
+  background-color: palevioletred;
+}
+
+/* 움직이는 친구들 */
+
+.sticky-part {
+  display: none;
+  position: fixed;
+  /* top: 0; */
+  left: 0;
+  width: 100%;
+}
+
+#show-scene-0 #scroll-section-0 .sticky-part,
+#show-scene-1 #scroll-section-1 .sticky-part,
+#show-scene-2 #scroll-section-2 .sticky-part,
+#show-scene-3 #scroll-section-3 .sticky-part {
+  display: block;
+}
+
+.canvas-0 {
+  top: 0;
+  background-color: rgb(28, 28, 28);
+  height: 100%;
+}
+
+.canvas-0 canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* height: 100vh; */
+}
+
+.canvas-1 {
+  top: 0;
+  height: 100%;
+  /* background-color: antiquewhite; */
+}
+
+.canvas-1 canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+#scroll-section-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-blend-canvas {
+  background-color: blue;
+}
+
+/* 미디어 쿼리 */
+
+@media (min-width: 1024px) {
+  #scroll-section-0 h1 {
+    font-size: 9vw;
+  }
+
+  .main-message {
+    font-size: 4vw;
+  }
+
+  .description {
+    font-size: 2rem;
+  }
+
+  .description strong {
+    font-size: 6rem;
+  }
+
+  #scroll-section-2 .main-message {
+    font-size: 6vw;
+  }
+
+  #scroll-section-2 .b {
+    top: 20%;
+    left: 53%;
+  }
+
+  #scroll-section-2 .b {
+    left: 55%;
+  }
+  .main-message small {
+    font-size: 1.5vw;
+  }
+
+  .desc-message {
+    width: 20%;
+  }
+
+  .sub-message {
+    font-size: 4vw;
+  }
+
+  .canvas-caption {
+    font-size: 2rem;
+  }
+}
