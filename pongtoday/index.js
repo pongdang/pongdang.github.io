@@ -49,6 +49,7 @@ const diaryList = [
   { name: "21.11.22, n^2 배열 자르기", url: "/pongtoday/11/22" },
   { name: "21.11.29, 이진 변환 반복하기", url: "/pongtoday/11/29" },
   { name: "21.11.30, 점프와 순간 이동", url: "/pongtoday/11/30" },
+  { name: "21.12.06, 짝지어 제거하기", url: "/pongtoday/12/06" },
 ].reverse();
 
 function markPageNo(pageNo) {
