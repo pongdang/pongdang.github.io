@@ -1,65 +1,57 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/todaystyle.css" />
     <title>없는 숫자 더하기</title>
     <style>
-        .link {
-            background-color: rgb(254, 141, 178);
-            line-height: 4;
-        }
+      .link {
+        background-color: rgb(254, 141, 178);
+        line-height: 4;
+      }
 
-        .link:hover {
-            background-color: rgb(255, 205, 222)
-        }
+      .link:hover {
+        background-color: rgb(255, 205, 222);
+      }
 
-        .link:active {
-            color: gray;
-        }
+      .link:active {
+        color: gray;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="fixedBar">
-        <a href="https://blog.pongdang.today/">
-            PONGDANG's BLOG
-        </a>
+      <a href="https://blog.pongdang.today/"> PONGDANG's BLOG </a>
     </div>
 
     <header class="wrapper">
-        <h2 class="diaryTitle">
-            2021/09/26/일요일
-        </h2>
+      <h2 class="diaryTitle">2021/09/26/일요일</h2>
     </header>
 
     <section class="wrapper">
-        <div class="diaryContents">
-            <h2>없는 숫자 더하기</h2>
-            <img src="/pongtoday/img/0926.png" alt="없는 숫자 더하기 문제">
-            <h3>🌟내가 푼 방법🌟 (1)</h3>
-            <img src="/pongtoday/img/0926-a.png" alt="없는 숫자 더하기 답 1">
-            <p>
-                0부터 9까지의 숫자로 이루어진 배열의 요소 합은 최대 45이다.
-                배열 안에 있는 요소들을 다 더하여 최대 합을 빼면 굳이 배열 안에 어떤 숫자가 없는지까지 구하지 않아도 된다.
-                위 코드에는 answer = 0으로 정의되어 있지만, answer = 45로 정의하여 += 복합연산자가 아닌 -= 복합연사자를 사용해 배열의 요소를 45에서 빼도록 할 수도 있다.
-            </p>
-            <h3>🌟내가 푼 방법🌟 (2)</h3>
-            <img src="/pongtoday/img/0926-a2.png" alt="없는 숫자 더하기 답 2">
-            <p>
-                ES6 문법에 for of 라는 것이 있다길래 한 번 적용해 보았다. 이 문제는 딱히 인덱스별로 차이를 두지 않아도 되어서 쓸 수 있었다.
-                불필요한 변수, let i = 0 과 같은 것을 만들지 않아도 되어서 메모리의 이점이 있다.<br>
-                <a class="link"
-                    href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/for...of">
-                    MDN의 for...of 설명 보러가기
-                </a>
-            </p>
-        </div>
+      <div class="diaryContents">
+        <h2>없는 숫자 더하기</h2>
+        <img src="/pongtoday/img/21/0926.png" alt="없는 숫자 더하기 문제" />
+        <h3>🌟내가 푼 방법🌟 (1)</h3>
+        <img src="/pongtoday/img/21/0926-a.png" alt="없는 숫자 더하기 답 1" />
+        <p>
+          0부터 9까지의 숫자로 이루어진 배열의 요소 합은 최대 45이다. 배열 안에 있는 요소들을 다 더하여 최대 합을 빼면
+          굳이 배열 안에 어떤 숫자가 없는지까지 구하지 않아도 된다. 위 코드에는 answer = 0으로 정의되어 있지만, answer =
+          45로 정의하여 += 복합연산자가 아닌 -= 복합연사자를 사용해 배열의 요소를 45에서 빼도록 할 수도 있다.
+        </p>
+        <h3>🌟내가 푼 방법🌟 (2)</h3>
+        <img src="/pongtoday/img/21/0926-a2.png" alt="없는 숫자 더하기 답 2" />
+        <p>
+          ES6 문법에 for of 라는 것이 있다길래 한 번 적용해 보았다. 이 문제는 딱히 인덱스별로 차이를 두지 않아도 되어서
+          쓸 수 있었다. 불필요한 변수, let i = 0 과 같은 것을 만들지 않아도 되어서 메모리의 이점이 있다.<br />
+          <a class="link" href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/for...of">
+            MDN의 for...of 설명 보러가기
+          </a>
+        </p>
+      </div>
     </section>
-</body>
-
-
+  </body>
 </html>

@@ -20,20 +20,20 @@
     <section class="wrapper">
       <div class="diaryContents">
         <h2>점프와 순간 이동</h2>
-        <img src="/pongtoday/img/1130.png" alt="점프와 순간 이동 문제" />
+        <img src="/pongtoday/img/21/1130.png" alt="점프와 순간 이동 문제" />
         <h3>🌟내가 푼 방법 (1)🌟</h3>
-        <img src="/pongtoday/img/1130-a.png" alt="점프와 순간 이동 답 1 (실패)" />
+        <img src="/pongtoday/img/21/1130-a.png" alt="점프와 순간 이동 답 1 (실패)" />
         <p>n을 2로 계속해서 나누면서 나머지가 1이 나올 경우 count의 숫자를 올려주는 반복문을 만들었다.</p>
-        <img src="/pongtoday/img/1130-r.png" alt="점프와 순간 이동 테스트 실패" />
+        <img src="/pongtoday/img/21/1130-r.png" alt="점프와 순간 이동 테스트 실패" />
         <p>이렇게 푸는 건 맞는 것 같은데, 연산속도가 느려 시간초과로 문제를 해결하지 못했다.</p>
         <h3>🌟내가 푼 방법 (2)🌟</h3>
-        <img src="/pongtoday/img/1130-a2.png" alt="점프와 순간 이동 답 2 (성공)" />
+        <img src="/pongtoday/img/21/1130-a2.png" alt="점프와 순간 이동 답 2 (성공)" />
         <p>
           n을 2로 나누었을 때 0이 아니면 n을 2로 나눈 뒤 정수로 바꾸고 count를 증가시키도록 했다. 나머지가 1인 경우에는
           순간 이동이 아니라 점프로 이동한 것이기 때문이다. else의 경우에는 n이 짝수이기 때문에 순간이동을 한 것이니 n을
           2로 나눈 값을 n으로 정의해주었다.
         </p>
-        <img src="/pongtoday/img/1130-r2.png" alt="점프와 순간 이동 테스트 성공" />
+        <img src="/pongtoday/img/21/1130-r2.png" alt="점프와 순간 이동 테스트 성공" />
         <p>
           생각해봤는데, n % 2 === 1로 정의할 경우에 시간초과가 나는 듯 하다. for문만 쓰다가 while문을 쓰니 새로운
           느낌이다. switch 문을 썼어도 됐으려나?
