@@ -1,228 +1,177 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title> CSS font </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <title>CSS font</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Otomanopee+One&family=Ubuntu&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Otomanopee+One&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/studystyle.css" />
     <style>
-        img {
-            width: 100%;
-            object-fit: contain;
-        }
+      img {
+        width: 100%;
+        object-fit: contain;
+        text-align: center;
+        margin: 10px 0;
+      }
+      #font1 {
+        font-family: "Oswald", sans-serif;
+      }
 
-        .image {
-            text-align: center;
-        }
+      #font2 {
+        font-family: "Otomanopee One", sans-serif;
+      }
 
-        header {
-            text-align: center;
-        }
-
-        body {
-            padding-top: 40px;
-            line-height: 2;
-        }
-
-        article {
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        h2 {
-            color: rgb(255, 93, 120);
-        }
-
-        #font1 {
-            font-family: 'Oswald', sans-serif;
-        }
-
-        #font2 {
-            font-family: 'Otomanopee One', sans-serif;
-        }
-
-        #font3 {
-            font-family: 'Ubuntu', sans-serif;
-        }
-
-        .cursor {
-            cursor: pointer;
-        }
-
-        #me {
-            background-color: rgb(252, 243, 244);
-            color: black;
-            position: fixed;
-            left: 0px;
-            top: 0px;
-            width: 100%;
-            height: 30px;
-            padding: 10px;
-            font-weight: bold;
-        }
+      #font3 {
+        font-family: "Ubuntu", sans-serif;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <header>
-        <div id="me">P O N G D A N G ' s <a href="/">🚪</a> B L O G
-        </div>
-
-        <h1 style="color:palevioletred">
-            CSS의 font
-        </h1>
+  <body>
+    <div class="fixedBar">
+      <a href="https://blog.pongdang.today/"> PONGDANG's BLOG </a>
+    </div>
+    <header class="wrapper">
+      <h1 class="study-title">CSS의 font</h1>
     </header>
 
-    <article>
+    <section class="wrapper">
+      <div class="study-contents">
+        <h2 class="study-sub-title study-sub-title1">font-size</h2>
         <p>
-        <h2>
-            font-size
-        </h2>
-        font의 크기 단위에는 px, em, rem이 있다.<br>
-        px은 고정된 크기로, 사용자가 브라우저 환경을 아주 작게, 작게, 크게, 아주 크게 등으로 바꾸어도 font의 크기는 변하지 않는다.<br>
-        반면에 em과 rem은 사용자가 브라우저 환경을 바꾸면 설정에 따라서 폰트 크기가 달라진다.<br>
+          font의 크기 단위에는 px, em, rem이 있다. px은 고정된 크기로, 사용자가 브라우저 환경을 아주 작게, 작게, 크게,
+          아주 크게 등으로 바꾸어도 font의 크기는 변하지 않는다. 반면에 em과 rem은 사용자가 브라우저 환경을 바꾸면
+          설정에 따라서 폰트 크기가 달라진다.
         </p>
-        <p class="image">
-            <img src="/pongstudy/study-images/fontsize.png" alt="동일한 수치의 rem과 px" style=max-height:250px; width:100%;
-                height:100%;>
+
+        <img
+          src="/pongstudy/study-images/fontsize.png"
+          alt="동일한 수치의 rem과 px"
+          style="max-height: 250px"
+          width:100%;
+          height:100%;
+        />
+        <p>
+          위의 font-size는 24px이고, 아래의 font-size는 24rem이다. 브라우저 환경을 바꾸어 보면 둘의 차이를 확인할 수
+          있다.
+        </p>
+
+        <img
+          src="/pongstudy/study-images/fontbig.png"
+          alt="브라우저 환경 글꼴 크게 보기"
+          style="max-height: 40px"
+          width:100%;
+          height:100%;
+        />
+        <p>설정에 들어가 글꼴 크기를 아주 크게로 바꾸어 보았다.</p>
+
+        <img
+          src="/pongstudy/study-images/bigrem.png"
+          alt="브라우저 환경 글꼴 크게 보기"
+          style="max-height: 300px"
+          width:100%;
+          height:100%;
+        />
+        <p>rem의 크기는 브라우저 환경 설정에 맞추어 커졌지만, px의 크기는 변하지 않았다.</p>
+
+        <img
+          src="/pongstudy/study-images/fontsmall.png"
+          alt="브라우저 환경 글꼴 작게 보기"
+          style="max-height: 40px"
+          width:100%;
+          height:100%;
+        />
+        <p>설정에 들어가 글꼴 크기를 아주 작게로 바꾸어 보았다.</p>
+
+        <img
+          src="/pongstudy/study-images/smallrem.png"
+          alt="브라우저 환경 글꼴 작게 보기"
+          style="max-height: 230px"
+          width:100%;
+          height:100%;
+        />
+        <p>
+          rem의 크기는 브라우저 환경 설정에 맞추어 작아졌지만, px의 크기는 변하지 않았다. 어떤 상황에도 폰트의 크기가
+          변하지 않길 바란다면 px을 쓰면 되고, 사용자의 환경에 맞추어 변하길 바란다면 rem을 쓰면 된다. 그런데 CSS
+          철학(?)에 따르면 사용자의 권리를 존중해주기 위해 rem 사용을 권장한다고 한다. 사용자가 처해있는 상황에 맞게
+          폰트를 변경할 수 있는 것이 사소해보이지만 사용자의 권리를 존중하는 행위라고 할 수 있다.
+        </p>
+
+        <h2 class="study-sub-title">font-family와 wed font</h2>
+        <p>
+          이것을 통해 글꼴을 설정할 수 있다.
+          <strong>font-family: arial, verdana, "Helvetica Neue", sans-serif;</strong>
+          위처럼 원하는 폰트의 이름을 나열하면 된다. 만약 폰트 이름에 띄어쓰기가 쓰였다면 " " (따옴표)를 사용해야 한다.
+          나열한 순서대로 앞 폰트가 없다면 뒤에 있는 폰트를 사용하여 웹페이지에 적용된다. 그리고 폰트의 모양을 보면
+          장식이 있는 것과 장식이 없는 것이 있다. 있는 것은 <strong>Serif</strong>, 없는 것은
+          <strong>Sans-serif</strong> 라고 부른다. 영문 폰트를 쓸 경우에는 폰트의 모양도 명시해주어야 한다.
         </p>
 
         <p>
-            위의 font-size는 24px이고, 아래의 font-size는 24rem이다. <br>
-            브라우저 환경을 바꾸어 보면 둘의 차이를 확인할 수 있다.
+          font-family를 통해 웹페이지의 폰트를 원하는 폰트로 바꿀 수 있지만, 사용자가 그 폰트를 가지고 있지 않으면
+          글씨가 깨질 수 있다. 사용자에게 그 폰트를 다운받게 하면서 글씨가 깨지는 문제를 해결할 수도 있지만 쉬운 방법은
+          아니다. 한글 폰트의 용량은 영문 폰트의 비해서 굉장히 크다. 그래서 사용자에게 폰트를 다운받게 하려면 폰트의
+          용량만큼 만드는 사람이 비용을 써야 하고 사용자도 다운받는다는 행위 자체가 부담스러울 수 있다. 사용자에게 폰트
+          다운을 권유하는 방법 외에도 다른 방법이 있다.
         </p>
 
-        <p class="image">
-            <img src="/pongstudy/study-images/fontbig.png" alt="브라우저 환경 글꼴 크게 보기" style=max-height:40px; width:100%;
-                height:100%;>
-        </p>
-        <p>
-            설정에 들어가 글꼴 크기를 아주 크게로 바꾸어 보았다.
-        </p>
-        <p class="image">
-            <img src="/pongstudy/study-images/bigrem.png" alt="브라우저 환경 글꼴 크게 보기" style=max-height:300px; width:100%;
-                height:100%;>
-        </p>
-        <p>
-            rem의 크기는 브라우저 환경 설정에 맞추어 커졌지만, px의 크기는 변하지 않았다.
-        </p>
-        <p class="image">
-            <img src="/pongstudy/study-images/fontsmall.png" alt="브라우저 환경 글꼴 작게 보기" style=max-height:40px; width:100%;
-                height:100%;>
-        </p>
-        <p>
-            설정에 들어가 글꼴 크기를 아주 작게로 바꾸어 보았다.
-        </p>
-        <p class="image">
-            <img src="/pongstudy/study-images/smallrem.png" alt="브라우저 환경 글꼴 작게 보기" style=max-height:230px; width:100%;
-                height:100%;>
-        </p>
-        <p>
-            rem의 크기는 브라우저 환경 설정에 맞추어 작아졌지만, px의 크기는 변하지 않았다.<br>
-            어떤 상황에도 폰트의 크기가 변하지 않길 바란다면 px을 쓰면 되고, 사용자의 환경에 맞추어 변하길 바란다면 rem을 쓰면 된다. <br>
-            그런데 CSS 철학(?)에 따르면 사용자의 권리를 존중해주기 위해 rem 사용을 권장한다고 한다.<br>
-            사용자가 처해있는 상황에 맞게 폰트를 변경할 수 있는 것이 사소해보이지만 사용자의 권리를 존중하는 행위라고 할 수 있다.<br>
-        </p>
+        <p>구글 폰트에서 세 개의 폰트를 다운 받았다. 폰트의 이름은 Otomanopee One, Oswald, Ubuntu 이다.</p>
+        <img
+          src="/pongstudy/study-images/fontdown.png"
+          alt="구글 폰트 다운 화면"
+          style="max-height: 900px"
+          width:100%;
+          height:100%;
+        />
 
+        <p>link 라고 쓰여있는 부분과 css rules to specify families를 복사해서 그대로 붙여넣기하면 된다.</p>
+        <img
+          src="/pongstudy/study-images/fontcode.png"
+          alt="폰트 코드"
+          style="max-height: 250px"
+          width:100%;
+          height:100%;
+        />
+        <p id="font1">
+          🌟 첫 번 째 폰 트 실 행 화 면 🌟 <br />
+          #font1<br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit.
+          Volutpat odio facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donec adipiscing
+          tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit.
+          Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent. In hac habitasse platea
+          dictumst quisque sagittis purus. Pulvinar elementum integer enim neque volutpat ac.
+        </p>
+        <p id="font2">
+          🌟 두 번 째 폰 트 실 행 화 면 🌟 <br />
+          #font2<br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit.
+          Volutpat odio facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donec adipiscing
+          tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit.
+          Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent. In hac habitasse platea
+          dictumst quisque sagittis purus. Pulvinar elementum integer enim neque volutpat ac.
+        </p>
+        <p id="font3">
+          🌟 세 번 째 폰 트 실 행 화 면 🌟 <br />
+          #font3<br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit.
+          Volutpat odio facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donec adipiscing
+          tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit.
+          Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent. In hac habitasse platea
+          dictumst quisque sagittis purus. Pulvinar elementum integer enim neque volutpat ac.
+        </p>
+        <br />
         <p>
-        <h2>
-            font-family와 wed font
-        </h2>
-        이것을 통해 글꼴을 설정할 수 있다. <br>
-        <strong>font-family: arial, verdana, "Helvetica Neue", sans-serif;</strong><br>
-        위처럼 원하는 폰트의 이름을 나열하면 된다. 만약 폰트 이름에 띄어쓰기가 쓰였다면 " " (따옴표)를 사용해야 한다.<br>
-        나열한 순서대로 앞 폰트가 없다면 뒤에 있는 폰트를 사용하여 웹페이지에 적용된다. <br>
-        그리고 폰트의 모양을 보면 장식이 있는 것과 장식이 없는 것이 있다. <br>
-        있는 것은 <strong>Serif</strong>, 없는 것은 <strong>Sans-serif</strong> 라고 부른다.<br>
-        영문 폰트를 쓸 경우에는 폰트의 모양도 명시해주어야 한다.
+          웹 브라우저가 link라는 태그를 만나면 href에 해당되는 파일을 다운로드받는다. 다운받은 파일은 CSS 문법에 따라
+          해석, 동작한다. 다운받은 것중에 사용하고 싶은 폰트는 font-family를 통해 지정해서 사용할 수 있다.
         </p>
-        <p>
-            font-family를 통해 웹페이지의 폰트를 원하는 폰트로 바꿀 수 있지만, 사용자가 그 폰트를 가지고 있지 않으면 글씨가 깨질 수 있다. <br>
-            사용자에게 그 폰트를 다운받게 하면서 글씨가 깨지는 문제를 해결할 수도 있지만 쉬운 방법은 아니다.<br>
-            한글 폰트의 용량은 영문 폰트의 비해서 굉장히 크다. 그래서 사용자에게 폰트를 다운받게 하려면 폰트의 용량만큼
-            만드는 사람이 비용을 써야 하고 사용자도 다운받는다는 행위 자체가 부담스러울 수 있다.<br>
-            사용자에게 폰트 다운을 권유하는 방법 외에도 다른 방법이 있다.
-        </p>
-
-        <p>
-            구글 폰트에서 세 개의 폰트를 다운 받았다. 폰트의 이름은 Otomanopee One, Oswald, Ubuntu 이다. <br>
-        <p class="image">
-            <img src="/pongstudy/study-images/fontdown.png" alt="구글 폰트 다운 화면" style=max-height:900px; width:100%;
-                height:100%;>
-        </p>
-        </p>
-        <p>
-            link 라고 쓰여있는 부분과 css rules to specify families를 복사해서 그대로 붙여넣기하면 된다. <br>
-        <p class="image">
-            <img src="/pongstudy/study-images/fontcode.png" alt="폰트 코드" style=max-height:250px; width:100%;
-                height:100%;>
-        </p>
-        </p>
-        <p>
-        <div id="font1">
-            🌟 첫 번 째 폰 트 실 행 화 면 🌟 <br>
-            #font1<br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna
-            aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Volutpat
-            odio
-            facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget
-            mauris
-            pharetra et. Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit. Ornare arcu dui vivamus
-            arcu
-            felis. Egestas integer eget aliquet nibh praesent. In hac habitasse platea dictumst quisque sagittis purus.
-            Pulvinar
-            elementum integer enim neque volutpat ac.
-        </div>
-        </p>
-        <p>
-        <div id="font2">
-            🌟 두 번 째 폰 트 실 행 화 면 🌟 <br>
-            #font2<br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna
-            aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Volutpat
-            odio
-            facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget
-            mauris
-            pharetra et. Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit. Ornare arcu dui vivamus
-            arcu
-            felis. Egestas integer eget aliquet nibh praesent. In hac habitasse platea dictumst quisque sagittis purus.
-            Pulvinar
-            elementum integer enim neque volutpat ac.
-        </div>
-        </p>
-        <p>
-        <div id="font3">
-            🌟 세 번 째 폰 트 실 행 화 면 🌟 <br>
-            #font3<br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna
-            aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Volutpat
-            odio
-            facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget
-            mauris
-            pharetra et. Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit. Ornare arcu dui vivamus
-            arcu
-            felis. Egestas integer eget aliquet nibh praesent. In hac habitasse platea dictumst quisque sagittis purus.
-            Pulvinar
-            elementum integer enim neque volutpat ac.
-        </div>
-        </p>
-        <p>
-            웹 브라우저가 link라는 태그를 만나면 href에 해당되는 파일을 다운로드받는다. 다운받은 파일은 CSS 문법에 따라 해석, 동작한다. 다운받은 것중에
-            사용하고 싶은 폰트는 font-family를 통해 지정해서 사용할 수 있다.
-        </p>
-    </article>
-</body>
-
-<footer>
-
-</footer>
-
-
+      </div>
+    </section>
+  </body>
 </html>

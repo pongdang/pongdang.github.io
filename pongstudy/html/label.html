@@ -1,117 +1,95 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>HTML &lt;label&gt;</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/studystyle.css" />
+  </head>
 
-<head>
-    <title> HTML &lt;label&gt; </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        a:visited {
-            color: black;
-        }
+  <body>
+    <div class="fixedBar">
+      <a href="https://blog.pongdang.today/"> PONGDANG's BLOG </a>
+    </div>
 
-        a:link {
-            color: black;
-        }
-
-
-        a:hover {
-            color: palevioletred;
-        }
-
-        a:active {
-            color: peachpuff;
-        }
-
-        .cursor {
-            cursor: pointer;
-        }
-
-        body {
-            text-align: center;
-            line-height: 2;
-        }
-    </style>
-</head>
-
-<body>
-    <header>
-        <h1 style="color:palevioletred">
-            HTML &lt;label&gt; 태그
-        </h1>
+    <header class="wrapper">
+      <h1 class="study-title">HTML &lt;label&gt; 태그</h1>
     </header>
 
-    <article>
+    <section class="wrapper">
+      <div class="study-contents">
+        <h2 class="study-sub-title study-sub-title1">&lt;label&gt; 태그는 무엇일까?</h2>
         <p>
-        <h2>
-            &lt;label&gt; 태그는 무엇일까?
-        </h2>
-        &lt;label&gt; 태그는 간단하게 이름표라고 말할 수 있다. 여기에 for을 같이 입력하면 이름표의 주인도 정해줄 수 있다.<br>
-        <br>
-        &lt;html&gt; <br>
-        &lt;body&gt; <br>
-        &lt;form&gt; <br>
-        &lt;p&gt; <br>
+          &lt;label&gt; 태그는 간단하게 이름표라고 말할 수 있다. 여기에 for을 같이 입력하면 이름표의 주인도 정해줄 수
+          있다.
+        </p>
+
+        <pre class="training-section">
+            
+        &lt;html&gt;
+            &lt;body&gt;
+                &lt;form&gt;
+                    &lt;p&gt;
         <strong>
-            &lt;label for="id_txt"&gt; 아이디 : &lt;/label&gt;<br>
-            ** 이름표 생성 <br>
+                        &lt;label for="id_txt"&gt; 아이디 : &lt;/label&gt;
+                        -> 이름표 생성
         </strong>
         <strong>
-            &lt;input id="id_txt" type="text" name="id" value="아이디를 입력하세요"&gt; <br>
-            ** 누구의 이름표인지 정해주기 <br>
+                        &lt;input id="id_txt" type="text" name="id" value="아이디를 입력하세요"&gt;
+                        -> 누구의 이름표인지 정해주기
         </strong>
-        &lt;/p&gt; <br>
-        &lt;p&gt; <br>
-        &lt;label for="password" &gt;비밀번호 : &lt;/label&gt; <br>
-        &lt;input id="password" type="password" name="pwd" value="비밀번호를 입력하세요" &gt; <br>
-        &lt;/p&gt; <br>
-        &lt;p&gt; <br>
-        textarea : <br>
-        &lt;textarea rows="2"&gt; 아무 문자나 입력하세요 &lt;/textarea&gt; <br>
-        &lt;/p&gt; <br>
-        &lt;/form&gt; <br>
-        &lt;/body&gt; <br>
-        &lt;/html&gt; <br>
-        <br>
-        🌟실행화면🌟
+                    &lt;/p&gt;
+
+                    &lt;p&gt;
+                        &lt;label for="password" &gt;비밀번호 : &lt;/label&gt;
+                        &lt;input id="password" type="password" name="pwd" value="비밀번호를 입력하세요" &gt;
+                    &lt;/p&gt;
+
+                    &lt;p&gt;
+                        textarea :&lt;textarea rows="2"&gt; 아무 문자나 입력하세요 &lt;/textarea&gt;
+                    &lt;/p&gt;
+                &lt;/form&gt;
+            &lt;/body&gt; 
+        &lt;/html&gt;
+        </pre>
+
+        <h3 class="training-result">🌟실행화면🌟</h3>
         <form>
-            <p>
-                <label for="id_txt"> text : </label>
-                <input id="id_txt" type="text" name="id" value="아이디를 입력하세요">
-            </p>
-            <p>
-                <label for="password"> password : </label>
-                <input id="password" type="password" name="pwd" value="비밀번호를 입력하세요">
-            </p>
-            <p>
-                textarea :
-                <textarea rows="2"> 아무 문자나 입력하세요 </textarea>
-            </p>
+          <p>
+            <label for="id_txt"> text : </label>
+            <input id="id_txt" type="text" name="id" value="아이디를 입력하세요" />
+          </p>
+          <p>
+            <label for="password"> password : </label>
+            <input id="password" type="password" name="pwd" value="비밀번호를 입력하세요" />
+          </p>
+          <p>
+            textarea :
+            <textarea rows="2"> 아무 문자나 입력하세요 </textarea>
+          </p>
         </form>
-        <br>
-        label을 사용하지 않은 textarea는 그 칸을 눌러야만 커서가 이동되고, <br>
-        label을 사용한 아이디와 비밀번호는 칸 뿐만 아니라 그 칸에 해당되는 글자를 눌러도 커서가 이동되는 것을 알 수 있다. <br>
-        만약 각각의 id를 만들어주는 것이 귀찮다면 그 부분을 &lt;label&gt;로 감싸도 된다. <br>
-        <br>
-        체크박스에서 네모박스가 아닌 항목을 눌러도 선택이 되게끔 만들 때도 label이 쓰일 수 있다. <br>
-        🌟실행화면🌟
+        <br />
+        <p>
+          label을 사용하지 않은 textarea는 그 칸을 눌러야만 커서가 이동되고, label을 사용한 아이디와 비밀번호는 칸 뿐만
+          아니라 그 칸에 해당되는 글자를 눌러도 커서가 이동되는 것을 알 수 있다. 만약 각각의 id를 만들어주는 것이
+          귀찮다면 그 부분을 &lt;label&gt;로 감싸도 된다. 체크박스에서 네모박스가 아닌 항목을 눌러도 선택이 되게끔 만들
+          때도 label이 쓰일 수 있다.
+        </p>
+        <h3 class="training-result">🌟실행화면🌟</h3>
         <form>
-            <p>
-                <label for="color_blue"> 파란색 </label>
-                <input id="color_blue" type="checkbox" name="color" velue="blue">
-            </p>
-            <p>
-                <label for="color_pink"> 분홍색 </label>
-                <input id="color_pink" type="checkbox" name="color" velue="pink">
-            </p>
-            <p>
-                <label for="color_green"> 초록색 </label>
-                <input id="color_green" type="checkbox" name="color" velue="green">
-            </p>
+          <p>
+            <label for="color_blue"> 파란색 </label>
+            <input id="color_blue" type="checkbox" name="color" velue="blue" />
+          </p>
+          <p>
+            <label for="color_pink"> 분홍색 </label>
+            <input id="color_pink" type="checkbox" name="color" velue="pink" />
+          </p>
+          <p>
+            <label for="color_green"> 초록색 </label>
+            <input id="color_green" type="checkbox" name="color" velue="green" />
+          </p>
         </form>
-</body>
-
-<footer>
-
-</footer>
-
+      </div>
+    </section>
+  </body>
 </html>

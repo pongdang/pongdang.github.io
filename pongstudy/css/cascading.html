@@ -1,137 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/studystyle.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cascading, 케스케이딩</title>
+  </head>
+  <body>
+    <body>
+      <div class="fixedBar">
+        <a href="https://blog.pongdang.today/"> PONGDANG's BLOG </a>
+      </div>
+      <header class="wrapper">
+        <h1 class="study-title">cascading, 케스케이딩</h1>
+      </header>
 
-    <title> Cascading, 케스케이딩 </title>
-    <style>
-        h2,
-        p,
-        pre {
-            margin: 0;
-            padding: 0;
-        }
-
-        #me {
-            background-color: rgb(252, 243, 244);
-            color: black;
-            position: fixed;
-            left: 0px;
-            top: 0px;
-            width: 100%;
-            height: 30px;
-            padding: 10px;
-            font-weight: bold;
-        }
-
-        .cursor {
-            cursor: pointer;
-        }
-
-
-        header {
-            text-align: center;
-        }
-
-        body {
-            padding-top: 40px;
-            line-height: 2;
-        }
-
-        article {
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        h2 {
-            margin-bottom: 10px;
-            color: rgb(255, 93, 120);
-        }
-
-        ul,
-        ol {
-            display: table;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        img {
-            width: 100%;
-            object-fit: contain;
-        }
-
-        .image {
-            text-align: center;
-        }
-
-        .run_Screen {
-            border: 3px solid pink;
-        }
-
-        textarea.block-center {
-            display: block;
-            margin: 20px auto 10px auto;
-        }
-
-        textarea {
-            resize: none;
-            color: rgb(0, 2, 141);
-        }
-
-        pre {
-            font-family: unset;
-            margin: 0;
-            padding: 10px;
-            overflow: auto;
-            white-space: pre-wrap;
-        }
-    </style>
-
-<body>
-    <header>
-        <div id="me">P O N G D A N G ' s <a href="/">🚪</a> B L O G
+      <section class="wrapper">
+        <div class="study-contents">
+          <h2 class="study-sub-title study-sub-title1">우선순위</h2>
+          <p>
+            css를 하다가 보면 스타일끼리 충돌한다던가 스타일이 생각한대로 적용되지 않았던 경험이 있다. 그런 일이
+            발생하는 이유는 css 안에 우선순위라는 것이 존재하기 때문이다.<br />
+            6 순위 : * <br />5 순위 : tag 선택자 <br />4 순위 : class 선택자 <br />3 순위 : id 선택자 <br />2 순위 :
+            inline-style
+          </p>
+          <pre style="font-size: 12px">(ex)&lt;h1 style="color:blueviolet;"&gt;hello&lt;/h1&gt;</pre>
+          <p>1 순위 : !important <br /></p>
         </div>
-
-        <h1 style="color:palevioletred">
-            cascading, 케스케이딩
-        </h1>
-    </header>
-
-    <article>
-        <h2>
-            우선순위
-        </h2>
-        css를 하다가 보면 스타일끼리 충돌한다던가 스타일이 생각한대로 적용되지 않았던 경험이 있다.
-        그런 일이 발생하는 이유는 css 안에 우선순위라는 것이 존재하기 때문이다.
-        <textarea class="block-center" name="태그 선택자" cols="40" rows="20">
-
-6 순위 : *
-
-5 순위 : tag 선택자
-
-4 순위 : class 선택자
-
-3 순위 : id 선택자
-
-2 순위 : inline-style 
-(ex) 
-<h1 style="color:blueviolet;">hello</h1>
-
-1 순위 : !important
-        
-        </textarea>
-
-        아래로 내려갈수록 우선순위가 높다. 여기서 inline-style은 태그 안에 존재하는 스타일을 말한다.
-
-    </article>
-</body>
-
-<footer>
-
-</footer>
-
-
+      </section>
+    </body>
+  </body>
 </html>

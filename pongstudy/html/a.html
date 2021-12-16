@@ -4,42 +4,19 @@
 <head>
     <title> HTML &lt;a&gt; 태그 </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        a:visited {
-            color: black;
-        }
-
-        a:link {
-            color: black;
-        }
-
-
-        a:hover {
-            color: palevioletred;
-        }
-
-        a:active {
-            color: peachpuff;
-        }
-
-        .cursor {
-            cursor: pointer;
-        }
-
-        body {
-            text-align: center;
-            line-height: 2;
-        }
-    </style>
-
+    <link rel="stylesheet" href="/css/todaystyle.css" />
 <body>
-    <header>
-        <h1 style="color:palevioletred">
+    <div class="fixedBar">
+        <a href="https://blog.pongdang.today/"> PONGDANG's BLOG </a>
+      </div>
+    <header class="wrapper"> 
+        <h1 class="diaryTitle">
             HTML &lt;a&gt; 태그
         </h1>
     </header>
 
-    <article>
+    <section class="wrapper">
+      <div class="diaryContents">
         <p>
             <strong> &lt;a href="url"&gt; &lt;/a&gt; </strong> <br>
             href는 (hypertext referenc)의 약어. <br>
@@ -56,10 +33,10 @@
             된다.
             <br>
         </p>
+</div>
 
 
-
-    </article>
+    </section>
 </body>
 
 <footer>

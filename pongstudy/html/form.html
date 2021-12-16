@@ -1,128 +1,108 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>HTML &lt;form&gt;</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/studystyle.css">
+  </head>
 
-<head>
-    <title> HTML &lt;form&gt; </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        a:visited {
-            color: black;
-        }
+  <body>
+    <div class="fixedBar">
+      <a href="https://blog.pongdang.today/"> PONGDANG's BLOG </a>
+    </div>
 
-        a:link {
-            color: black;
-        }
-
-
-        a:hover {
-            color: palevioletred;
-        }
-
-        a:active {
-            color: peachpuff;
-        }
-
-        .cursor {
-            cursor: pointer;
-        }
-
-        body {
-            text-align: center;
-            line-height: 2;
-        }
-    </style>
-</head>
-
-<body>
-    <header>
-        <h1 style="color:palevioletred">
-            여러가지의 HTML &lt;form&gt; -로그인 화면
-        </h1>
+    <header class="wrapper">
+      <h1 class="study-title">여러가지의 HTML &lt;form&gt; -로그인 화면</h1>
     </header>
 
-    <article>
-        <p>
-        <h2>
-            아이디와 비밀번호를 입력할 수 있는 로그인 화면은 어떻게 만들까?!
-        </h2>
-        그러기 위해서는 &lt;input&gt; 태그가 필요하다. 그리고 type 정도만 결정해주면 만들 수 있다. <br>
-        <br>
-        &lt;html&gt; <br>
-        &lt;body&gt; <br>
-        <strong>&lt;form&gt; <br>
-            &lt;p&gt; 아이디 : &lt;input type="text" &gt; &lt;/p&gt; <br>
-            &lt;p&gt; 비밀번호 : &lt;input type="password"&gt; &lt;/p&gt; <br>
-            &lt;p&gt; &lt;input type="submit"&gt; &lt;/p&gt; <br>
-            &lt;/form&gt; <br> </strong>
-        &lt;/body&gt; <br>
-        &lt;/html&gt; <br>
-        <br>
-        🌟실행화면🌟
+    <section class="wrapper">
+      <div class="study-contents">
+        <h2 class="study-sub-title study-sub-title1">간단한 로그인 화면 만들기</h2>
+        <p>그러기 위해서는 &lt;input&gt; 태그가 필요하다. 그리고 type 정도만 결정해주면 만들 수 있다.</p>
+        <pre class="training-section">
+
+          &lt;html&gt;
+            &lt;body&gt;
+                <strong>
+                &lt;form&gt;
+                    &lt;p&gt;아이디 : &lt;input type="text"&gt;&lt;/p&gt;
+                    &lt;p&gt;비밀번호 : &lt;input type="password"&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;input type="submit"&gt;&lt;/p&gt;
+                &lt;/form&gt;
+            </strong>
+            &lt;/body&gt;
+          &lt;/html&gt;
+        </pre>
+        <h3 class="training-result">🌟실행화면🌟</h3>
         <form>
-            <p> 아이디 : <input type="text"> </p>
-            <p> 비밀번호 : <input type="password"></p>
-            <p><input type="submit"></p>
+          <p>아이디 : <input type="text" /></p>
+          <p>비밀번호 : <input type="password" /></p>
+          <p><input type="submit" style="width: 50px" /></p>
         </form>
 
-        <h2>
-            제출을 누르면 서버로 정보들이 전송되어야 하는데(?) 그렇게 하려면 어떻게 해야 할까?!
+        <h2 class="study-sub-title">
+            정보를 서버로 전송하는 속성 : action
         </h2>
-        &lt;form&gt; 태그 안에 서버 주소를 추가하면 된다.<br>
-        <br>
-        &lt;html&gt; <br>
-        &lt;body&gt; <br>
-        <strong>&lt;form action="서버주소"&gt; <br>
-            &lt;p&gt; 아이디 : &lt;input type="text" &gt; &lt;/p&gt; <br>
-            &lt;p&gt; 비밀번호 : &lt;input type="password"&gt; &lt;/p&gt; <br>
-            &lt;p&gt; &lt;input type="submit"&gt; &lt;/p&gt; <br>
-            &lt;/form&gt; <br> </strong>
-        &lt;/body&gt; <br>
-        &lt;/html&gt; <br>
-        <br>
-        🌟실행화면🌟
-        <form action="서버주소">
-            <p> 아이디 : <input type="text"> </p>
-            <p> 비밀번호 : <input type="password"></p>
-            <p><input type="submit"></p>
+        <p>&lt;form&gt; 태그 안에 서버 주소를 추가하면 된다.</p>
+        
+        <pre class="training-section">
+
+          &lt;html&gt;
+             &lt;body&gt;
+          <strong>
+                &lt;form action="서버주소"&gt;
+                    &lt;p&gt;아이디 : &lt;input type="text"&gt;&lt;/p&gt;
+                    &lt;p&gt;비밀번호 : &lt;input type="password"&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;input type="submit"&gt;&lt;/p&gt;
+                &lt;/form&gt;
+          </strong>
+            &lt;/body&gt;
+          &lt;/html&gt;
+        </pre>
+     
         </form>
-        그런데, 많은 정보들이 서버에서 잘 정리되기 위해서는 이름을 정해주어야 한다.<br>
-        <br>
-        &lt;html&gt; <br>
-        &lt;body&gt; <br>
-        &lt;form action="서버주소"&gt; <br>
-        &lt;p&gt; 아이디 : &lt;input type="text" <strong>name="id"</strong> &gt; &lt;/p&gt; <br>
-        &lt;p&gt; 비밀번호 : &lt;input type="password" <strong>name="pwd"</strong> &gt; &lt;/p&gt; <br>
-        &lt;p&gt; &lt;input type="submit"&gt; &lt;/p&gt; <br>
-        &lt;/form&gt; <br>
-        &lt;/body&gt; <br>
-        &lt;/html&gt; <br>
-        <br>
-        이렇게 입력해도 딱히 바뀌는 것은 없다. 이제 서버로 전송될 때 name 안의 이름으로 전송된다.<br>
-        <br>
-        <h2>
-            아이디 입력칸 안에 입력되어있는 문자!
-        </h2>
-        &lt;html&gt; <br>
-        &lt;body&gt; <br>
-        &lt;form action="서버주소"&gt; <br>
-        &lt;p&gt; 아이디 : &lt;input type="text" name="id" <strong>value="아이디를 입력하세요" </strong> &gt; &lt;/p&gt; <br>
-        &lt;p&gt; 비밀번호 : &lt;input type="password" name="pwd" &gt; &lt;/p&gt; <br>
-        &lt;p&gt; &lt;input type="submit"&gt; &lt;/p&gt; <br>
-        &lt;/form&gt; <br>
-        &lt;/body&gt; <br>
-        &lt;/html&gt; <br>
-        <br>
-        🌟실행화면🌟
+        <p>그런데, 많은 정보들이 서버에서 잘 정리되기 위해서는 이름을 정해주어야 한다.</p>
+        <pre class="training-section">
+
+          &lt;html&gt;
+            &lt;body&gt;
+                &lt;form action="서버주소"&gt;
+                    &lt;p&gt;아이디 : &lt;input type="text" <strong>name="id"</strong> &gt;&lt;/p&gt;
+                    &lt;p&gt;비밀번호 : &lt;input type="password" <strong>name="pwd"</strong>&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;input type="submit"&gt;&lt;/p&gt;
+                &lt;/form&gt;
+            &lt;/body&gt;
+          &lt;/html&gt;
+        </pre>
+        <h3 class="training-result">🌟실행화면🌟</h3>
         <form action="서버주소">
-            <p> 아이디 : <input type="text" name="id" value="아이디를 입력하세요"> </p>
-            <p> 비밀번호 : <input type="password" name="pwd"> </p>
-            <p><input type="submit"></p>
+          <p>아이디 : <input type="text" /></p>
+          <p>비밀번호 : <input type="password" /></p>
+          <p><input type="submit" style="width: 50px" /></p>
+        <p>이렇게 입력해도 딱히 바뀌는 것은 없다. 이제 서버로 전송될 때 name 안의 이름으로 전송된다.</p>
+
+        <h2 class="study-sub-title">기본 value 값 설정</h2>
+        <pre class="training-section">
+
+          &lt;html&gt;
+            &lt;body&gt;
+                &lt;form action="서버주소"&gt;
+                    &lt;p&gt;아이디 : &lt;input type="text" name="id" <strong>value="아이디를 입력하세요"</strong>&gt;&lt;/p&gt;
+                    &lt;p&gt;비밀번호 : &lt;input type="password" name="pwd"&gt;&lt;/p&gt;
+                    &lt;p&gt;&lt;input type="submit"&gt;&lt;/p&gt;
+                &lt;/form&gt;
+            &lt;/body&gt;
+          &lt;/html&gt;
+        </pre>
+        <h3 class="training-result">🌟실행화면🌟</h3>
+        <form action="서버주소">
+          <p>아이디 : <input type="text" name="id" value="아이디를 입력하세요" /></p>
+          <p>비밀번호 : <input type="password" name="pwd" /></p>
+          <p><input type="submit" style="width: 50px" /></p>
         </form>
-    </article>
-</body>
+      </div>
+    </section>
+  </body>
 
-<footer>
-
-</footer>
-
+  <footer></footer>
 </html>
