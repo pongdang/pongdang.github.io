@@ -25,6 +25,7 @@ body {
   min-height: 100vh;
   background-color: rgb(255, 229, 235);
   font-family: "NanumBarunGothic";
+  margin: 0 30px;
 }
 
 .wrapper {
@@ -151,15 +152,15 @@ p {
 }
 
 @media screen and (max-width: 629px) {
-  .wrapper {
+  /* .wrapper {
     padding: 0 20px;
-  }
+  } */
 }
 
 @media screen and (max-width: 555px) {
-  .wrapper {
+  /* .wrapper {
     padding: 0 20px;
-  }
+  } */
   .todayItem {
     text-align: center;
     word-break: keep-all;
