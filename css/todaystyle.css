@@ -25,6 +25,7 @@ body {
   min-height: 100vh;
   background-color: rgb(255, 229, 235);
   font-family: "NanumBarunGothic";
+  margin: 0 30px;
 }
 
 .wrapper {
@@ -134,10 +135,4 @@ img {
 .footer {
   padding: 40px;
   height: 30px;
-}
-
-@media screen and (max-width: 629px) {
-  .wrapper {
-    padding: 0 20px;
-  }
 }
