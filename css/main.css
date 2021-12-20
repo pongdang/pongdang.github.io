@@ -29,6 +29,7 @@ body {
 .wrapper {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 .title {
@@ -206,15 +207,42 @@ p {
 
 /* 미디어 쿼리 */
 
-@media screen and (max-width: 629px) {
-  .wrapper {
-    padding: 0 20px;
+@media screen and (max-width: 1000px) {
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    word-wrap: break-word;
   }
+  .menu-box {
+    border: 4px solid #f1d7ff;
+    border-radius: 20px;
+    background-color: white;
+    width: unset;
+    height: 130px;
+  }
+  .menu-box a {
+    /* border: 3px solid salmon; */
+    background-color: unset;
+    height: 100%;
+  }
+  .menu-box a:hover {
+    background-color: unset;
+    color: palevioletred;
+  }
+  .menu-box a img {
+    display: none;
+  }
+}
+@media screen and (max-width: 690px) {
+  /* .wrapper {
+    padding: 0 20px;
+  } */
 
   .menu-container {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     word-wrap: break-word;
   }
   .menu-box {
