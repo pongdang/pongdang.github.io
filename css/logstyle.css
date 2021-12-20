@@ -1,0 +1,131 @@
+/* 초기화 */
+
+*,
+body,
+h1,
+h2,
+ul {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+/* 공통 스타일 */
+
+body {
+  min-height: 100vh;
+  background-color: rgb(255, 229, 235);
+  font-family: "NanumBarunGothic";
+  margin: 0 30px;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+:root {
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 2.7rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2.3rem;
+}
+
+a,
+p,
+span {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* 고정 바 */
+
+.fixedBar {
+  background-color: #f1d7ff;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  /* text-align: center; */
+  height: 50px;
+  width: 100%;
+}
+
+.fixedBar a {
+  letter-spacing: 10px;
+  /* font-size: 1rem; */
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* contents */
+
+.study-log-date {
+  margin: 100px 0 30px;
+  color: #660099;
+  display: inline-block;
+  position: relative;
+}
+
+.study-log-date::before {
+  content: " ";
+  height: 0.8rem;
+  width: 100%;
+  background-color: #b789cd;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+.study-log-contents {
+  background-color: white;
+  border: 4px solid #f1d7ff;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 100px;
+}
+
+.study-log-contents-day {
+  border-bottom: 6px solid #eac3ff;
+  display: inline-block;
+}
+
+.study-log-tag {
+  /* border: 3px solid pink; */
+  padding: 16px 14px;
+  font-weight: bold;
+  border-radius: 30px;
+  background-color: #eac3ff;
+}
+img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.footer {
+  padding: 40px;
+  height: 30px;
+}
