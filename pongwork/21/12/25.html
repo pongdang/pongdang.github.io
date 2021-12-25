@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      section {
+        max-width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 40px 0;
+        display: inline-block;
+        border-bottom: 8px solid peachpuff;
+      }
+
+      .click-btn {
+        font-size: 20px;
+        padding: 10px 20px;
+        margin-bottom: 40px;
+        cursor: pointer;
+      }
+
+      .answer {
+        font-size: 20px;
+      }
+
+      .big-box {
+        background-color: rgb(249, 238, 222);
+        width: 700px;
+        height: 700px;
+        margin: 40px auto;
+        position: relative;
+      }
+
+      .small-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        background-color: rgb(247, 220, 113);
+      }
+
+      .date {
+        font-size: 20px;
+        text-align: end;
+        margin-bottom: 10px;
+      }
+
+      .clock {
+        font-size: 20px;
+        text-align: end;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 날짜 객체 활용 예제,  
+        스트링 객체 활용 예제,
+        Math 객체 활용 예제 -->
+    <section>
+      <h1>당신의 생일을 맞춰보겠습니다!</h1>
+      <br />
+      <button class="click-btn" onclick="birthQuiz()">눌러주세요</button>
+      <div class="answer"></div>
+    </section>
+
+    <section>
+      <h1>상자를 클릭해보세요!</h1>
+      <div class="big-box">
+        <div class="small-box" onclick="clickBox()"></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="date"></div>
+      <div class="clock"></div>
+    </section>
+    <script>
+      function question(...args) {
+        const message = prompt(...args);
+        if (message == null) {
+          throw new Error("취소했습니다.");
+        }
+        return message;
+      }
+      // 당신의 생일을 맞춰보겟습니다!
+      function birthQuiz() {
+        const q1 = question("당신이 태어난 달에 4를 곱해주세요", "ex)태어난 달이 1월이라면 1X4, 4입력");
+        const q2 = question(`${q1}에 9를 더해주세요`);
+        const q3 = question(`${q2}에 25를 곱해주세요`);
+        const q4 = question(`${q3}에 당신이 태어난 날을 더해주세요`);
+
+        const a1 = String(q4 - 225);
+        const a2 = a1.split("");
+        const a3 = a2.splice(-2, 2).join("");
+        const a4 = a2.join("");
+        const answer = document.querySelector(".answer");
+
+        answer.innerHTML = `당신의 생일은 ${a4}월 ${a3}일 입니다!`;
+      }
+
+      // 상자를 클릭해보세요!
+      function clickBox() {
+        const box = document.querySelector(".small-box");
+
+        box.style.top = `${Math.floor(Math.random() * 650)}px`;
+        box.style.left = `${Math.floor(Math.random() * 650)}px`;
+      }
+
+      // 실시간 시계
+      const updateClock = () => {
+        const clock = document.querySelector(".clock");
+        const date = document.querySelector(".date");
+        const now = new Date();
+        const year = now.getFullYear();
+        const month = now.getMonth();
+        const day = now.getDay();
+        const hour = now.getHours();
+        const minute = now.getMinutes();
+        const second = now.getSeconds();
+        date.innerHTML = `${year}년 ${month}월 ${day}일`;
+        clock.innerHTML = `${hour < 10 ? `0${hour}` : hour}:${minute < 10 ? `0${minute}` : minute}:${
+          second < 10 ? `0${second}` : second
+        }`;
+        requestAnimationFrame(updateClock);
+      };
+      requestAnimationFrame(updateClock);
+
+      // 원래의 시간과 약간의 차이가 있다.
+      // setInterval은 함수를 반복 실행하는데, 그 반복 실행하는데 주어지는 지연시간이 동일하게 보장이 되지 않는다.
+      //   setInterval(() => {
+      //     const clock = document.querySelector(".clock");
+      //     const time = new Date();
+      //     const hour = time.getHours();
+      //     const minute = time.getMinutes();
+      //     const second = time.getSeconds();
+      //     clock.innerHTML = `${hour < 10 ? `0${hour}` : hour}:${minute < 10 ? `0${minute}` : minute}:${
+      //       second < 10 ? `0${second}` : second
+      //     }`;
+      //   }, 100);
+    </script>
+  </body>
+</html>
