@@ -136,6 +136,16 @@ span {
 .study-log-main-text img {
   margin: 20px 0;
 }
+
+.code-section {
+  border: 3px solid plum;
+  border-radius: 30px;
+  margin: 20px 0;
+  padding: 0 20px;
+  font-size: 1.8rem;
+  overflow: scroll;
+}
+
 img {
   width: 100%;
   margin-bottom: 30px;
