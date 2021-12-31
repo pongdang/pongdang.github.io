@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/logstyle.css" />
+    <title>21.12.15, 3일차</title>
+  </head>
+  <body>
+    <div class="fixedBar">
+      <a href="https://blog.pongdang.today/">PONGDANG's BLOG</a>
+    </div>
+    <header class="wrapper">
+      <h1 class="study-log-date">2021/12/15/수요일</h1>
+    </header>
+    <section class="wrapper">
+      <div class="study-log-contents">
+        <h2 class="study-log-contents-day">3일차</h2>
+        <br />
+        <div class="study-log-main-text">
+          <h3>웹 폼</h3>
+          <p>
+            • 웹 페이지에서 사용자 입력을 받을 수 있다.<br />
+            • 로그인, 등록, 검색, 예약 등에 쓰인다.<br />
+          </p>
+        </div>
+        <hr />
+        <div class="study-log-main-text">
+          <h3>간단한 로그인 폼 만들어보기</h3>
+          <pre class="code-section">
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;title&gt;로그인 폼&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;h3&gt;로그인 폼&lt;/h3&gt;
+    &lt;hr /&gt;
+    &lt;form name="LoginForm" method="get"&gt;
+        사용자 이름
+        &lt;br /&gt;
+        &lt;input type="text" size="15" value="" id="name" /&gt;
+        &lt;br /&gt;
+        ID
+        &lt;br /&gt;
+        &lt;input type="text" size="15" value="" id="id" /&gt;
+        &lt;br /&gt;
+        비밀번호&lt;br /&gt;
+        &lt;input type="password" size="15" value="" id="pwd" /&gt;
+        &lt;br /&gt;
+        &lt;br /&gt;
+        &lt;input type="submit" value="완료" onclick="getMemberInfo()" /&gt;
+    &lt;/form&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+          </pre>
+          <img src="/studylog/img/21/12/15-1.png" alt="로그인 폼 코드 실행 화면" />
+        </div>
+        <hr />
+        <div class="study-log-main-text">
+          <h3>form 태그의 속성값</h3>
+          <p>
+            • <strong>name</strong> : 폼의 이름을 지정한다.<br />
+            • <strong>action</strong> : submit 버튼이 눌리면 브라우저는 action에 지정된 웹 서버 응용프로그램 실행을
+            요청한다.<br />
+            • <strong>method</strong> : 폼 데이터를 웹 서버로 전송하는 형식이다. 대표적으로 GET, POST가 있다.<br />
+          </p>
+        </div>
+        <hr />
+        <div class="study-log-main-text">
+          <h3>네이버 검색 사례로 폼 전송 과정 이해</h3>
+          <p>
+            1️⃣ 네이버 사이트에 접속<br />
+            • 입력 창에 "bird" 입력, "검색" 버튼 누르면 form 태그의 action을 참고하여 search.naver.com 서버에 접속하여
+            search.naver 응용프로그램의 실행을 요구해야 한다는 것을 확인<br />
+            2️⃣ 입력 창에 "bird" 입력, "검색" 버튼 누르면 웹 서버 응용프로그램에 보낼 폼 데이터를 만든다.<br />
+            • search.naver.com/search.naver?...query=bird ...<br />
+            <img src="/studylog/img/21/12/15-2.png" alt="네이버 주소창을 통해 폼 전송 과정 알아보기" />
+            3️⃣ 브라우저는 search.naver.com에 접속하여 search.naver 실행을 요청하고 query=bird를 전달한다.<br />
+            4️⃣ 웹 서버에서 search.naver 응용프로그램이 실행되고, 검색 결과를 브라우저에게 보낸다.<br />
+            5️⃣ 브라우저는 검색 결과를 화면에 출력한다.<br />
+          </p>
+        </div>
+        <span class="study-log-tag">#HTML</span>
+      </div>
+    </section>
+  </body>
+</html>
