@@ -119,10 +119,11 @@ span {
 
 .study-log-tag {
   /* border: 3px solid pink; */
-  padding: 16px 14px;
+  padding: 8px 10px;
   font-weight: bold;
   border-radius: 30px;
   background-color: #eac3ff;
+  font-size: 1.3rem;
 }
 
 .study-log-main-text {
