@@ -5,6 +5,7 @@ const diaryList = [
   { name: "21.12.16, 4일차", url: "/studylog/21/12/16" },
   { name: "21.12.17, 5일차", url: "/studylog/21/12/17" },
   { name: "21.12.20, 6일차", url: "/studylog/21/12/20" },
+  { name: "22.01.03, MariaDB 설치하고 실행해보기", url: "/studylog/22/01/03" },
 ];
 
 function markPageNo(pageNo) {
