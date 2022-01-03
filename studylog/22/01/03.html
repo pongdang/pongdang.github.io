@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/logstyle.css" />
+    <title>MariaDB 설치하고 실행해보기</title>
+  </head>
+  <body>
+    <div class="fixedBar">
+      <a href="https://blog.pongdang.today/">PONGDANG's BLOG</a>
+    </div>
+    <header class="wrapper">
+      <h1 class="study-log-date">MariaDB 설치하고 실행해보기</h1>
+    </header>
+    <section class="wrapper">
+      <div class="study-log-contents">
+        <h2 class="study-log-contents-day">설치방법</h2>
+        <br />
+        <div class="study-log-main-text">
+          <h3>1. App Store에서 Xcode 다운받기</h3>
+          <p>Xcode : MacOS와 iOS 개발을 위해 애플이 개발한 툴 모음</p>
+          <img src="/studylog/img/22/01/03-1.png" alt="x-code 설치하는 화면" />
+          <p>
+            이거 다운받을 때 진짜 개개개개개개개개 오래 걸린다.<br />
+            brew를 통해 MariaDB를 설치하기 전에 필요한 작업이라고 한다.
+          </p>
+          <h3>2. Homebrew 설치하기</h3>
+          <p>Homebrew : macOS 용 패키지 관리자</p>
+          <img src="/studylog/img/22/01/03-2.png" alt="Homebrew 설치 방법 안내 화면" />
+          <p>
+            <span style="background-color: rgb(228, 228, 228); padding: 5px 10px; border-radius: 20px"
+              >/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</span
+            >
+            <br />
+            위를 복사하여 터미널에 붙여넣기하면 된다.
+          </p>
+          <img src="/studylog/img/22/01/03-3.png" alt="터미널로 Homebrew 설치하는 화면" />
+          <p>
+            Mac 로그인 비밀번호를 입력해주고 Enter(Return)키를 누른 뒤 한 번 더 Enter(Return)키를 누르면 설치가
+            시작된다.<br />
+            근데 이것도..? 꽤 오래 걸린다. 뭐가 되고 있긴 한 건가? 생각이 들어도 기다려야 한다. 안 되는 건 줄 알고 성격
+            급해서 몇 번이나 껐다켰다 했는데 기다려야 했음
+          </p>
+          <h3>3. Homebrew 업데이트 확인하기</h3>
+          <img src="/studylog/img/22/01/03-4.png" alt="터미널로 Homebrew 업데이트 확인하기" />
+          <p>
+            <span style="background-color: rgb(228, 228, 228); padding: 5px 10px; border-radius: 20px"
+              >brew update</span
+            >
+            를 입력하여 업데이트할 것이 있는지 확인한다. 만약에 있다면 영어로 어쩌구저쩌구 나오면서 알아서 업데이트
+            해준다.<br />
+            <strong>Homebrew로 프로그램을 설치하거나 업그레이드 전에는 꼭 확인해주어야 한다.</strong>
+          </p>
+          <h3>4. MariaDB 설치</h3>
+          <img src="/studylog/img/22/01/03-5.png" alt="터미널로 MariaDB 설치하기" />
+          <p>
+            <span style="background-color: rgb(228, 228, 228); padding: 5px 10px; border-radius: 20px"
+              >brew install mariadb</span
+            >
+            를 입력하면 설치가 시작된다. 이미 설치 되었다면 위처럼 뜰 것이다!
+          </p>
+          <h3>5. MariaDB 접속하기</h3>
+          <img src="/studylog/img/22/01/03-6.png" alt="터미널로 MariaDB 접속하기" />
+          <p>
+            <span style="background-color: rgb(228, 228, 228); padding: 5px 10px; border-radius: 20px"
+              >mysql.server start</span
+            >
+            를 입력하면 MariaDB에 접속할 수 있다.
+          </p>
+          <h3>6. MariaDB 켜기..?</h3>
+          <img src="/studylog/img/22/01/03-7.png" alt="터미널로 MariaDB 실행하기" />
+          <p>
+            <span style="background-color: rgb(228, 228, 228); padding: 5px 10px; border-radius: 20px"
+              >mysql -u root -p</span
+            >를 입력하면 계속 뭘 설치하겠냐고 물어보는데 그냥 y만 계속 입력해주면 된다. 그러다가 다 되면 password를
+            입력하라고 뜨는데, 그때 password를 입력해주면 된다.<br />
+            그럼 이제 MariaDB 켜고 싶을 때마다
+            <span style="background-color: rgb(228, 228, 228); padding: 5px 10px; border-radius: 20px"
+              >mysql -u root -p</span
+            >
+            를 입력하고, password를 입력하면 된다.
+          </p>
+          <hr />
+          <p>
+            얼레벌레 설치를 해보았다. 강의에서 MAC에서 MariaDB 설치하는 방법을 알려주지 않아서 몇 번의 검색 끝에
+            설치했다. 그래도 블로그에 방법을 정리하여 공유해주신 분들이 많아서 큰 어려움없이 할 수 있었다. 근데 제대로
+            한 건지는 모르겠다. 근데 되긴 된다.
+          </p>
+        </div>
+
+        <span class="study-log-tag">#MariaDB</span>
+      </div>
+    </section>
+  </body>
+</html>
