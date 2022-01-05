@@ -22,7 +22,7 @@ a {
 /* 공통 스타일 */
 
 body {
-  background-color: #ffedbc;
+  background-color: rgb(255, 229, 235);
   font-family: "NanumBarunGothic";
 }
 
@@ -30,23 +30,6 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 30px;
-}
-
-.title {
-  display: inline-block;
-  margin: 70px 0;
-  color: #660099;
-  position: relative;
-}
-
-.title::before {
-  content: " ";
-  height: 0.6rem;
-  width: 100%;
-  background-color: #b789cd;
-  position: absolute;
-  bottom: 0;
-  z-index: -1;
 }
 
 :root {
@@ -71,6 +54,53 @@ p {
 /* header */
 
 .header-cover {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: 1px solid palevioletred;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.header-title {
+  margin-right: auto;
+  font-size: 24px;
+}
+
+.github-link,
+.velog-link {
+  width: 52px;
+  height: 52px;
+  margin-left: 10px;
+}
+
+.header-logo {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  display: inline-block;
+  margin: 70px 0;
+  color: #660099;
+  position: relative;
+}
+
+.title::before {
+  content: " ";
+  height: 0.6rem;
+  width: 100%;
+  background-color: #b789cd;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+.title.title-none {
+  display: none;
+}
+
+/* .header-cover {
   background: #800080;
   background: -webkit-linear-gradient(to right, #ffc0cb, #800080);
   background: linear-gradient(to right, #ffc0cb, #800080);
@@ -79,28 +109,28 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.header-title {
+/* .header-title {
   background-color: rgba(0, 0, 0, 0.728);
-  padding: 0 2rem;
-  /* 폰트 */
-  font-size: 3.5vw;
+  padding: 0 2rem; */
+/* 폰트 */
+/* font-size: 3.5vw;
   color: white;
   line-height: 2;
-  letter-spacing: 1vw;
-  /* 효과 */
-  /* 원래 크기로 돌아오는데 0.6s 걸림 */
-  transform: scale(1);
+  letter-spacing: 1vw; */
+/* 효과 */
+/* 원래 크기로 돌아오는데 0.6s 걸림 */
+/* transform: scale(1);
   transition: transform 0.6s;
-}
+} */
 
-.header-cover:hover .header-title {
-  /* 효과 */
-  /* 1.4배만큼 커지고 커지는데 0.6s 걸림 */
-  transform: scale(1.1);
+/* .header-cover:hover .header-title { */
+/* 효과 */
+/* 1.4배만큼 커지고 커지는데 0.6s 걸림 */
+/* transform: scale(1.1);
   transition: transform 0.6s;
-}
+} */
 
 /* menu */
 
@@ -121,7 +151,7 @@ p {
   height: 100%;
   width: 100%;
   font-weight: bold;
-  background-color: #9796f0;
+  background-color: #f1d7ff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -189,7 +219,7 @@ p {
 }
 
 .contents-box {
-  border: 4px solid #9796f0;
+  border: 4px solid #f1d7ff;
   border-radius: 20px;
   background-color: white;
   padding: 50px;
@@ -215,7 +245,7 @@ p {
     word-wrap: break-word;
   }
   .menu-box {
-    border: 4px solid #9796f0;
+    border: 4px solid #f1d7ff;
     border-radius: 20px;
     background-color: white;
     width: unset;
@@ -246,7 +276,7 @@ p {
     word-wrap: break-word;
   }
   .menu-box {
-    border: 4px solid #9796f0;
+    border: 4px solid #f1d7ff;
     border-radius: 20px;
     background-color: white;
     width: unset;
