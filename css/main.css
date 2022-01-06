@@ -241,6 +241,7 @@ p {
 
 @media screen and (max-width: 1000px) {
   .menu-container {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 10px;
