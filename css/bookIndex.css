@@ -23,7 +23,7 @@ a {
 
 body {
   min-height: 100vh;
-  background-color: rgb(255, 229, 235);
+  background-color: #fdf6f1;
   font-family: "NanumBarunGothic";
 }
 
@@ -34,6 +34,8 @@ body {
 
 :root {
   font-size: 10px;
+  --main-bg-color: #fde3a7;
+  --box-hover-color: #fefad4;
 }
 
 h1 {
@@ -56,7 +58,7 @@ p {
 /* 고정 바 */
 
 .fixedBar {
-  background-color: #f1d7ff;
+  background-color: var(--main-bg-color);
   position: fixed;
   left: 0px;
   top: 0px;
@@ -81,7 +83,6 @@ p {
 
 .bookTitle {
   margin: 100px 0;
-  color: #660099;
   display: inline-block;
   position: relative;
 }
@@ -90,7 +91,7 @@ p {
   content: " ";
   height: 0.8rem;
   width: 100%;
-  background-color: #b789cd;
+  background-color: var(--main-bg-color);
   position: absolute;
   bottom: 0;
   z-index: -1;
@@ -103,7 +104,7 @@ p {
 
 .bookNav li {
   background-color: white;
-  border: 4px solid #f1d7ff;
+  border: 4px solid var(--main-bg-color);
   border-radius: 20px;
   height: 100px;
   padding: 0 20px;
@@ -111,7 +112,7 @@ p {
 }
 
 .bookNav li:hover {
-  background-color: #e9e9e9;
+  background-color: var(--box-hover-color);
 }
 
 .bookItem {
@@ -123,7 +124,7 @@ p {
 }
 
 .bookItem:active {
-  color: palevioletred;
+  color: var(--main-bg-color);
 }
 
 .footer {
