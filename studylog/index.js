@@ -13,7 +13,7 @@ function markPageNo(pageNo) {
   for (const button of buttonList) {
     if (button.innerText === `${Number(pageNo) + 1}`) {
       button.style.fontWeight = "bold";
-      button.style.color = "#660099";
+      button.style.color = "var(--main-bg-color)";
     }
   }
 }
