@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/todaystyle.css" />
+    <title>숫자의 표현</title>
+  </head>
+
+  <body>
+    <div class="fixedBar">
+      <a href="https://blog.pongdang.today/"> PONGDANG's BLOG </a>
+    </div>
+
+    <header class="wrapper">
+      <h2 class="diaryTitle"></h2>
+    </header>
+
+    <section class="wrapper">
+      <div class="diaryContents">
+        <h2>숫자의 표현</h2>
+        <p class="diary-contents-date">2022/01/11/화요일</p>
+        <img src="/pongtoday/img/22/01/11.png" alt="숫자의 표현 문제" />
+        <h3>🌟내가 푼 방법🌟</h3>
+        <img src="/pongtoday/img/22/01/11-a1.png" alt="숫자의 표현 답1" />
+        <p>
+          now는 현재 더하고 있는 값, plusNum은 누적 값(?), count는 순서대로 더하는 값 중에 맨 처음이다.<br />
+          plusNum = plusNum + now 를 풀어서 보자면, <br />
+          0 + 1 = 1<br />
+          1 + 2 = 3<br />
+          3 + 3 = 6<br />
+          6 + 4 = 10<br />
+          10 + 5 = 15<br />
+          1 + 2 + 3 + 4 + 5 가 15라는 뜻이다! 현재 count는 1이고, plusNum이 15가 되면 answer와 count를 증가시킨다. now가
+          count 2가 되어 2부터 또 더하기 시작한다. 그리고 plusNum도 0으로 만들어 다시 더하게 만든다. plusNum이 15가
+          넘으면 answer는 증가시키지 않고, plusNum 초기화, count 증가, now를 count로 정의한다.
+        </p>
+        <img src="/pongtoday/img/22/01/11-a2.png" alt="숫자의 표현 답2" />
+        <p>
+          연속된 숫자로 n을 만드는 것과 n의 약수가 같다고 한다. 솔직히 납득이 가지 않아서 ㅎㅎ .. n이 4일 때는 만족하지
+          않는다.
+        </p>
+        <img src="/pongtoday/img/22/01/11-a2.png" alt="숫자의 표현 답2 해설" />
+        <p>이런 이유 때문이라고 하는데... 그럼 왜 4는 안 돼?</p>
+      </div>
+    </section>
+  </body>
+</html>
