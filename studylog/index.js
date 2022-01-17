@@ -1,10 +1,7 @@
 const diaryList = [
-  { name: "21.12.13, 1일차", url: "/studylog/21/12/13" },
-  { name: "21.12.14, 2일차", url: "/studylog/21/12/14" },
-  { name: "21.12.15, 3일차", url: "/studylog/21/12/15" },
-  { name: "21.12.16, 4일차", url: "/studylog/21/12/16" },
-  { name: "21.12.17, 5일차", url: "/studylog/21/12/17" },
-  { name: "21.12.20, 6일차", url: "/studylog/21/12/20" },
+  { name: "HTML의 기본 구조와 태그 정리", url: "/studylog/21/12/13" },
+  { name: "HTML 시맨틱 태그", url: "/studylog/21/12/14" },
+  { name: "HTML form 태그", url: "/studylog/21/12/15" },
   { name: "MariaDB 설치하고 실행해보기", url: "/studylog/22/01/03" },
 ];
 
