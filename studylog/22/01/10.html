@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/logstyle.css" />
+    <title>React 설치하고 시작하기</title>
+  </head>
+  <body>
+    <div class="fixedBar">
+      <a href="https://blog.pongdang.today/">PONGDANG's BLOG</a>
+    </div>
+    <header class="wrapper">
+      <h1 class="study-log-date">React 설치하고 시작하기</h1>
+    </header>
+    <section class="wrapper">
+      <div class="study-log-contents">
+        <div class="study-log-main-text">
+          <h2>React</h2>
+          <p>
+            공개 소프트웨어이다.<br />
+            JavaScript로 작성된다.<br />
+            화면 출력에 특화된 라이브러리이다.<br />
+            React 하나만 배워도 웹, 앱 둘 다 만들 수 있다.
+          </p>
+          <h2 style="margin: 20px 0">패키지 관리 툴</h2>
+          <h3>npm</h3>
+          <p>
+            자바스크립트 라이브러리를 설치 및 관리<br />
+            node_modules 폴더에 라이브러리를 내려 받아 저장하고, package.json 이라는 파일에 설치된 라이브러리의 정보를
+            기록하여 저장한다.
+          </p>
+
+          <h3>yarn</h3>
+          <p>
+            <strong>npm 을 개선한 관리 툴 속도</strong><br />
+            다운받은 패키지 데이터를 캐시에 저장하여 중복된 데이터는 다운로드하지 않고, 저장된 파일을 활용하여 npm 보다
+            패키지 설치 속도가 빠르다.<br />
+            패키지 설치를 순차적으로 처리하는 npm 과 달리 yarn 은 병렬로 처리하여 yarn 의 패키지 설치 속도가 더
+            빠르다.<br />
+            <strong>안정성 / 보안성</strong><br />
+            npm 은 패키지가 설치될 때 자동으로 코드와 의존성을 실행할 수 있도록 했다. 하지만 이 기능이 안정성을 위협할
+            수도 있다.<br />
+            반면, yarn 은 yarn.lock 과 package.json 으로부터 설치만 하며 모든 디바이스에 같은 패키지를 설치하는 것을
+            보장하여 버전 차이로 생기는 버그를 방지할 수 있다.
+          </p>
+          <h3>하나의 프로젝트 안에서 npm이랑 yarn 둘 다 써도 됨?</h3>
+          <p>
+            npm 과 yarn 을 같이 사용하는 것은 좋지 않다. 어떤 패키지를 쓸 것인지 정하고 하나의 패키지만 써야 한다.
+            패키지 관리의 책임이 두 곳으로 분산되어 개발자에게 혼란을 야기할 수 있다. 또한 package-lock.json, yarn.lock
+            과 같은 의존성 관련 파일이 2개나 생겨버린다.<br />
+            <a
+              href="https://velog.io/@kysung95/%EA%B0%9C%EB%B0%9C%EC%83%81%EC%8B%9D-npm%EA%B3%BC-yarn"
+              style="background-color: rgb(215, 215, 215)"
+              >참고 : [개발상식] npm과 yarn</a
+            >
+          </p>
+
+          <h2>yarn으로 React 설치</h2>
+          <p>
+            1. yarn을 설치<br />
+            <span style="background-color: rgb(228, 228, 228); padding: 5px 10px; border-radius: 20px"
+              >npm install -g yarn</span
+            >
+            <br />
+            2. create-react-app 설치<br />
+            <span style="background-color: rgb(228, 228, 228); padding: 5px 10px; border-radius: 20px"
+              >yarn global add create-react-app
+            </span>
+            <br />
+            3. React 앱 생성<br />
+            <span style="background-color: rgb(228, 228, 228); padding: 5px 10px; border-radius: 20px"
+              >create-react-app 프로젝트 이름</span
+            >
+            프로젝트 이름의 폴더가 생성된다.
+          </p>
+          <h3>| create-react-app myapp</h3>
+          <img src="/studylog/img/22/01/10-1.png" alt="리액트 생성 후 파일 목록" />
+          <h2>yarn으로 React 실행</h2>
+          <p>
+            1.프로젝트 폴더 안으로 이동<br />
+            <span style="background-color: rgb(228, 228, 228); padding: 5px 10px; border-radius: 20px"
+              >cd 프로젝트 이름
+            </span>
+            <br />
+            <img src="/studylog/img/22/01/10-2.png" alt="터미널에서 프로젝트 폴더 안으로 이동" />
+            2.React 앱 실행
+            <br />
+            <span style="background-color: rgb(228, 228, 228); padding: 5px 10px; border-radius: 20px"
+              >yarn start
+            </span>
+            <br />
+            <img src="/studylog/img/22/01/10-3.png" alt="리액트 실행화면" />
+          </p>
+        </div>
+
+        <span class="study-log-tag">#React</span>
+        <span class="study-log-tag">#JavaScript</span>
+        <span class="study-log-tag">#yarn</span>
+        <span class="study-log-tag">#npm</span>
+      </div>
+    </section>
+  </body>
+</html>
