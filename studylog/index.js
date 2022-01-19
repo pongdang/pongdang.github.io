@@ -3,6 +3,7 @@ const diaryList = [
   { name: "HTML 시맨틱 태그", url: "/studylog/21/12/14" },
   { name: "HTML form 태그", url: "/studylog/21/12/15" },
   { name: "MariaDB 설치하고 실행해보기", url: "/studylog/22/01/03" },
+  { name: "React 설치하고 시작하기", url: "/studylog/22/01/10" },
 ];
 
 function markPageNo(pageNo) {
