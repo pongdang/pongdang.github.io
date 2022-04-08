@@ -73,6 +73,7 @@ span {
   /* text-align: center; */
   height: 50px;
   width: 100%;
+  z-index: 999;
 }
 
 .fixedBar a {
