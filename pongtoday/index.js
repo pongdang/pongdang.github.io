@@ -52,6 +52,7 @@ const diaryList = [
   { name: "21.12.06, 짝지어 제거하기", url: "/pongtoday/21/12/06" },
   { name: "21.12.07, 예상 대진표", url: "/pongtoday/21/12/07" },
   { name: "21.12.21, 프린터", url: "/pongtoday/21/12/21" },
+  { name: "22.01.11, 숫자의 표현", url: "/pongtoday/22/01/11" },
 ].reverse();
 
 function markPageNo(pageNo) {
