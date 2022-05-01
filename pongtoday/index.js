@@ -54,6 +54,7 @@ const diaryList = [
   { name: "21.12.21, 프린터", url: "/pongtoday/21/12/21" },
   { name: "22.01.11, 숫자의 표현", url: "/pongtoday/22/01/11" },
   { name: "22.04.28, 신고 결과 받기", url: "/pongtoday/22/04/28" },
+  { name: "22.04.30, 숫자 문자열과 영단어", url: "/pongtoday/22/04/30" },
 ].reverse();
 
 function markPageNo(pageNo) {
