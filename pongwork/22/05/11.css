@@ -1,0 +1,222 @@
+/* global */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0px;
+  box-sizing: border-box;
+  font-family: "Righteous", cursive;
+  color: #000;
+}
+
+body {
+  padding-top: 150px;
+  background-image: url(https://cdn.pixabay.com/photo/2015/09/24/19/04/rabbit-956170_960_720.png);
+}
+
+/*
+    Calculator styles
+  */
+
+.container {
+  height: 100vh;
+  min-width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  background-color: pink;
+  border-radius: 10px;
+  padding: 30px 20px;
+}
+
+.calculator__display--bare {
+  display: none;
+  background-color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 10px;
+  padding: 25px 15px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
+.calculator__display--bare > span {
+  width: 50px;
+  display: inline-block;
+  text-align: center;
+  background-color: #f3f0fc;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.calculator__display--for-advanced {
+  /* display: none; 이 줄을 모두 지우면 advanced 테스트를 하실 수 있습니다. */
+  background-color: #ffffff;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: end;
+  vertical-align: middle;
+  padding: 25px 30px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
+.calculator__buttons {
+  background-color: #ffffff;
+  margin-top: 10px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.clear__and__enter {
+  background-color: #f3f0fc;
+  display: flex;
+  gap: 10px;
+}
+
+.clear__and__enter > button {
+  border-radius: 10px;
+  width: 65px;
+  height: 65px;
+  flex-grow: 1;
+  background-color: rgb(250, 86, 119);
+  cursor: pointer;
+  outline: none;
+}
+
+.clear__and__enter button:hover {
+  background-color: rgb(255 125 151);
+}
+
+.clear__and__enter button:active {
+  transform: scale(0.95);
+}
+
+.button__row {
+  background-color: #f3f0fc;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  padding: 4px 0;
+}
+
+.button__row > button {
+  width: 65px;
+  height: 65px;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  background-color: #ebebeb;
+  font-size: 20px;
+}
+
+.button__row > .number:hover {
+  background-color: #ffe0e6;
+  transform: scale(0.95);
+}
+
+.button__row > .number:active {
+  transform: scale(0.9);
+}
+
+.button__row > .operator:hover {
+  background-color: #727272;
+}
+
+.button__row > .operator {
+  color: #ffffff;
+  background-color: #313132;
+}
+
+.button__row .isPressed {
+  background-color: rgb(250, 86, 119);
+}
+
+.button__row:nth-child(5) {
+  display: flex;
+}
+
+.button__row > .double {
+  flex-grow: 1;
+}
+
+/* 토끼 시작 */
+
+.rabbit {
+  font-size: 0;
+  width: 500px;
+  margin: -320px auto 0 auto;
+  text-align: center;
+  display: inline-block;
+}
+
+.rabbit .ear {
+  display: inline-block;
+  border: 3px solid pink;
+  border-bottom: none;
+  border-radius: 50px 50px 0 0;
+  width: 100px;
+  height: 200px;
+  margin: 10px 50px 0 50px;
+  background-color: pink;
+}
+
+.rabbit .ear1 {
+  display: inline-block;
+  border: 3px solid rgb(250, 86, 119);
+  border-radius: 50px 50px 0 0;
+  width: 50px;
+  height: 170px;
+  margin: 27px 20px 0 20px;
+  background-color: rgb(250, 86, 119);
+}
+
+.rabbit .face {
+  border: 3px solid pink;
+  border-radius: 0 0 50px 50px;
+  width: 300px;
+  height: 150px;
+  margin: -3px auto 0 auto;
+  background-color: pink;
+}
+
+.rabbit .eye {
+  display: inline-block;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  margin: 20px 30px;
+  background-color: black;
+}
+
+.rabbit .mouse {
+  background-color: black;
+  width: 45px;
+  height: 5px;
+  margin: 0 auto;
+}
+
+.rabbit .teeth {
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  background-color: white;
+}
+
+.rabbit .teeth.left {
+  border: 3px solid black;
+  border-right: 1px solid black;
+  border-top: 0;
+}
+
+.rabbit .teeth.right {
+  border: 3px solid black;
+  border-left: 0;
+  border-top: 0;
+}
+
+/* 토끼 끝 */
