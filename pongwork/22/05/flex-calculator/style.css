@@ -1,0 +1,109 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: skyblue;
+  font-family: "Rajdhani", sans-serif;
+}
+
+#calculator {
+  display: flex;
+  flex-direction: column;
+}
+
+.calculator__display-wrapper {
+  padding: 20px 30px;
+  flex-grow: 2;
+  background-color: #030303;
+  border-radius: 24px 24px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: end;
+}
+
+.calculator__display--bare {
+  font-size: 24px;
+  color: #7c7c7c;
+  margin: 20px 0;
+  position: relative;
+}
+
+.calculator__result {
+  display: none;
+  position: absolute;
+  top: 29px;
+  right: 0px;
+}
+
+.calculator__display--for-advanced {
+  font-size: 40px;
+  color: #e5e5e5;
+}
+
+.button-wrapper {
+  padding: 20px 30px;
+  flex-grow: 7;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 0 24px 24px;
+  background-color: #f3f3f3;
+}
+
+.button-row-container {
+  margin: 4px 0;
+  display: flex;
+  gap: 10px;
+}
+
+.button-row-container button {
+  font-size: 20px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 8px 6px 7px #e2e2e2;
+}
+
+.button-row-container:nth-child(1) .white {
+  background-color: white;
+}
+
+.button-row-container:nth-child(5) {
+  display: flex;
+}
+
+.button-row-container:nth-child(5) .number.zero {
+  flex-grow: 2;
+  padding-left: 20px;
+  text-align: left;
+  border-radius: 20px;
+}
+
+.operator {
+  background-color: #6bc8f4;
+}
+
+.button-row-container:nth-child(5) button:last-child {
+  color: white;
+  background-color: #1d1d1d;
+}
+
+.button-row-container button:hover,
+.button-row-container:nth-child(1) .white:hover {
+  transform: scale(0.95);
+  background-color: #cdcdcd;
+}
+
+.button-row-container button:active,
+.button-row-container:nth-child(1) .white:active {
+  transform: scale(0.9);
+}
